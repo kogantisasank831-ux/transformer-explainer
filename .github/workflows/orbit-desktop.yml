@@ -1,0 +1,109 @@
+# Copy to the REPOSITORY ROOT at .github/workflows/orbit-desktop.yml.
+# Orbit source belongs in Orbit/ below that root.
+name: Orbit desktop installers
+on:
+  workflow_dispatch:
+  push:
+    branches: ['orbit-build/**']
+    paths: ['Orbit/**', '.github/workflows/orbit-desktop.yml']
+  pull_request:
+    paths: ['Orbit/**', '.github/workflows/orbit-desktop.yml']
+permissions:
+  contents: read
+concurrency:
+  group: orbit-desktop-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  desktop:
+    name: ${{ matrix.platform }}
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            platform: windows-x64
+            target: x86_64-pc-windows-msvc
+          - os: macos-14
+            platform: macos-arm64
+            target: aarch64-apple-darwin
+          - os: macos-15-intel
+            platform: macos-x64
+            target: x86_64-apple-darwin
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: Orbit
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Existing repository content need not be downloaded for Orbit's build.
+          sparse-checkout: |
+            Orbit
+            .github/workflows
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: Orbit/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: Orbit -> target
+      - name: Verify native architecture
+        env:
+          ORBIT_EXPECTED_TARGET: ${{ matrix.target }}
+        run: python scripts/check-host.py
+      - name: Install macOS conversion tools
+        if: runner.os == 'macOS'
+        run: |
+          brew install --cask libreoffice
+          brew install tesseract
+      - name: Install Windows conversion tools
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          choco install libreoffice-fresh tesseract -y --no-progress
+          if ($LASTEXITCODE -ne 0) { throw "Conversion tool installation failed" }
+          'C:\Program Files\Tesseract-OCR' | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+      - name: Install application dependencies
+        run: |
+          npm ci
+          python -m pip install -r engine/requirements-dev.txt
+      - name: Rust tests
+        run: cargo test -p orbit-core --locked
+      - name: PDF and OCR tests
+        run: python -m pytest engine/test_worker.py -q
+      - name: Interface tests
+        run: |
+          npm test
+          npx playwright install chromium
+          npm run test:ui
+      - name: Bundle PDF worker
+        run: python scripts/build-engine.py
+      - name: Test packaged conversions
+        env:
+          ORBIT_REQUIRE_OFFICE: '1'
+        run: |
+          cargo build -p orbit-core --bin orbit-convert --locked
+          python scripts/check-packaged.py
+      - name: Build native installers
+        run: npm run package
+      - name: Collect installers and checksums
+        run: python scripts/collect-installers.py --platform ${{ matrix.platform }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Orbit-${{ matrix.platform }}
+          path: Orbit/release/*
+          if-no-files-found: error
+          retention-days: 14
+      - name: Attach build result to run summary
+        if: always()
+        shell: bash
+        run: |
+          echo "## Orbit — ${{ matrix.platform }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Native installer artifacts appear on this workflow run after a successful build. They are not public release assets." >> "$GITHUB_STEP_SUMMARY"
+

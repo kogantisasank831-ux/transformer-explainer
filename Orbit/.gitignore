@@ -1,0 +1,13 @@
+target/
+release/
+node_modules/
+dist/
+.venv/
+__pycache__/
+.pytest_cache/
+engine/build/
+engine/dist/
+src-tauri/binaries/orbit-engine-*
+*.log
+.DS_Store
+

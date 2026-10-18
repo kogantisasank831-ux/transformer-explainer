@@ -1,0 +1,59 @@
+name: Test and build desktop installers
+on:
+  workflow_dispatch:
+  push:
+    tags: ['orbit-v*']
+  pull_request:
+    paths: ['crates/**', 'src-tauri/**', 'ui/**', 'engine/**', 'scripts/**', 'package*.json', 'Cargo*', '.github/workflows/desktop.yml']
+permissions:
+  contents: read
+jobs:
+  desktop:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-14, macos-15-intel]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - name: Install dependencies
+        run: |
+          npm ci
+          python -m pip install -r engine/requirements-dev.txt
+      - name: Test Rust core
+        run: cargo test -p orbit-core --locked
+      - name: Test PDF worker
+        run: python -m pytest engine/test_worker.py -q
+      - name: Test interface model
+        run: npm test
+      - name: Test interface interactions
+        run: |
+          npx playwright install chromium
+          npm run test:ui
+      - name: Package PDF worker
+        run: python scripts/build-engine.py
+      - name: Check packaged worker through Rust
+        run: |
+          cargo build -p orbit-core --bin orbit-convert --locked
+          python scripts/check-packaged.py
+      - name: Build native installer
+        run: npm run package
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Orbit-${{ matrix.os }}
+          path: |
+            target/release/bundle/nsis/*.exe
+            target/release/bundle/msi/*.msi
+            target/release/bundle/dmg/*.dmg
+          if-no-files-found: error
+          retention-days: 14
+
