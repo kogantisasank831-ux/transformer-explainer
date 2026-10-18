@@ -1,8 +1,9 @@
-# Native installers: prepared next step
+# Native installers
 
-Orbit's conversion code has been tested as recorded in VALIDATION.md. Native
-Windows and macOS installers have **not** yet been generated for this delivery.
-The build workflow needs a repository destination before it can run remotely.
+Orbit's Windows x64, Apple Silicon and Intel Mac installers were built
+successfully in [this workflow run](https://github.com/kogantisasank831-ux/transformer-explainer/actions/runs/39153907673).
+Conversion and interface checks passed on all three native runners. The build
+artifacts contain installers and SHA-256 checksums; signing/notarization is not configured.
 
 ## Standalone repository
 
@@ -54,6 +55,8 @@ OCR. The PDF worker is included in Orbit's installer.
   and checksum generation.
 - Checked preparation without modifying an existing repository, including
   refusal to overwrite existing source/workflow paths.
-- Native runner builds, installer execution and OS-specific drag/drop testing
-  still require the actual Windows/macOS build run.
+- All three native runner builds and their packaged conversion checks passed.
+- Downloaded installer archives were checked against their published checksums.
+- Installer launch and OS-specific drag/drop testing on the end user's machines
+  remain manual checks.
 

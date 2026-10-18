@@ -3,8 +3,8 @@
 A local file converter for Windows and macOS. Drop files, choose a destination
 format around a circular wheel, then convert them in a background queue.
 
-**This package contains the implemented application source, not prebuilt Windows
-or macOS installers.** Native build scripts and a GitHub Actions workflow are
+**Native Windows x64, Apple Silicon and Intel Mac installers are available in
+the [successful build run](https://github.com/kogantisasank831-ux/transformer-explainer/actions/runs/39153907673).** Native build scripts and a GitHub Actions workflow are
 included. Rust powers the desktop host, conversion policy, queue, cancellation
 and image codecs. A small Python worker handles PDF reconstruction and OCR; it
 can be bundled into an executable, so end users of a packaged build do not need
@@ -140,8 +140,8 @@ seconds while the packaged worker extracts its runtime.
 The included `.github/workflows/desktop.yml` runs tests and builds native
 Windows x64, Apple Silicon and Intel Mac installers. It can be run manually
 through GitHub Actions or using an `orbit-v*` tag. It uploads build artifacts;
-it does not publish a GitHub release. This workflow has not been run against
-your repository. Release signing/notarization credentials are not configured.
+it does not publish a GitHub release. All three native jobs passed in the linked
+build run. Release signing/notarization credentials are not configured.
 
 ## Tests
 

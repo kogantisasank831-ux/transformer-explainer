@@ -1,7 +1,7 @@
 # Delivery validation
 
-This report records checks performed in the Linux development environment.
-It is not a claim that Windows/macOS installers have been built or tested.
+The first sections record the original Linux development checks. Native build
+and packaged-conversion results are recorded in the follow-up section below.
 
 ## Completed checks
 
@@ -44,9 +44,8 @@ Windows or macOS toolchain. Browser checks exercised the actual interface,
 using its clearly labelled browser-preview mode. They did not simulate
 successful desktop conversions.
 
-## Native validation still required
+## Manual validation still required
 
-- Execute the supplied GitHub Actions workflow or build on Windows and macOS.
 - Install and open the resulting native installers on the target machines.
 - Exercise native drag/drop, executable discovery, floating-window focus,
   cancellation/closing and output-folder opening on those operating systems.
@@ -55,8 +54,8 @@ successful desktop conversions.
 - Configure signing/notarization for a public release if distributing one.
 
 The supplied workflow builds Windows x64, Apple Silicon and Intel Mac packages.
-No repository was changed, no workflow was run remotely and no release was
-published during this task.
+At the original source-package delivery, no repository had been changed and
+no remote build had run. The native build follow-up below supersedes that status.
 
 ## Installer preparation follow-up
 
@@ -66,3 +65,26 @@ coverage, cross-platform OCR test fonts, and installer/checksum collection.
 Local checks cover preparing the folder layout, preventing overwrites, collecting
 the expected installer types, generating matching checksums and parsing the
 workflow. These checks do not substitute for native installer execution.
+
+## Native build follow-up
+
+Build run: https://github.com/kogantisasank831-ux/transformer-explainer/actions/runs/39153907673
+
+| Target | Native checks | Installer output |
+| --- | --- | --- |
+| Windows x64 | Rust, PDF/OCR, UI and 24 packaged conversion operations passed | EXE and MSI built |
+| Apple Silicon | Rust, PDF/OCR, UI and 24 packaged conversion operations passed | ARM64 DMG built |
+| Intel Mac | Rust, PDF/OCR, UI and 24 packaged conversion operations passed | x64 DMG built |
+
+Native testing exposed and resolved two packaging issues: inherited parent
+frontend configuration in a subfolder checkout, and an Intel Mac OpenSSL
+collision caused by a preinstalled dynamic cryptography build. Orbit now uses
+explicit local frontend configuration and builds workers in a clean virtual
+environment with binary cryptography wheels. The release command explicitly
+enables the PDF-worker bundling configuration. An empty ICNS asset was also
+replaced with a validated multi-resolution icon before the first upload.
+
+Installer artifacts include SHA-256 checksums. Their downloaded ZIP integrity,
+installer checksums and native file signatures were independently checked.
+The produced builds are unsigned/not notarized. Native GUI launch, OS drag/drop
+and integration with a user's installed Office/OCR tools remain manual checks.
