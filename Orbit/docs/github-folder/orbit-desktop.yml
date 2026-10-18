@@ -72,7 +72,7 @@ jobs:
       - name: Install application dependencies
         run: |
           npm ci
-          python -m pip install -r engine/requirements-dev.txt
+          python scripts/install-ci-deps.py
       - name: Rust tests
         run: cargo test -p orbit-core --locked
       - name: PDF and OCR tests

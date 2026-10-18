@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm ci
-          python -m pip install -r engine/requirements-dev.txt
+          python scripts/install-ci-deps.py
       - name: Test Rust core
         run: cargo test -p orbit-core --locked
       - name: Test PDF worker
