@@ -12,7 +12,7 @@ for path in root.rglob('*'):
     if not path.is_file(): continue
     parts=path.relative_to(root).parts
     if any(part in {'target','node_modules','dist','build','.venv','__pycache__','.pytest_cache','gen','binaries'} for part in parts): continue
-    if parts[0] not in {'crates','src-tauri','ui','engine','scripts','docs','.github','.gitignore','Cargo.toml','Cargo.lock','package.json','package-lock.json','index.html','README.md','LICENSE'}: continue
+    if parts[0] not in {'crates','src-tauri','ui','engine','scripts','docs','.github','.gitignore','Cargo.toml','Cargo.lock','package.json','package-lock.json','index.html','README.md','LICENSE','vite.config.js','tsconfig.json'}: continue
     files.append(path)
 files.sort()
 checksums=''.join(f'{hashlib.sha256(path.read_bytes()).hexdigest()}  {path.relative_to(root).as_posix()}\n' for path in files)

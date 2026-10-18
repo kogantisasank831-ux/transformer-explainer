@@ -12,7 +12,7 @@ permissions:
   contents: read
 concurrency:
   group: orbit-desktop-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   desktop:
     name: ${{ matrix.platform }}

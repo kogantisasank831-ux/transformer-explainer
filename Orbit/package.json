@@ -4,11 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host 127.0.0.1 --port 1420 --strictPort",
-    "build": "vite build",
+    "dev": "vite --config vite.config.js --host 127.0.0.1 --port 1420 --strictPort",
+    "build": "vite build --config vite.config.js",
     "tauri": "tauri",
     "desktop": "tauri dev",
-    "package": "tauri build",
+    "package": "tauri build --config src-tauri/tauri.bundle.json",
     "test": "node --test ui/model.test.js",
     "test:ui": "node scripts/ui-smoke.mjs"
   },

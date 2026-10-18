@@ -1,8 +1,9 @@
 import assert from 'node:assert/strict';
 import { createServer } from 'vite';
 import { chromium } from 'playwright';
+import { fileURLToPath } from 'node:url';
 
-const server=await createServer({server:{host:'127.0.0.1',port:1450,strictPort:true}});
+const server=await createServer({configFile:fileURLToPath(new URL('../vite.config.js',import.meta.url)),server:{host:'127.0.0.1',port:1450,strictPort:true}});
 await server.listen();
 const browser=await chromium.launch({headless:true,executablePath:process.env.ORBIT_BROWSER||undefined,args:['--no-sandbox','--disable-dev-shm-usage','--disable-gpu']});
 try {
