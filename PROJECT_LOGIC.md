@@ -19,15 +19,17 @@ Last reviewed: 2026-10-21. Scope: repository navigation and the shared engineeri
 | TOOLKIT-003 | Keep agent instructions concise and load skill details only when relevant. | Implemented organization; detailed wording subject to user review. | `AGENTS.md`, `CLAUDE.md`; link and routing review. |
 | TOOLKIT-004 | Keep project-specific rules separate from generic workflows. | Implemented organization; detailed wording subject to user review. | This index and `skills/templates/PROJECT_LOGIC.md`. |
 | TOOLKIT-005 | Preserve explicit unknowns and acceptance status; do not infer approval or fabricate quality targets. | Implemented workflow control. | Requirements skill, baseline template, and scenario review. |
+| TOOLKIT-006 | Persist reviewed SRS logic and resolved questions in the target project's logic document so the coding harness can use them. | Confirmed user requirement, 2026-10-21; no project SRS supplied in this task. | `AGENTS.md`, logic template, and requirements skill handoff procedure. |
 
 ## Workflow and outputs
 
 1. Identify the target component and read its current contracts and project logic.
 2. Select an available skill from the registry; read only the applicable resources.
 3. For requirements work, establish evidence, scope, process, backend/data contracts, acceptance checks, and unanswered decisions.
-4. Resolve decisions that block the next activity while continuing independent work.
-5. Update project-specific requirements and logic when decisions or behavior change; record significant rationale separately.
-6. Verify the change, update the skill registry if needed, and report actual publication and validation status.
+4. Resolve decisions that block the next activity while continuing independent work. Preserve answers, their sources, and acceptance evidence.
+5. Materialize accepted answers into the target project's current logic rules, workflows, contracts, edge cases, and acceptance criteria; record significant rationale separately.
+6. Before coding, load the applicable logic revision and rule IDs, check critical open decisions and conflicts, and derive the implementation's verification cases.
+7. Verify the change, update logic/code/test links together, update the skill registry if needed, and report actual publication and validation status.
 
 Current available workflow: backend and data science requirements analysis. Architecture, coding, unit testing, security testing, deployment, scaling, and the dedicated SRS gap-audit workflows remain planned unless subsequently added to the registry.
 
@@ -36,6 +38,10 @@ Current available workflow: backend and data science requirements analysis. Arch
 For a component-specific task, establish a `PROJECT_LOGIC.md` inside that component using [the template](skills/templates/PROJECT_LOGIC.md), or preserve its existing equivalent documentation and link it here. Keep its rules and decision records scoped to that product. Do not share one unqualified rule table across unrelated products.
 
 Use a linked SRS for full requirements, API/event schemas for interface details, and `docs/decisions/` for major choices and tradeoffs. This file remains the entry point, not a copy of every document. See [the layout decision](docs/decisions/0001-engineering-knowledge-layout.md).
+
+Use [the SRS-to-logic handoff procedure](skills/ds-requirements-analysis/references/logic-handoff.md) to transfer review outcomes into a versioned coding baseline. The target project's document must contain the effective rules and accepted answers, rather than only a link back to a conversation. Keep source SRS links and decision history for traceability.
+
+Harness contract: load the target logic baseline before implementation, select rules for the task, respect unresolved blockers, and update code/test references after changes. These are agent operating instructions; an external programmatic harness must explicitly read the documents if it does not already load repository guidance. This task does not add a runtime document loader.
 
 ## Open decisions and limits
 

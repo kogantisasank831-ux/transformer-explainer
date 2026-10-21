@@ -75,6 +75,8 @@ Use [requirements-baseline.md](assets/requirements-baseline.md) as the output st
 
 Deliver scope and process, the requirements register, data/evaluation plan, coverage, decisions/assumptions, and traceability to proposed verification. State checks actually performed separately from planned verification.
 
+When a project workspace is available and maintaining its documentation is within scope, read [logic-handoff.md](references/logic-handoff.md) and persist the reviewed baseline and accepted answers into that project's `PROJECT_LOGIC.md` or its established equivalent. Update the document when subsequent answers change the effective rules. Do not leave resolved logic only in conversation. If no workspace or write access is available, return a proposed document patch and identify that persistence remains pending.
+
 Apply readiness to a named next activity, not the entire project:
 
 - **Ready:** relevant requirements are sufficiently clear and accepted, with no unresolved blockers for that activity.
@@ -89,3 +91,4 @@ Do not equate a complete template, an untested assumption, or no new questions w
 - Hand accepted requirements and remaining scoped blockers to architecture, implementation planning, test strategy, security, and production readiness workflows as needed. Do not automatically invoke every skill.
 - Do not write production code, train models, run load tests, deploy, or change external systems as part of requirements analysis unless the user separately requests that work.
 - End with the baseline status, highest-impact open decisions, and the next justified activity. Do not claim stakeholder sign-off that did not occur.
+- Include the logic document path/revision, rule IDs affected by accepted answers, and any pending synchronization in the coding handoff. Require the implementation workflow to read those rules before coding; this requirements skill does not execute implementation.

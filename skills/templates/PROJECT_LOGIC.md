@@ -7,6 +7,7 @@ Status: draft template, not accepted requirements. Replace placeholders with evi
 - Purpose, user decisions, and business outcomes: [values]
 - Component boundary, exclusions, delivery stage: [values]
 - Owner and last verified date/revision: [values or unknown]
+- Logic baseline revision and source SRS revisions: [stable revision; source references; actual review state]
 - Sources: [S-ID, document/section or statement, version/date, authority, limitations]
 - Glossary: [domain terms, units, timezones, rounding, null/absent meanings]
 
@@ -42,9 +43,28 @@ Capture latency boundary, throughput, cost, availability, recovery, monitoring, 
 
 ## Open decisions and assumptions
 
-| Q/A-ID | Question or assumption | Options and impact | Affected rules / blocked work | Owner | Open/answered/deferred; assumption acceptance |
+| Q/A-ID | Question/source or assumption | Answer; options and impact | Affected rules / blocked work | Source/decision maker; date if known | Open/answered/deferred; accepted/pending/rejected with evidence |
 |---|---|---|---|---|---|
-| [ID] | [Value] | [Alternatives] | [Exact scope] | [Owner or unassigned] | [Evidence] |
+| [ID] | [SRS section/gap] | [Actual answer or explicitly pending] | [Exact scope and IDs] | [Source/owner or unknown] | [Status and evidence] |
+
+Preserve resolved answers here and incorporate accepted decisions into the effective rule, workflow, and contract sections above. Do not leave the usable logic only in this ledger or a chat transcript.
+
+## SRS review and logic synchronization
+
+| Logic revision | Source SRS/review and answered Q-IDs | Effective rule/contract changes | Acceptance evidence / unresolved conflicts | Code/test impact and actual synchronization status |
+|---|---|---|---|---|
+| [Revision] | [Sources and IDs] | [Current rule IDs; superseded IDs] | [Evidence or pending] | [Links or pending implementation/verification] |
+
+## Coding handoff
+
+- Task/component and logic revision to load: [values]
+- Accepted rules, workflows, contracts, and invariants required for this task: [IDs/sections]
+- Critical open questions, contradictions, or unaccepted proposals: [IDs and blocked scope]
+- Explicitly accepted assumptions/waivers: [source, scope, consequences; or none]
+- Acceptance cases and verification links: [testable cases; planned versus executed]
+- Readiness for this task: [ready / conditionally ready / blocked with evidence]
+
+Require the coding agent to read these sections before implementation, trace the change to their rule IDs, and update code/test references after verification. Reassess the change if the logic revision changes. Do not claim production readiness from documentation alone.
 
 ## Decisions and change control
 

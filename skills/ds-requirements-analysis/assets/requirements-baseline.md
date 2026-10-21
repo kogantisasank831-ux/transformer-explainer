@@ -70,6 +70,10 @@ For backend-only work, complete the backend contract below and mark ML-specific 
 
 ## Readiness and handoff
 
+- Logic document path and revision: [target project's PROJECT_LOGIC.md or established equivalent; actual persistence status]
+- Reviewed SRS/source revisions and accepted answer IDs: [sources and Q-IDs]
+- Current logic changes and traceability: [Q-ID → requirement/rule IDs → planned/existing code/tests]
+- Coding context: [accepted rules/sections to read, cross-cutting invariants, and affected open blockers]
 - Readiness for the named next activity: [ready / conditionally ready / blocked, with evidence]
 - Highest-impact unanswered questions: [up to three for the next clarification round]
 - Independent work that can proceed: [bounded activities]

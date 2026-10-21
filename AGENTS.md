@@ -23,6 +23,16 @@
 - Update affected logic, contracts, and decision records alongside behavior changes. Do not mark decisions accepted merely because an agent proposed them.
 - Keep credentials, personal data, client-confidential information, and production records out of versioned examples and logs.
 
+## Transfer SRS decisions into the coding baseline
+
+- After reviewing an SRS or receiving answers, update the target project's `PROJECT_LOGIC.md` in the same task. Read [the handoff procedure](skills/ds-requirements-analysis/references/logic-handoff.md). Do not leave resolved business decisions only in chat, an SRS review report, or a requirements register.
+- Record the SRS source/revision, exact answer or decision, source/decision maker, date when known, acceptance evidence, affected rule/requirement IDs, and implementation/verification status. An answer is not automatically approval of the proposed behavior.
+- Incorporate accepted decisions into the current rule tables, workflows, states, data/API contracts, edge cases, and acceptance criteria. Keep historical rationale in linked decision records; mark old rules superseded.
+- Before coding, explicitly load the target project's logic baseline and relevant linked sections into the coding context. Identify the baseline revision, applicable rule IDs, unresolved blockers, and tests implied by those rules. Never apply another component's logic by default.
+- Start affected implementation only when the relevant critical questions are resolved and accepted or explicitly waived by the authorized decision maker. Continue independent work. Do not wait for unrelated optional questions or invent defaults for blocked behavior.
+- If the SRS, accepted logic, or implementation conflicts, record the conflict and resolve the affected decision before changing consequential behavior. Existing code shows current behavior; it does not silently redefine intended rules.
+- Update logic, code, and verification references together after an accepted behavior change. Reading the document alone does not establish correctness or production readiness.
+
 ## Apply software quality to backend and DS work
 
 - Preserve clear interfaces and business/transport/persistence boundaries. Validate external input and enforce authorization independently of model output.
