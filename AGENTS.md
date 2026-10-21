@@ -11,6 +11,7 @@
 
 - Read [skills/README.md](skills/README.md) to find an available workflow. Load only the relevant `SKILL.md`, then its references when directed.
 - For a new backend, API, service, worker, data science, ML, RAG, or agentic requirement, load [ds-requirements-analysis](skills/ds-requirements-analysis/SKILL.md). Use the backend profile for ordinary services and the data science profile only where applicable.
+- For understanding or productionizing existing code, load [ds-repository-assessment](skills/ds-repository-assessment/SKILL.md). Inspect the requested component, compare it with accepted logic, and distinguish static observations, executed checks, hypotheses, and unknowns. Assess before proposing a broad rewrite.
 - For small well-specified fixes, use the existing contract and a proportional verification scope; do not require a full requirements exercise.
 - If native skill discovery is unavailable, explicitly read the linked file and apply its workflow. A directory named `skills/` alone does not guarantee discovery in every tool.
 - Do not assume planned skills exist. Check the registry and files before invoking another skill; perform a bounded task directly or report the missing capability when needed.
@@ -32,6 +33,7 @@
 - Start affected implementation only when the relevant critical questions are resolved and accepted or explicitly waived by the authorized decision maker. Continue independent work. Do not wait for unrelated optional questions or invent defaults for blocked behavior.
 - If the SRS, accepted logic, or implementation conflicts, record the conflict and resolve the affected decision before changing consequential behavior. Existing code shows current behavior; it does not silently redefine intended rules.
 - Update logic, code, and verification references together after an accepted behavior change. Reading the document alone does not establish correctness or production readiness.
+- Keep repository-assessment findings as observed evidence or unresolved discrepancies. Do not rewrite accepted logic to make it agree with a defect, or treat suggested remediation as an approved business decision.
 
 ## Apply software quality to backend and DS work
 

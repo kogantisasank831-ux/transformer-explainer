@@ -20,6 +20,7 @@ Last reviewed: 2026-10-21. Scope: repository navigation and the shared engineeri
 | TOOLKIT-004 | Keep project-specific rules separate from generic workflows. | Implemented organization; detailed wording subject to user review. | This index and `skills/templates/PROJECT_LOGIC.md`. |
 | TOOLKIT-005 | Preserve explicit unknowns and acceptance status; do not infer approval or fabricate quality targets. | Implemented workflow control. | Requirements skill, baseline template, and scenario review. |
 | TOOLKIT-006 | Persist reviewed SRS logic and resolved questions in the target project's logic document so the coding harness can use them. | Confirmed user requirement, 2026-10-21; no project SRS supplied in this task. | `AGENTS.md`, logic template, and requirements skill handoff procedure. |
+| TOOLKIT-007 | Assess existing backend/DS code with scoped evidence, compare it with accepted logic, and prioritize findings without inventing runtime results or changing business acceptance. | Implemented workflow for catalog skill 2, requested as the next skill. | `skills/ds-repository-assessment/`; metadata/link checks and isolated scenario reviews. |
 
 ## Workflow and outputs
 
@@ -31,7 +32,7 @@ Last reviewed: 2026-10-21. Scope: repository navigation and the shared engineeri
 6. Before coding, load the applicable logic revision and rule IDs, check critical open decisions and conflicts, and derive the implementation's verification cases.
 7. Verify the change, update logic/code/test links together, update the skill registry if needed, and report actual publication and validation status.
 
-Current available workflow: backend and data science requirements analysis. Architecture, coding, unit testing, security testing, deployment, scaling, and the dedicated SRS gap-audit workflows remain planned unless subsequently added to the registry.
+Current available workflows: backend and data science requirements analysis, and repository assessment. Architecture, coding, unit testing, security testing, deployment, scaling, and the dedicated SRS gap-audit workflows remain planned unless subsequently added to the registry.
 
 ## Keep each product's logic local
 
@@ -46,5 +47,5 @@ Harness contract: load the target logic baseline before implementation, select r
 ## Open decisions and limits
 
 - Application-specific rules for the existing components have not been reverse-engineered in this task. Their deeper logic remains unverified here.
-- Skill creation order remains one at a time from the agreed catalog; only the first skill is currently available.
+- Skill creation order remains one at a time from the agreed catalog; the first two skills are currently available.
 - Organizational file layout is implemented for review; it is not evidence of product approval or production readiness.

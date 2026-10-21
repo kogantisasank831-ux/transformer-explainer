@@ -7,8 +7,9 @@ Use this collection for data scientists building ordinary backend services, anal
 | Skill / stable invocation | Scope | Entry point |
 |---|---|---|
 | `ds-requirements-analysis` | Requirements for backend APIs, CRUD/auth services, workers, integrations, analytics, ML, forecasting, optimization, RAG, and agents. ML checks are conditional. | [SKILL.md](ds-requirements-analysis/SKILL.md) |
+| `ds-repository-assessment` | Existing code, architecture/flow mapping, coding and test quality, dependency/data/model lineage, operations indicators, accepted-logic discrepancies, and prioritized evidence-backed gaps. | [SKILL.md](ds-repository-assessment/SKILL.md) |
 
-Only this skill is currently implemented. The remaining catalog, including exhaustive SRS gap analysis, is planned. Add rows only when the corresponding skill is created and validated.
+These two skills are currently implemented. The remaining catalog, including exhaustive SRS gap analysis, is planned. Add rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -25,6 +26,8 @@ If the skill is installed in your tool's supported skill location, invoke it by 
 This repository directory is portable source, not a guarantee that every coding assistant automatically discovers or installs it. `AGENTS.md` and `CLAUDE.md` provide explicit file-loading guidance. Install into the selected tool's supported location when native skill discovery is required.
 
 The first skill analyzes requirements; it does not itself implement, test, or deploy a backend. Those tasks receive their own skills as the collection grows.
+
+The second skill assesses existing code and evidence. Example: `Use $ds-repository-assessment to map this service and prioritize production gaps against its PROJECT_LOGIC.md.` It defaults to static inspection; running bounded existing checks requires an appropriate authorized environment. It does not remediate findings, train models, benchmark capacity, or certify production readiness as part of an assessment.
 
 ## Keep three kinds of knowledge separate
 

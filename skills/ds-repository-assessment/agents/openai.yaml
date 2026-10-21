@@ -1,0 +1,4 @@
+interface:
+  display_name: "Backend & Data Science Repository Assessment"
+  short_description: "Assess existing backend and data science repositories"
+  default_prompt: "Use $ds-repository-assessment to inspect this repository, map its backend and data science flows, and prioritize evidence-backed gaps before production changes."
