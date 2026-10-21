@@ -1,0 +1,13 @@
+interface:
+  display_name: "Backend & Data Science Requirements"
+  short_description: "Define testable backend and data science requirements"
+  default_prompt: "Use $ds-requirements-analysis to turn this backend or data science project request into traceable, testable requirements and identify decisions needed before implementation."
+  icon_small: "assets/icon.svg"
+  icon_large: "assets/icon.svg"
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
