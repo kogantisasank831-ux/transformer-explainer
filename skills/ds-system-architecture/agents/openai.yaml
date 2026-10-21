@@ -1,0 +1,4 @@
+interface:
+  display_name: "Backend & Data Science System Architecture"
+  short_description: "Design traceable backend and data science architectures"
+  default_prompt: "Use $ds-system-architecture to design this backend or data science system from its reviewed requirements and PROJECT_LOGIC.md, comparing practical options and documenting contracts, failure behavior, and open decisions."

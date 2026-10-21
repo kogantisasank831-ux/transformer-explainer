@@ -8,8 +8,9 @@ Use this collection for data scientists building ordinary backend services, anal
 |---|---|---|
 | `ds-requirements-analysis` | Requirements for backend APIs, CRUD/auth services, workers, integrations, analytics, ML, forecasting, optimization, RAG, and agents. ML checks are conditional. | [SKILL.md](ds-requirements-analysis/SKILL.md) |
 | `ds-repository-assessment` | Existing code, architecture/flow mapping, coding and test quality, dependency/data/model lineage, operations indicators, accepted-logic discrepancies, and prioritized evidence-backed gaps. | [SKILL.md](ds-repository-assessment/SKILL.md) |
+| `ds-system-architecture` | Backend and DS component/deployment boundaries, practical alternatives, contracts, consistency, failure/recovery, data/model lifecycle, operating constraints, and traceable coding handoff. | [SKILL.md](ds-system-architecture/SKILL.md) |
 
-These two skills are currently implemented. The remaining catalog, including exhaustive SRS gap analysis, is planned. Add rows only when the corresponding skill is created and validated.
+These three skills are currently implemented. The remaining catalog, including exhaustive SRS gap analysis, is planned. Add rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -28,6 +29,8 @@ This repository directory is portable source, not a guarantee that every coding 
 The first skill analyzes requirements; it does not itself implement, test, or deploy a backend. Those tasks receive their own skills as the collection grows.
 
 The second skill assesses existing code and evidence. Example: `Use $ds-repository-assessment to map this service and prioritize production gaps against its PROJECT_LOGIC.md.` It defaults to static inspection; running bounded existing checks requires an appropriate authorized environment. It does not remediate findings, train models, benchmark capacity, or certify production readiness as part of an assessment.
+
+The third skill designs or evolves a system from reviewed intent. Example: `Use $ds-system-architecture to design this backend and ML workflow from its accepted rules and existing constraints.` It compares practical options and defines contracts, data/resource boundaries, failure handling, migration, and verification; it does not implement or deploy the proposed system. Keep its authoritative design linked from the project's logic index.
 
 ## Keep three kinds of knowledge separate
 
