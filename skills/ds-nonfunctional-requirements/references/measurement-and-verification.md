@@ -34,6 +34,8 @@ Describe no-traffic windows, missing/corrupt telemetry and boundary gaps; do not
 
 ## Verification states and handoff
 
+For Python deployment candidates under the user's testing policy, record three profiles: thorough relevant local verification, mandatory CI pytest unit/required integration checks, and basic candidate/production-server smoke checks. Link the exact commit/artifact, commands, environment, required suite membership, reports and actual pass/fail state. A local pass cannot replace the CI gate; missing/no-test/skipped required gates do not establish release eligibility. Deployed health/readiness and a safe representative journey verify runtime wiring without running deep/destructive suites against production data. Treat these as accepted policy while keeping application-specific implementation and observed enforcement explicit.
+
 | State | Meaning |
 |---|---|
 | Draft/proposed target | Candidate behavior/threshold with rationale; not accepted by default. |

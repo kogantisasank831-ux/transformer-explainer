@@ -35,6 +35,10 @@ The third skill designs or evolves a system from reviewed intent. Example: `Use 
 
 The fourth skill specifies measurable quality requirements. Example: `Use $ds-nonfunctional-requirements to clarify this product's performance, availability, recovery, cost and quality targets.` It defines workload, measurement rules, decision status and verification plans. It does not itself execute load/recovery/security tests or prove model quality. Link accepted constraints and open decisions from project logic and the authoritative quality/SRS document.
 
+## Required testing and release behavior
+
+Follow [the shared testing/release policy](../docs/TESTING_AND_RELEASE_POLICY.md): thorough relevant local checks, mandatory pytest CI gates for Python deployment candidates, and basic server smoke checks before promotion and after deployment. Carry the policy into future testing/CI/CD/deployment skills. Those specialist skills are still planned; this policy is not a claim that a target application's pipeline or server checks already exist.
+
 ## Keep three kinds of knowledge separate
 
 | File | Purpose |

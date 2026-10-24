@@ -46,6 +46,7 @@
 - Specify transaction boundaries, idempotency, concurrency behavior, retry limits, cancellation, and recovery before adding consequential side effects.
 - For ML/GenAI, additionally preserve data/model/prompt/config lineage, leakage-safe evaluation, quality evidence, resource bounds, and safe fallback.
 - Run the checks appropriate to the change and report what actually ran. Keep planned tests separate from passed tests; never invent measurements, stakeholder sign-off, or production readiness.
+- Follow [the testing and release policy](docs/TESTING_AND_RELEASE_POLICY.md): thorough relevant local tests, required pytest gates for every Python deployment candidate in CI, and basic deployed-server smoke checks before promotion and after rollout. Required failures or missing/skipped gates block deployment; match evidence to the actual artifact. Record target-specific enforcement separately from this policy.
 - Select straightforward solutions matching actual requirements; do not introduce ML, agents, queues, microservices, or orchestration without a justified need.
 
 ## Maintain the shared skill collection

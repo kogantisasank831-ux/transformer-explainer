@@ -47,6 +47,10 @@ Preserve source-supplied target values even when feasibility is unknown. Mark mi
 
 ## Verification and coding handoff
 
+- Release test profiles/gates: [relevant local suite; mandatory CI pytest unit/required integration suite for Python; safe deployed-server smoke suite]
+- Candidate evidence: [commit/artifact identity, actual commands/suite membership, reports and enforcement wiring; required failures/missing/skipped gates block progression]
+- Enforcement state: [policy recorded / target pipeline implemented / actual gate and server checks verified; do not conflate these]
+
 | NFR / linked rule IDs | Instrumentation/source and representative conditions | Method and pass/fail/insufficient-evidence rule | Planned / executed; actual result and limitations |
 |---|---|---|---|
 | [IDs] | [Environment, workload/window/sample/version] | [Test/analysis/inspection/demonstration] | [Evidence or not run reason] |

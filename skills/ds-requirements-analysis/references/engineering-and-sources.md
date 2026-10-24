@@ -17,6 +17,10 @@ For a production Python project, propose the following only where relevant and l
 
 Keep language-independent intent explicit. Do not force Python, FastAPI, LangGraph, a vector database, or container orchestration onto an unrelated analysis or a project with another established stack.
 
+## User's testing and deployment policy
+
+For Python backend/DS products in this collection, capture the explicit requirement for thorough relevant local verification, mandatory pytest unit/required integration checks in CI for every deployment candidate, and a small deployed-server smoke suite before promotion and after rollout. Required test failures, missing/no-test suites and skipped gates must block release progression. Record candidate commit/artifact identity, actual suite commands, environments, reports and the owner. Keep target-specific pipeline implementation and verified enforcement distinct from a documented policy. Use the established native test runner for other languages. Do not run the deep local suite against live production data or claim a universal pipeline exists before it is wired and checked.
+
 ## Verification examples
 
 Treat these as example formats, not approved targets.

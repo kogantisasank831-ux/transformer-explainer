@@ -57,6 +57,7 @@ For each NFR record:
 ## 5. Define verification and scoped readiness
 
 - Plan representative workload, duration/window, environment/versions, dependency conditions, success/negative/degraded cases, observation method, evidence and completion criteria. Identify what must be instrumented or clarified before the requirement is testable.
+- For Python products following the user's release policy, capture thorough relevant local tests, mandatory passing pytest unit/required integration gates for every CI deployment candidate, and basic deployed-server smoke checks before promotion and after rollout. Tie results to the same commit/artifact; required failure, missing suite or skipped gate blocks progression. Specify this enforcement and evidence; do not claim a pipeline exists merely because the requirement is recorded.
 - Distinguish specification completeness, empirical feasibility and demonstrated compliance with the target. A measurable accepted requirement can remain untested; a benchmark pass in one environment does not establish a general guarantee.
 - If measurement is unavailable, propose a focused experiment with the question and exit criterion. Use insufficient evidence, not pass, when workload/window/sample support is missing or unsuitable.
 - Do not implement instrumentation, install tools, run load/fault/security tests, train/evaluate models, spend money, access production, or deploy as part of this specification unless separately requested. Inspect authorized existing evidence without exposing sensitive records.
