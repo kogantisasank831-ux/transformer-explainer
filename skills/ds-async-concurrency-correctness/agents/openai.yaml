@@ -1,0 +1,4 @@
+interface:
+  display_name: "Async and Concurrency Correctness"
+  short_description: "Make concurrent backend and data workflows reliable"
+  default_prompt: "Use $ds-async-concurrency-correctness for this backend or data science task using the project's accepted logic and contracts."

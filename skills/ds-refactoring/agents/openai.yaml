@@ -1,0 +1,4 @@
+interface:
+  display_name: "Refactoring"
+  short_description: "Restructure code while preserving accepted behavior"
+  default_prompt: "Use $ds-refactoring for this backend or data science task using the project's accepted logic and contracts."

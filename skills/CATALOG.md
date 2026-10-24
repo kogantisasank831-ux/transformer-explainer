@@ -2,7 +2,7 @@
 
 Scope: backend and data science products; apply specialist profiles only where relevant. This tracks the agreed 90 entries plus the added SRS gap-analysis workflow.
 
-Progress: **9 of 91 available; 82 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **10–14**. The final batch may be smaller. Planned entries are not installed workflows.
+Progress: **14 of 91 available; 77 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **15–19**. The final batch may be smaller. Planned entries are not installed workflows.
 
 Use the registry in [README.md](README.md) for scopes and the shared testing/release policy. Each available package contains its own SKILL.md, on-demand reference and output template. Update this table and the registry only after implementation and validation.
 
@@ -17,11 +17,11 @@ Use the registry in [README.md](README.md) for scopes and the shared testing/rel
 | 7 | Implementation planning | Available | [ds-implementation-planning](ds-implementation-planning/SKILL.md) |
 | 8 | Production readiness review | Available | [ds-production-readiness-review](ds-production-readiness-review/SKILL.md) |
 | 9 | Project setup | Available | [ds-project-setup](ds-project-setup/SKILL.md) |
-| 10 | Production coding practices | Planned | — |
-| 11 | Code review | Planned | — |
-| 12 | Refactoring | Planned | — |
-| 13 | Debugging and root cause analysis | Planned | — |
-| 14 | Async and concurrency correctness | Planned | — |
+| 10 | Production coding practices | Available | [ds-production-coding-practices](ds-production-coding-practices/SKILL.md) |
+| 11 | Code review | Available | [ds-code-review](ds-code-review/SKILL.md) |
+| 12 | Refactoring | Available | [ds-refactoring](ds-refactoring/SKILL.md) |
+| 13 | Debugging and root cause analysis | Available | [ds-debugging-root-cause-analysis](ds-debugging-root-cause-analysis/SKILL.md) |
+| 14 | Async and concurrency correctness | Available | [ds-async-concurrency-correctness](ds-async-concurrency-correctness/SKILL.md) |
 | 15 | Error handling and resource cleanup | Planned | — |
 | 16 | Configuration management | Planned | — |
 | 17 | Dependency management | Planned | — |

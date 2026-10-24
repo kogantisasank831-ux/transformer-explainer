@@ -1,0 +1,4 @@
+interface:
+  display_name: "Debugging and Root Cause Analysis"
+  short_description: "Diagnose failures with reproducible causal evidence"
+  default_prompt: "Use $ds-debugging-root-cause-analysis for this backend or data science task using the project's accepted logic and contracts."

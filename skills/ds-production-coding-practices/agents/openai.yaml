@@ -1,0 +1,4 @@
+interface:
+  display_name: "Production Coding Practices"
+  short_description: "Implement maintainable backend and data science code"
+  default_prompt: "Use $ds-production-coding-practices for this backend or data science task using the project's accepted logic and contracts."

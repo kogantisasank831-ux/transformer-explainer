@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Review"
+  short_description: "Review backend and data science changes with evidence"
+  default_prompt: "Use $ds-code-review for this backend or data science task using the project's accepted logic and contracts."

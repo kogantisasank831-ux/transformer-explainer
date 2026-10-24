@@ -15,8 +15,13 @@ Use this collection for data scientists building ordinary backend services, anal
 | `ds-implementation-planning` | Dependency-ordered implementation slices, rule traceability, meaningful verification, migrations and release sequencing. | [SKILL.md](ds-implementation-planning/SKILL.md) |
 | `ds-production-readiness-review` | Stage-aware release decisions for an exact candidate, with mandatory CI/server gates and applicable quality/recovery evidence. | [SKILL.md](ds-production-readiness-review/SKILL.md) |
 | `ds-project-setup` | Reproducible scoped scaffolds, real package/CLI/service boundaries, meaningful pytest cases and CI test jobs where in scope. | [SKILL.md](ds-project-setup/SKILL.md) |
+| `ds-production-coding-practices` | Scoped implementation from accepted logic, typed boundaries, explicit effects, secure input/authority handling and meaningful verification. | [SKILL.md](ds-production-coding-practices/SKILL.md) |
+| `ds-code-review` | Actionable diff findings with rule/file evidence, impact, severity, confidence and honest verification limits. | [SKILL.md](ds-code-review/SKILL.md) |
+| `ds-refactoring` | Behavior-preserving structural changes with characterization, compatibility and differential evidence. | [SKILL.md](ds-refactoring/SKILL.md) |
+| `ds-debugging-root-cause-analysis` | Controlled reproduction and hypothesis testing, causal evidence, scoped fixes and regression verification. | [SKILL.md](ds-debugging-root-cause-analysis/SKILL.md) |
+| `ds-async-concurrency-correctness` | Task/resource ownership, bounded work, cancellation, atomicity and controlled-interleaving checks across explicit coordination boundaries. | [SKILL.md](ds-async-concurrency-correctness/SKILL.md) |
 
-These nine skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 10–14. Add registry rows only when the corresponding skill is created and validated.
+These fourteen skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 15–19. Add registry rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -41,6 +46,8 @@ The third skill designs or evolves a system from reviewed intent. Example: `Use 
 The fourth skill specifies measurable quality requirements. Example: `Use $ds-nonfunctional-requirements to clarify this product's performance, availability, recovery, cost and quality targets.` It defines workload, measurement rules, decision status and verification plans. It does not itself execute load/recovery/security tests or prove model quality. Link accepted constraints and open decisions from project logic and the authoritative quality/SRS document.
 
 Catalog entries 5–9 respectively design interfaces, review architecture, plan implementation, assess release evidence and set up real scoped project files. Each has a separate workflow, supporting reference and output template. Use only the relevant skill. In particular, Project Setup can create a meaningful CI test job for a target scaffold, while release readiness requires actual candidate-matched evidence and does not deploy.
+
+Catalog entries 10–14 implement accepted behavior, inspect diffs, preserve behavior during restructuring, establish causal defect evidence, and make concurrent execution correct within explicit boundaries. They share local/CI/server release gates and support backend-only projects. Code Review remains read-only unless fixes are requested; coding/debugging/refactoring can implement their authorized scope. None deploys or replaces specialist security/model/load evaluation.
 
 ## Required testing and release behavior
 
