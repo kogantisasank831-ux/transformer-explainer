@@ -1,0 +1,4 @@
+interface:
+  display_name: "Error Handling and Resource Cleanup"
+  short_description: "Handle failures and resource lifetimes explicitly"
+  default_prompt: "Use $ds-error-handling-resource-cleanup for this backend or data science task using its accepted project logic and contracts."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dependency Management"
+  short_description: "Manage compatible and reproducible dependencies"
+  default_prompt: "Use $ds-dependency-management for this backend or data science task using its accepted project logic and contracts."

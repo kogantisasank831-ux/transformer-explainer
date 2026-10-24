@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legacy Modernization"
+  short_description: "Modernize legacy systems through compatible slices"
+  default_prompt: "Use $ds-legacy-modernization for this backend or data science task using its accepted project logic and contracts."

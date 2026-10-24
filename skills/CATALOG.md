@@ -2,7 +2,7 @@
 
 Scope: backend and data science products; apply specialist profiles only where relevant. This tracks the agreed 90 entries plus the added SRS gap-analysis workflow.
 
-Progress: **14 of 91 available; 77 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **15–19**. The final batch may be smaller. Planned entries are not installed workflows.
+Progress: **19 of 91 available; 72 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **20–24**. The final batch may be smaller. Planned entries are not installed workflows.
 
 Use the registry in [README.md](README.md) for scopes and the shared testing/release policy. Each available package contains its own SKILL.md, on-demand reference and output template. Update this table and the registry only after implementation and validation.
 
@@ -22,11 +22,11 @@ Use the registry in [README.md](README.md) for scopes and the shared testing/rel
 | 12 | Refactoring | Available | [ds-refactoring](ds-refactoring/SKILL.md) |
 | 13 | Debugging and root cause analysis | Available | [ds-debugging-root-cause-analysis](ds-debugging-root-cause-analysis/SKILL.md) |
 | 14 | Async and concurrency correctness | Available | [ds-async-concurrency-correctness](ds-async-concurrency-correctness/SKILL.md) |
-| 15 | Error handling and resource cleanup | Planned | — |
-| 16 | Configuration management | Planned | — |
-| 17 | Dependency management | Planned | — |
-| 18 | Legacy modernization | Planned | — |
-| 19 | Test strategy | Planned | — |
+| 15 | Error handling and resource cleanup | Available | [ds-error-handling-resource-cleanup](ds-error-handling-resource-cleanup/SKILL.md) |
+| 16 | Configuration management | Available | [ds-configuration-management](ds-configuration-management/SKILL.md) |
+| 17 | Dependency management | Available | [ds-dependency-management](ds-dependency-management/SKILL.md) |
+| 18 | Legacy modernization | Available | [ds-legacy-modernization](ds-legacy-modernization/SKILL.md) |
+| 19 | Test strategy | Available | [ds-test-strategy](ds-test-strategy/SKILL.md) |
 | 20 | Unit test creation | Planned | — |
 | 21 | Integration testing | Planned | — |
 | 22 | Contract testing | Planned | — |

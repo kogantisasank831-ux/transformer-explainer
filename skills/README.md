@@ -20,8 +20,13 @@ Use this collection for data scientists building ordinary backend services, anal
 | `ds-refactoring` | Behavior-preserving structural changes with characterization, compatibility and differential evidence. | [SKILL.md](ds-refactoring/SKILL.md) |
 | `ds-debugging-root-cause-analysis` | Controlled reproduction and hypothesis testing, causal evidence, scoped fixes and regression verification. | [SKILL.md](ds-debugging-root-cause-analysis/SKILL.md) |
 | `ds-async-concurrency-correctness` | Task/resource ownership, bounded work, cancellation, atomicity and controlled-interleaving checks across explicit coordination boundaries. | [SKILL.md](ds-async-concurrency-correctness/SKILL.md) |
+| `ds-error-handling-resource-cleanup` | Explicit error contracts, owned/borrowed resource lifetimes, partial acquisition, cleanup failures, cancellation and safe recovery boundaries. | [SKILL.md](ds-error-handling-resource-cleanup/SKILL.md) |
+| `ds-configuration-management` | Typed settings, explicit source precedence/merge, secret redaction, startup/reload snapshots and reproducible effective configuration. | [SKILL.md](ds-configuration-management/SKILL.md) |
+| `ds-dependency-management` | Bounded manifest/lock changes, dependency resolution, provenance and actual platform/runtime/install compatibility evidence. | [SKILL.md](ds-dependency-management/SKILL.md) |
+| `ds-legacy-modernization` | Incremental legacy migration with preserved contracts, consumer coexistence, isolated shadow comparison and cutover/recovery gates. | [SKILL.md](ds-legacy-modernization/SKILL.md) |
+| `ds-test-strategy` | Risk-based rule-to-test mapping, meaningful oracles/fixtures, required local/CI/server gates and honest coverage/evidence gaps. | [SKILL.md](ds-test-strategy/SKILL.md) |
 
-These fourteen skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 15–19. Add registry rows only when the corresponding skill is created and validated.
+These nineteen skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 20–24. Add registry rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -49,9 +54,11 @@ Catalog entries 5–9 respectively design interfaces, review architecture, plan 
 
 Catalog entries 10–14 implement accepted behavior, inspect diffs, preserve behavior during restructuring, establish causal defect evidence, and make concurrent execution correct within explicit boundaries. They share local/CI/server release gates and support backend-only projects. Code Review remains read-only unless fixes are requested; coding/debugging/refactoring can implement their authorized scope. None deploys or replaces specialist security/model/load evaluation.
 
+Catalog entries 15–19 handle failure/lifetime contracts, validated runtime settings, compatible dependency graphs, incremental legacy migration and risk-based verification strategy. They retain backend-only and conditional DS profiles. Test Strategy plans meaningful local/CI/server gates; the specialist unit/integration/contract/end-to-end/regression workflows remain the next batch. No target CI/deployment success is inferred from these packages.
+
 ## Required testing and release behavior
 
-Follow [the shared testing/release policy](../docs/TESTING_AND_RELEASE_POLICY.md): thorough relevant local checks, mandatory pytest CI gates for Python deployment candidates, and basic server smoke checks before promotion and after deployment. Carry the policy into future testing/CI/CD/deployment skills. Those specialist skills are still planned; this policy is not a claim that a target application's pipeline or server checks already exist.
+Follow [the shared testing/release policy](../docs/TESTING_AND_RELEASE_POLICY.md): thorough relevant local checks, mandatory pytest CI gates for Python deployment candidates, and basic server smoke checks before promotion and after deployment. Carry the policy into future testing/CI/CD/deployment skills. Dedicated test creation, CI/CD and deployment skills are still planned; this policy is not a claim that a target application's pipeline or server checks already exist.
 
 ## Keep three kinds of knowledge separate
 

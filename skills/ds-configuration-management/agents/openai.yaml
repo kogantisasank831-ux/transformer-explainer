@@ -1,0 +1,4 @@
+interface:
+  display_name: "Configuration Management"
+  short_description: "Validate and trace backend and data science settings"
+  default_prompt: "Use $ds-configuration-management for this backend or data science task using its accepted project logic and contracts."

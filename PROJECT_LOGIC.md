@@ -26,6 +26,7 @@ Last reviewed: 2026-10-24. Scope: repository navigation and the shared engineeri
 | TOOLKIT-010 | Require thorough relevant local tests, mandatory pytest CI gates for Python deployment candidates, and basic deployed-server smoke verification, with failures blocking release progression. | Confirmed user policy, 2026-10-24; target-specific pipeline implementation and enforcement must be verified. | [Testing/release policy](docs/TESTING_AND_RELEASE_POLICY.md); existing Orbit pytest installer check is not a generic backend/server deployment gate. |
 | TOOLKIT-011 | Create subsequent catalog skills in batches of five, retaining separate packages and validation per skill. Catalog entries 5–9 cover contracts, architecture review, implementation planning, release readiness and project setup. | Confirmed batching instruction, 2026-10-24; implemented workflow packages, not an application deployment. | [91-skill catalog](skills/CATALOG.md); per-skill metadata/link checks and isolated scenario validation. |
 | TOOLKIT-012 | Implement catalog entries 10–14 as distinct coding, review, refactoring, debugging and concurrency workflows, grounded in accepted logic and proportionate behavioral verification. Keep review-only scope, intentional behavior changes, causal uncertainty and coordination boundaries explicit. | Implemented workflow packages in the requested five-skill cadence, 2026-10-24. | Per-skill metadata/resource checks and isolated forward tasks; application CI/deployment evidence remains target-specific. |
+| TOOLKIT-013 | Implement catalog entries 15–19 as separate failure/lifetime, configuration, dependency, legacy-modernization and test-strategy workflows. Preserve accepted semantics, compatibility and evidence boundaries; test strategy designs required local/CI/server gates without claiming execution. | Implemented workflow packages in the requested five-skill cadence, 2026-10-24. | Per-skill metadata/resource checks and isolated forward tasks; actual target pipeline enforcement and release evidence remain separate. |
 
 ## Workflow and outputs
 
@@ -37,7 +38,7 @@ Last reviewed: 2026-10-24. Scope: repository navigation and the shared engineeri
 6. Before coding, load the applicable logic revision and rule IDs, check critical open decisions and conflicts, and derive the implementation's verification cases.
 7. Verify the change, update logic/code/test links together, update the skill registry if needed, and report actual publication and validation status.
 
-Current available workflows: the first fourteen catalog entries, from requirements analysis through async and concurrency correctness. The catalog and registry identify their boundaries. Further error/configuration/dependency handling, dedicated testing/CI/CD/deployment, scaling and SRS gap-audit workflows remain planned. Project Setup may create a real scoped CI test job, while Production Readiness Review assesses release evidence; neither means that this repository now has a generic product deployment pipeline.
+Current available workflows: the first nineteen catalog entries, from requirements analysis through test strategy. The catalog and registry identify their boundaries. Dedicated test-creation/execution, CI/CD/deployment, scaling and SRS gap-audit workflows remain planned. Test Strategy defines verification scope and gates; it does not implement all suites or establish a pass. Project Setup may create a real scoped CI test job, while Production Readiness Review assesses release evidence; neither means that this repository now has a generic product deployment pipeline.
 
 ## Keep each product's logic local
 
@@ -52,5 +53,5 @@ Harness contract: load the target logic baseline before implementation, select r
 ## Open decisions and limits
 
 - Application-specific rules for the existing components have not been reverse-engineered in this task. Their deeper logic remains unverified here.
-- The first fourteen catalog skills are available. Subsequent creation uses batches of five in catalog order; the next batch is 15–19. The final batch may be smaller. Maintain actual available/planned status rather than treating the backlog as installed.
+- The first nineteen catalog skills are available. Subsequent creation uses batches of five in catalog order; the next batch is 20–24. The final batch may be smaller. Maintain actual available/planned status rather than treating the backlog as installed.
 - Organizational file layout is implemented for review; it is not evidence of product approval or production readiness.

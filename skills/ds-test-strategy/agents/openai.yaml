@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test Strategy"
+  short_description: "Plan risk-based tests and enforceable release gates"
+  default_prompt: "Use $ds-test-strategy for this backend or data science task using its accepted project logic and contracts."
