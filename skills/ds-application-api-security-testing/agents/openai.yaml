@@ -1,0 +1,4 @@
+interface:
+  display_name: "Application and API Security Testing"
+  short_description: "Test scoped application security boundaries safely"
+  default_prompt: "Use $ds-application-api-security-testing for this backend or data science task using its accepted security rules and scoped evidence."

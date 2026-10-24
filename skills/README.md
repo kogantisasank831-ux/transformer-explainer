@@ -35,8 +35,13 @@ Use this collection for data scientists building ordinary backend services, anal
 | `ds-test-quality-assessment` | Evidence-based assessment of test oracles, real/fake boundaries, reliability, meaningful coverage and gate integrity. | [SKILL.md](ds-test-quality-assessment/SKILL.md) |
 | `ds-smoke-release-verification` | Safe exact-candidate diagnostics and stage-aware smoke gates, trusted identity, authority/journey checks and recovery handoff. | [SKILL.md](ds-smoke-release-verification/SKILL.md) |
 | `ds-threat-modeling` | Assets, actors, concrete trust-boundary abuse paths, control status, prioritized remedies and residual-risk decisions. | [SKILL.md](ds-threat-modeling/SKILL.md) |
+| `ds-secure-code-review` | Scoped code/config security tracing, actionable mechanisms, trust-boundary evidence and proportionate remedies. | [SKILL.md](ds-secure-code-review/SKILL.md) |
+| `ds-authentication-session-security` | Established identity/provider verification and session lifecycle controls with explicit unit versus real integration evidence. | [SKILL.md](ds-authentication-session-security/SKILL.md) |
+| `ds-authorization-tenant-isolation` | Trusted object/action/tenant decisions across data/cache/retrieval/worker/tool paths with meaningful negatives. | [SKILL.md](ds-authorization-tenant-isolation/SKILL.md) |
+| `ds-application-api-security-testing` | Bounded security cases against exact authorized boundaries, synthetic proof, normal failures and honest coverage limits. | [SKILL.md](ds-application-api-security-testing/SKILL.md) |
+| `ds-secrets-cryptography` | Audited secret/crypto usage, redaction, purpose separation, safe format/key lifecycle and recoverable rotation. | [SKILL.md](ds-secrets-cryptography/SKILL.md) |
 
-These twenty-nine skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 30–34. Add registry rows only when the corresponding skill is created and validated.
+These thirty-four skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 35–39. Add registry rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -69,6 +74,8 @@ Catalog entries 15–19 handle failure/lifetime contracts, validated runtime set
 Catalog entries 20–24 create and run scoped executable tests, preserving the difference between unit isolation, real integration, consumer/provider compatibility, complete journeys and regression protection. Each records its actual boundary and test results. Tests-only requests retain ordinary failures and report product defects; they do not silently change production code, approve new baselines or claim CI/server success from local runs.
 
 Catalog entries 25–29 add bounded property/fuzz exploration, safe fixture/data creation, test-quality assessment, candidate-aware smoke verification and concrete threat modeling. Ordinary failing examples remain visible; synthetic/server-fixture success is scoped to that boundary. Assessment/modeling workflows do not silently modify products, execute attacks or grant release/risk acceptance.
+
+Catalog entries 30–34 add concrete secure code review, authentication/session controls, trusted authorization/tenant isolation, bounded application/API security tests and audited secrets/crypto lifecycle work. Review/tests-only scope stays explicit; local fixtures and mocked providers do not establish deployed identity, storage or key-service enforcement. These workflows do not grant risk acceptance, security certification or deployment authority.
 
 ## Required testing and release behavior
 

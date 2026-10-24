@@ -1,0 +1,4 @@
+interface:
+  display_name: "Secrets and Cryptography"
+  short_description: "Manage secret lifecycles and audited crypto boundaries"
+  default_prompt: "Use $ds-secrets-cryptography for this backend or data science task using its accepted security rules and scoped evidence."

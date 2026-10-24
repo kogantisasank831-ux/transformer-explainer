@@ -1,0 +1,4 @@
+interface:
+  display_name: "Authentication and Session Security"
+  short_description: "Secure identity verification and session lifecycles"
+  default_prompt: "Use $ds-authentication-session-security for this backend or data science task using its accepted security rules and scoped evidence."

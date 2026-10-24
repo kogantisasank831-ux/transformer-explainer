@@ -1,0 +1,4 @@
+interface:
+  display_name: "Authorization and Tenant Isolation"
+  short_description: "Enforce trusted object, action and tenant permissions"
+  default_prompt: "Use $ds-authorization-tenant-isolation for this backend or data science task using its accepted security rules and scoped evidence."

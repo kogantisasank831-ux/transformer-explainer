@@ -2,7 +2,7 @@
 
 Scope: backend and data science products; apply specialist profiles only where relevant. This tracks the agreed 90 entries plus the added SRS gap-analysis workflow.
 
-Progress: **29 of 91 available; 62 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **30–34**. The final batch may be smaller. Planned entries are not installed workflows.
+Progress: **34 of 91 available; 57 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **35–39**. The final batch may be smaller. Planned entries are not installed workflows.
 
 Use the registry in [README.md](README.md) for scopes and the shared testing/release policy. Each available package contains its own SKILL.md, on-demand reference and output template. Update this table and the registry only after implementation and validation.
 
@@ -37,11 +37,11 @@ Use the registry in [README.md](README.md) for scopes and the shared testing/rel
 | 27 | Test quality assessment | Available | [ds-test-quality-assessment](ds-test-quality-assessment/SKILL.md) |
 | 28 | Smoke and release verification | Available | [ds-smoke-release-verification](ds-smoke-release-verification/SKILL.md) |
 | 29 | Threat modeling | Available | [ds-threat-modeling](ds-threat-modeling/SKILL.md) |
-| 30 | Secure code review | Planned | — |
-| 31 | Authentication and session security | Planned | — |
-| 32 | Authorization and tenant isolation | Planned | — |
-| 33 | Application and API security testing | Planned | — |
-| 34 | Secrets and cryptography | Planned | — |
+| 30 | Secure code review | Available | [ds-secure-code-review](ds-secure-code-review/SKILL.md) |
+| 31 | Authentication and session security | Available | [ds-authentication-session-security](ds-authentication-session-security/SKILL.md) |
+| 32 | Authorization and tenant isolation | Available | [ds-authorization-tenant-isolation](ds-authorization-tenant-isolation/SKILL.md) |
+| 33 | Application and API security testing | Available | [ds-application-api-security-testing](ds-application-api-security-testing/SKILL.md) |
+| 34 | Secrets and cryptography | Available | [ds-secrets-cryptography](ds-secrets-cryptography/SKILL.md) |
 | 35 | Software supply chain security | Planned | — |
 | 36 | Infrastructure security | Planned | — |
 | 37 | Privacy and data protection | Planned | — |

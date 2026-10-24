@@ -1,0 +1,4 @@
+interface:
+  display_name: "Secure Code Review"
+  short_description: "Trace security risks through actual code boundaries"
+  default_prompt: "Use $ds-secure-code-review for this backend or data science task using its accepted security rules and scoped evidence."
