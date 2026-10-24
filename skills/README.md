@@ -10,8 +10,13 @@ Use this collection for data scientists building ordinary backend services, anal
 | `ds-repository-assessment` | Existing code, architecture/flow mapping, coding and test quality, dependency/data/model lineage, operations indicators, accepted-logic discrepancies, and prioritized evidence-backed gaps. | [SKILL.md](ds-repository-assessment/SKILL.md) |
 | `ds-system-architecture` | Backend and DS component/deployment boundaries, practical alternatives, contracts, consistency, failure/recovery, data/model lifecycle, operating constraints, and traceable coding handoff. | [SKILL.md](ds-system-architecture/SKILL.md) |
 | `ds-nonfunctional-requirements` | Measurable quality scenarios and contracts for performance, scale, availability/recovery, security/privacy, operability, reproducibility, cost and applicable DS/GenAI quality, with decision and verification states. | [SKILL.md](ds-nonfunctional-requirements/SKILL.md) |
+| `ds-api-contract-design` | Detailed API/event/job/file/model/tool schemas, authority, errors, duplicate/failure semantics and consumer compatibility. | [SKILL.md](ds-api-contract-design/SKILL.md) |
+| `ds-architecture-review` | Evidence-based design assurance, strengths, rule/quality gaps, tradeoffs, scoped risks and remedies. | [SKILL.md](ds-architecture-review/SKILL.md) |
+| `ds-implementation-planning` | Dependency-ordered implementation slices, rule traceability, meaningful verification, migrations and release sequencing. | [SKILL.md](ds-implementation-planning/SKILL.md) |
+| `ds-production-readiness-review` | Stage-aware release decisions for an exact candidate, with mandatory CI/server gates and applicable quality/recovery evidence. | [SKILL.md](ds-production-readiness-review/SKILL.md) |
+| `ds-project-setup` | Reproducible scoped scaffolds, real package/CLI/service boundaries, meaningful pytest cases and CI test jobs where in scope. | [SKILL.md](ds-project-setup/SKILL.md) |
 
-These four skills are currently implemented. The remaining catalog, including exhaustive SRS gap analysis, is planned. Add rows only when the corresponding skill is created and validated.
+These nine skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 10–14. Add registry rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -34,6 +39,8 @@ The second skill assesses existing code and evidence. Example: `Use $ds-reposito
 The third skill designs or evolves a system from reviewed intent. Example: `Use $ds-system-architecture to design this backend and ML workflow from its accepted rules and existing constraints.` It compares practical options and defines contracts, data/resource boundaries, failure handling, migration, and verification; it does not implement or deploy the proposed system. Keep its authoritative design linked from the project's logic index.
 
 The fourth skill specifies measurable quality requirements. Example: `Use $ds-nonfunctional-requirements to clarify this product's performance, availability, recovery, cost and quality targets.` It defines workload, measurement rules, decision status and verification plans. It does not itself execute load/recovery/security tests or prove model quality. Link accepted constraints and open decisions from project logic and the authoritative quality/SRS document.
+
+Catalog entries 5–9 respectively design interfaces, review architecture, plan implementation, assess release evidence and set up real scoped project files. Each has a separate workflow, supporting reference and output template. Use only the relevant skill. In particular, Project Setup can create a meaningful CI test job for a target scaffold, while release readiness requires actual candidate-matched evidence and does not deploy.
 
 ## Required testing and release behavior
 

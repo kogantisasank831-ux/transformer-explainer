@@ -1,0 +1,4 @@
+interface:
+  display_name: "Backend & Data Science API Contract Design"
+  short_description: "Design explicit backend and data science contracts"
+  default_prompt: "Use $ds-api-contract-design to design interfaces and failure semantics from this project's reviewed logic."

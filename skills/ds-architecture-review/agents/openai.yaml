@@ -1,0 +1,4 @@
+interface:
+  display_name: "Backend & Data Science Architecture Review"
+  short_description: "Review designs against rules, risks and evidence"
+  default_prompt: "Use $ds-architecture-review to review this architecture against its requirements and evidence."

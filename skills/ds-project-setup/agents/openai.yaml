@@ -1,0 +1,4 @@
+interface:
+  display_name: "Backend & Data Science Project Setup"
+  short_description: "Set up reproducible projects with pytest and CI gates"
+  default_prompt: "Use $ds-project-setup to set up this project using its accepted scope, stack and testing policy."

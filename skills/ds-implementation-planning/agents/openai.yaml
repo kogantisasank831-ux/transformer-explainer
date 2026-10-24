@@ -1,0 +1,4 @@
+interface:
+  display_name: "Backend & Data Science Implementation Planning"
+  short_description: "Plan traceable implementation tasks and verification"
+  default_prompt: "Use $ds-implementation-planning to create a dependency-ordered implementation plan from the reviewed project logic."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Backend & Data Science Production Readiness"
+  short_description: "Assess release evidence and mandatory deployment gates"
+  default_prompt: "Use $ds-production-readiness-review to assess whether this exact candidate is ready for the named release stage."

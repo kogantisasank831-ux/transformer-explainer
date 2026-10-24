@@ -14,6 +14,7 @@
 - For understanding or productionizing existing code, load [ds-repository-assessment](skills/ds-repository-assessment/SKILL.md). Inspect the requested component, compare it with accepted logic, and distinguish static observations, executed checks, hypotheses, and unknowns. Assess before proposing a broad rewrite.
 - For choosing or evolving system boundaries and flows, load [ds-system-architecture](skills/ds-system-architecture/SKILL.md). Start from the reviewed logic/requirements and relevant current-state evidence; compare consequential alternatives, define contracts/failure behavior, and prepare a traceable coding handoff. Do not treat a design as measured production readiness.
 - For measurable quality constraints, load [ds-nonfunctional-requirements](skills/ds-nonfunctional-requirements/SKILL.md). Define workload, measurement boundaries/populations/windows, failure treatment, source targets and acceptance status; distinguish feasibility and actual verification from a written objective.
+- For detailed interfaces, design assurance, task sequencing, candidate-specific release decisions or runnable scaffolds, select the corresponding API Contract Design, Architecture Review, Implementation Planning, Production Readiness Review or Project Setup entry in [the registry](skills/README.md). Load the task's workflow only; review/planning/readiness do not implicitly authorize implementation or deployment.
 - For small well-specified fixes, use the existing contract and a proportional verification scope; do not require a full requirements exercise.
 - If native skill discovery is unavailable, explicitly read the linked file and apply its workflow. A directory named `skills/` alone does not guarantee discovery in every tool.
 - Do not assume planned skills exist. Check the registry and files before invoking another skill; perform a bounded task directly or report the missing capability when needed.
@@ -53,6 +54,7 @@
 
 - Add each completed skill as `skills/<stable-skill-name>/SKILL.md`, with only necessary references, assets, and scripts.
 - Update `skills/README.md` when availability or scope changes. Preserve stable invocation names unless a migration is explicitly intended.
+- Maintain [the 91-skill catalog](skills/CATALOG.md) with actual available versus planned status. Create subsequent skills in batches of five as requested, preserving distinct packages and applying validation to each; use the final smaller batch when fewer than five remain. Do not interpret batching as authorization to create all remaining skills in one turn.
 - Validate skill metadata, resource links, and applicable scenarios before committing. Use the Skill Creator workflow when available.
 - When maintaining an installed copy too, compare its portable files with the repository copy and report which destinations were actually updated. Keep host-generated metadata where required.
 
