@@ -1,0 +1,4 @@
+interface:
+  display_name: "Backend & Data Science Nonfunctional Requirements"
+  short_description: "Define measurable backend and data science quality targets"
+  default_prompt: "Use $ds-nonfunctional-requirements to define measurable quality requirements for this backend or data science product, including workload, measurement rules, acceptance status, and verification plans."

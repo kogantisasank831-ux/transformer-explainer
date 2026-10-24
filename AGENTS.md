@@ -13,6 +13,7 @@
 - For a new backend, API, service, worker, data science, ML, RAG, or agentic requirement, load [ds-requirements-analysis](skills/ds-requirements-analysis/SKILL.md). Use the backend profile for ordinary services and the data science profile only where applicable.
 - For understanding or productionizing existing code, load [ds-repository-assessment](skills/ds-repository-assessment/SKILL.md). Inspect the requested component, compare it with accepted logic, and distinguish static observations, executed checks, hypotheses, and unknowns. Assess before proposing a broad rewrite.
 - For choosing or evolving system boundaries and flows, load [ds-system-architecture](skills/ds-system-architecture/SKILL.md). Start from the reviewed logic/requirements and relevant current-state evidence; compare consequential alternatives, define contracts/failure behavior, and prepare a traceable coding handoff. Do not treat a design as measured production readiness.
+- For measurable quality constraints, load [ds-nonfunctional-requirements](skills/ds-nonfunctional-requirements/SKILL.md). Define workload, measurement boundaries/populations/windows, failure treatment, source targets and acceptance status; distinguish feasibility and actual verification from a written objective.
 - For small well-specified fixes, use the existing contract and a proportional verification scope; do not require a full requirements exercise.
 - If native skill discovery is unavailable, explicitly read the linked file and apply its workflow. A directory named `skills/` alone does not guarantee discovery in every tool.
 - Do not assume planned skills exist. Check the registry and files before invoking another skill; perform a bounded task directly or report the missing capability when needed.
@@ -36,6 +37,7 @@
 - Update logic, code, and verification references together after an accepted behavior change. Reading the document alone does not establish correctness or production readiness.
 - Keep repository-assessment findings as observed evidence or unresolved discrepancies. Do not rewrite accepted logic to make it agree with a defect, or treat suggested remediation as an approved business decision.
 - Keep the authoritative architecture linked from the target project's logic index. Carry both revisions and relevant rule/component/contract IDs into implementation; distinguish authorized technical choices from unaccepted business changes. Respect project governance without requiring approval for every reversible technical detail.
+- Link the authoritative NFR/quality baseline from project logic and carry its revision, accepted constraints, measurement contracts and open decisions into design/coding/testing. Do not silently change targets, denominators, exclusions, quality or fallback policies to claim a pass.
 
 ## Apply software quality to backend and DS work
 
