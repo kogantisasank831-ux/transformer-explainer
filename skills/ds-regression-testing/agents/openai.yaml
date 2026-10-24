@@ -1,0 +1,4 @@
+interface:
+  display_name: "Regression Testing"
+  short_description: "Preserve accepted behavior with defect-linked checks"
+  default_prompt: "Use $ds-regression-testing for this backend or data science task using its accepted rules and independent test oracles."

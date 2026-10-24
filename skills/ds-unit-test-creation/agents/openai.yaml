@@ -1,0 +1,4 @@
+interface:
+  display_name: "Unit Test Creation"
+  short_description: "Create meaningful isolated tests for accepted behavior"
+  default_prompt: "Use $ds-unit-test-creation for this backend or data science task using its accepted rules and independent test oracles."

@@ -2,7 +2,7 @@
 
 Scope: backend and data science products; apply specialist profiles only where relevant. This tracks the agreed 90 entries plus the added SRS gap-analysis workflow.
 
-Progress: **19 of 91 available; 72 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **20–24**. The final batch may be smaller. Planned entries are not installed workflows.
+Progress: **24 of 91 available; 67 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **25–29**. The final batch may be smaller. Planned entries are not installed workflows.
 
 Use the registry in [README.md](README.md) for scopes and the shared testing/release policy. Each available package contains its own SKILL.md, on-demand reference and output template. Update this table and the registry only after implementation and validation.
 
@@ -27,11 +27,11 @@ Use the registry in [README.md](README.md) for scopes and the shared testing/rel
 | 17 | Dependency management | Available | [ds-dependency-management](ds-dependency-management/SKILL.md) |
 | 18 | Legacy modernization | Available | [ds-legacy-modernization](ds-legacy-modernization/SKILL.md) |
 | 19 | Test strategy | Available | [ds-test-strategy](ds-test-strategy/SKILL.md) |
-| 20 | Unit test creation | Planned | — |
-| 21 | Integration testing | Planned | — |
-| 22 | Contract testing | Planned | — |
-| 23 | End-to-end testing | Planned | — |
-| 24 | Regression testing | Planned | — |
+| 20 | Unit test creation | Available | [ds-unit-test-creation](ds-unit-test-creation/SKILL.md) |
+| 21 | Integration testing | Available | [ds-integration-testing](ds-integration-testing/SKILL.md) |
+| 22 | Contract testing | Available | [ds-contract-testing](ds-contract-testing/SKILL.md) |
+| 23 | End-to-end testing | Available | [ds-end-to-end-testing](ds-end-to-end-testing/SKILL.md) |
+| 24 | Regression testing | Available | [ds-regression-testing](ds-regression-testing/SKILL.md) |
 | 25 | Property-based and fuzz testing | Planned | — |
 | 26 | Test fixtures and test data | Planned | — |
 | 27 | Test quality assessment | Planned | — |

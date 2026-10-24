@@ -1,0 +1,4 @@
+interface:
+  display_name: "End-to-End Testing"
+  short_description: "Verify critical journeys through actual system wiring"
+  default_prompt: "Use $ds-end-to-end-testing for this backend or data science task using its accepted rules and independent test oracles."

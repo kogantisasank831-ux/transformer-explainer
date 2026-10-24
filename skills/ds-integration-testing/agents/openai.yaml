@@ -1,0 +1,4 @@
+interface:
+  display_name: "Integration Testing"
+  short_description: "Verify real component and dependency boundaries"
+  default_prompt: "Use $ds-integration-testing for this backend or data science task using its accepted rules and independent test oracles."

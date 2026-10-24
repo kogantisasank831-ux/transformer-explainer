@@ -25,8 +25,13 @@ Use this collection for data scientists building ordinary backend services, anal
 | `ds-dependency-management` | Bounded manifest/lock changes, dependency resolution, provenance and actual platform/runtime/install compatibility evidence. | [SKILL.md](ds-dependency-management/SKILL.md) |
 | `ds-legacy-modernization` | Incremental legacy migration with preserved contracts, consumer coexistence, isolated shadow comparison and cutover/recovery gates. | [SKILL.md](ds-legacy-modernization/SKILL.md) |
 | `ds-test-strategy` | Risk-based rule-to-test mapping, meaningful oracles/fixtures, required local/CI/server gates and honest coverage/evidence gaps. | [SKILL.md](ds-test-strategy/SKILL.md) |
+| `ds-unit-test-creation` | Focused pytest/native unit cases with independent oracles, deterministic fixtures and explicit mocked-boundary limits. | [SKILL.md](ds-unit-test-creation/SKILL.md) |
+| `ds-integration-testing` | Real supported component/dependency checks, committed state, constraints, failures, isolated resources and reliable teardown. | [SKILL.md](ds-integration-testing/SKILL.md) |
+| `ds-contract-testing` | Actual consumer/provider verification from accepted independent contracts, interface evolution and version-pair evidence. | [SKILL.md](ds-contract-testing/SKILL.md) |
+| `ds-end-to-end-testing` | Critical journeys through actual entry points, workers/storage and terminal outcomes, with explicit substitutions and cleanup. | [SKILL.md](ds-end-to-end-testing/SKILL.md) |
+| `ds-regression-testing` | Defect-linked tests, governed baselines, safe bad/good comparisons and normal failure evidence for unresolved regressions. | [SKILL.md](ds-regression-testing/SKILL.md) |
 
-These nineteen skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 20–24. Add registry rows only when the corresponding skill is created and validated.
+These twenty-four skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 25–29. Add registry rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -54,11 +59,13 @@ Catalog entries 5–9 respectively design interfaces, review architecture, plan 
 
 Catalog entries 10–14 implement accepted behavior, inspect diffs, preserve behavior during restructuring, establish causal defect evidence, and make concurrent execution correct within explicit boundaries. They share local/CI/server release gates and support backend-only projects. Code Review remains read-only unless fixes are requested; coding/debugging/refactoring can implement their authorized scope. None deploys or replaces specialist security/model/load evaluation.
 
-Catalog entries 15–19 handle failure/lifetime contracts, validated runtime settings, compatible dependency graphs, incremental legacy migration and risk-based verification strategy. They retain backend-only and conditional DS profiles. Test Strategy plans meaningful local/CI/server gates; the specialist unit/integration/contract/end-to-end/regression workflows remain the next batch. No target CI/deployment success is inferred from these packages.
+Catalog entries 15–19 handle failure/lifetime contracts, validated runtime settings, compatible dependency graphs, incremental legacy migration and risk-based verification strategy. They retain backend-only and conditional DS profiles. Test Strategy plans meaningful local/CI/server gates; the specialist unit/integration/contract/end-to-end/regression workflows are now available as entries 20–24. No target CI/deployment success is inferred from these packages.
+
+Catalog entries 20–24 create and run scoped executable tests, preserving the difference between unit isolation, real integration, consumer/provider compatibility, complete journeys and regression protection. Each records its actual boundary and test results. Tests-only requests retain ordinary failures and report product defects; they do not silently change production code, approve new baselines or claim CI/server success from local runs.
 
 ## Required testing and release behavior
 
-Follow [the shared testing/release policy](../docs/TESTING_AND_RELEASE_POLICY.md): thorough relevant local checks, mandatory pytest CI gates for Python deployment candidates, and basic server smoke checks before promotion and after deployment. Carry the policy into future testing/CI/CD/deployment skills. Dedicated test creation, CI/CD and deployment skills are still planned; this policy is not a claim that a target application's pipeline or server checks already exist.
+Follow [the shared testing/release policy](../docs/TESTING_AND_RELEASE_POLICY.md): thorough relevant local checks, mandatory pytest CI gates for Python deployment candidates, and basic server smoke checks before promotion and after deployment. Carry the policy into future testing/CI/CD/deployment skills. Further specialized testing, CI/CD and deployment skills are still planned; this policy is not a claim that a target application's pipeline or server checks already exist.
 
 ## Keep three kinds of knowledge separate
 

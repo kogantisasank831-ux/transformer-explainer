@@ -1,0 +1,4 @@
+interface:
+  display_name: "Contract Testing"
+  short_description: "Verify consumer and provider interface compatibility"
+  default_prompt: "Use $ds-contract-testing for this backend or data science task using its accepted rules and independent test oracles."
