@@ -1,0 +1,4 @@
+interface:
+  display_name: "Threat Modeling"
+  short_description: "Model assets, trust boundaries and concrete abuse paths"
+  default_prompt: "Use $ds-threat-modeling for this backend or data science task using its accepted rules and scoped evidence."

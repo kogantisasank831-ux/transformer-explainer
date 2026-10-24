@@ -2,7 +2,7 @@
 
 Scope: backend and data science products; apply specialist profiles only where relevant. This tracks the agreed 90 entries plus the added SRS gap-analysis workflow.
 
-Progress: **24 of 91 available; 67 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **25–29**. The final batch may be smaller. Planned entries are not installed workflows.
+Progress: **29 of 91 available; 62 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **30–34**. The final batch may be smaller. Planned entries are not installed workflows.
 
 Use the registry in [README.md](README.md) for scopes and the shared testing/release policy. Each available package contains its own SKILL.md, on-demand reference and output template. Update this table and the registry only after implementation and validation.
 
@@ -32,11 +32,11 @@ Use the registry in [README.md](README.md) for scopes and the shared testing/rel
 | 22 | Contract testing | Available | [ds-contract-testing](ds-contract-testing/SKILL.md) |
 | 23 | End-to-end testing | Available | [ds-end-to-end-testing](ds-end-to-end-testing/SKILL.md) |
 | 24 | Regression testing | Available | [ds-regression-testing](ds-regression-testing/SKILL.md) |
-| 25 | Property-based and fuzz testing | Planned | — |
-| 26 | Test fixtures and test data | Planned | — |
-| 27 | Test quality assessment | Planned | — |
-| 28 | Smoke and release verification | Planned | — |
-| 29 | Threat modeling | Planned | — |
+| 25 | Property-based and fuzz testing | Available | [ds-property-based-fuzz-testing](ds-property-based-fuzz-testing/SKILL.md) |
+| 26 | Test fixtures and test data | Available | [ds-test-fixtures-data](ds-test-fixtures-data/SKILL.md) |
+| 27 | Test quality assessment | Available | [ds-test-quality-assessment](ds-test-quality-assessment/SKILL.md) |
+| 28 | Smoke and release verification | Available | [ds-smoke-release-verification](ds-smoke-release-verification/SKILL.md) |
+| 29 | Threat modeling | Available | [ds-threat-modeling](ds-threat-modeling/SKILL.md) |
 | 30 | Secure code review | Planned | — |
 | 31 | Authentication and session security | Planned | — |
 | 32 | Authorization and tenant isolation | Planned | — |

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Smoke and Release Verification"
+  short_description: "Verify exact release candidates with safe server checks"
+  default_prompt: "Use $ds-smoke-release-verification for this backend or data science task using its accepted rules and scoped evidence."

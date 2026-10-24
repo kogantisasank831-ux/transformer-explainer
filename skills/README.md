@@ -30,8 +30,13 @@ Use this collection for data scientists building ordinary backend services, anal
 | `ds-contract-testing` | Actual consumer/provider verification from accepted independent contracts, interface evolution and version-pair evidence. | [SKILL.md](ds-contract-testing/SKILL.md) |
 | `ds-end-to-end-testing` | Critical journeys through actual entry points, workers/storage and terminal outcomes, with explicit substitutions and cleanup. | [SKILL.md](ds-end-to-end-testing/SKILL.md) |
 | `ds-regression-testing` | Defect-linked tests, governed baselines, safe bad/good comparisons and normal failure evidence for unresolved regressions. | [SKILL.md](ds-regression-testing/SKILL.md) |
+| `ds-property-based-fuzz-testing` | Bounded generated domains, independent invariants, minimized reproducers and explicit exploration limits. | [SKILL.md](ds-property-based-fuzz-testing/SKILL.md) |
+| `ds-test-fixtures-data` | Fresh synthetic factories/data, safe lifecycle and parallel isolation, provenance and leakage-aware split constraints. | [SKILL.md](ds-test-fixtures-data/SKILL.md) |
+| `ds-test-quality-assessment` | Evidence-based assessment of test oracles, real/fake boundaries, reliability, meaningful coverage and gate integrity. | [SKILL.md](ds-test-quality-assessment/SKILL.md) |
+| `ds-smoke-release-verification` | Safe exact-candidate diagnostics and stage-aware smoke gates, trusted identity, authority/journey checks and recovery handoff. | [SKILL.md](ds-smoke-release-verification/SKILL.md) |
+| `ds-threat-modeling` | Assets, actors, concrete trust-boundary abuse paths, control status, prioritized remedies and residual-risk decisions. | [SKILL.md](ds-threat-modeling/SKILL.md) |
 
-These twenty-four skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 25–29. Add registry rows only when the corresponding skill is created and validated.
+These twenty-nine skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 30–34. Add registry rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -62,6 +67,8 @@ Catalog entries 10–14 implement accepted behavior, inspect diffs, preserve beh
 Catalog entries 15–19 handle failure/lifetime contracts, validated runtime settings, compatible dependency graphs, incremental legacy migration and risk-based verification strategy. They retain backend-only and conditional DS profiles. Test Strategy plans meaningful local/CI/server gates; the specialist unit/integration/contract/end-to-end/regression workflows are now available as entries 20–24. No target CI/deployment success is inferred from these packages.
 
 Catalog entries 20–24 create and run scoped executable tests, preserving the difference between unit isolation, real integration, consumer/provider compatibility, complete journeys and regression protection. Each records its actual boundary and test results. Tests-only requests retain ordinary failures and report product defects; they do not silently change production code, approve new baselines or claim CI/server success from local runs.
+
+Catalog entries 25–29 add bounded property/fuzz exploration, safe fixture/data creation, test-quality assessment, candidate-aware smoke verification and concrete threat modeling. Ordinary failing examples remain visible; synthetic/server-fixture success is scoped to that boundary. Assessment/modeling workflows do not silently modify products, execute attacks or grant release/risk acceptance.
 
 ## Required testing and release behavior
 

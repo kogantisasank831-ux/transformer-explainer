@@ -1,0 +1,4 @@
+interface:
+  display_name: "Property-Based and Fuzz Testing"
+  short_description: "Find boundary failures with bounded generated tests"
+  default_prompt: "Use $ds-property-based-fuzz-testing for this backend or data science task using its accepted rules and scoped evidence."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test Quality Assessment"
+  short_description: "Assess whether tests detect consequential defects"
+  default_prompt: "Use $ds-test-quality-assessment for this backend or data science task using its accepted rules and scoped evidence."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test Fixtures and Test Data"
+  short_description: "Build isolated reproducible fixtures and safe test data"
+  default_prompt: "Use $ds-test-fixtures-data for this backend or data science task using its accepted rules and scoped evidence."
