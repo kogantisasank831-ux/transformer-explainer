@@ -1,0 +1,4 @@
+interface:
+  display_name: "Data Modeling"
+  short_description: "Design traceable data models and enforce invariants"
+  default_prompt: "Use $ds-data-modeling for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

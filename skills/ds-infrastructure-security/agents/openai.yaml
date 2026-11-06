@@ -1,0 +1,4 @@
+interface:
+  display_name: "Infrastructure Security"
+  short_description: "Assess and harden infrastructure trust boundaries"
+  default_prompt: "Use $ds-infrastructure-security for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

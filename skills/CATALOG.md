@@ -2,7 +2,7 @@
 
 Scope: backend and data science products; apply specialist profiles only where relevant. This tracks the agreed 90 entries plus the added SRS gap-analysis workflow.
 
-Progress: **34 of 91 available; 57 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **35–39**. The final batch may be smaller. Planned entries are not installed workflows.
+Progress: **39 of 91 available; 52 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **40–44**. The final batch may be smaller. Planned entries are not installed workflows.
 
 Use the registry in [README.md](README.md) for scopes and the shared testing/release policy. Each available package contains its own SKILL.md, on-demand reference and output template. Update this table and the registry only after implementation and validation.
 
@@ -42,11 +42,11 @@ Use the registry in [README.md](README.md) for scopes and the shared testing/rel
 | 32 | Authorization and tenant isolation | Available | [ds-authorization-tenant-isolation](ds-authorization-tenant-isolation/SKILL.md) |
 | 33 | Application and API security testing | Available | [ds-application-api-security-testing](ds-application-api-security-testing/SKILL.md) |
 | 34 | Secrets and cryptography | Available | [ds-secrets-cryptography](ds-secrets-cryptography/SKILL.md) |
-| 35 | Software supply chain security | Planned | — |
-| 36 | Infrastructure security | Planned | — |
-| 37 | Privacy and data protection | Planned | — |
-| 38 | Vulnerability remediation | Planned | — |
-| 39 | Data modeling | Planned | — |
+| 35 | Software supply chain security | Available | [ds-software-supply-chain-security](ds-software-supply-chain-security/SKILL.md) |
+| 36 | Infrastructure security | Available | [ds-infrastructure-security](ds-infrastructure-security/SKILL.md) |
+| 37 | Privacy and data protection | Available | [ds-privacy-data-protection](ds-privacy-data-protection/SKILL.md) |
+| 38 | Vulnerability remediation | Available | [ds-vulnerability-remediation](ds-vulnerability-remediation/SKILL.md) |
+| 39 | Data modeling | Available | [ds-data-modeling](ds-data-modeling/SKILL.md) |
 | 40 | Database migrations | Planned | — |
 | 41 | Query optimization | Planned | — |
 | 42 | Transactions and consistency | Planned | — |

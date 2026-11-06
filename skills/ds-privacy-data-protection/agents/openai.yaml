@@ -1,0 +1,4 @@
+interface:
+  display_name: "Privacy and Data Protection"
+  short_description: "Map data purposes and enforce lifecycle controls"
+  default_prompt: "Use $ds-privacy-data-protection for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

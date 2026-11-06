@@ -41,7 +41,13 @@ Use this collection for data scientists building ordinary backend services, anal
 | `ds-application-api-security-testing` | Bounded security cases against exact authorized boundaries, synthetic proof, normal failures and honest coverage limits. | [SKILL.md](ds-application-api-security-testing/SKILL.md) |
 | `ds-secrets-cryptography` | Audited secret/crypto usage, redaction, purpose separation, safe format/key lifecycle and recoverable rotation. | [SKILL.md](ds-secrets-cryptography/SKILL.md) |
 
-These thirty-four skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 35–39. Add registry rows only when the corresponding skill is created and validated.
+| `ds-software-supply-chain-security` | Dependency/build trust, SBOM coverage, immutable artifacts, and policy-bound provenance verification. | [SKILL.md](ds-software-supply-chain-security/SKILL.md) |
+| `ds-infrastructure-security` | Cloud/IaC identity, exposure, storage, and workload isolation with desired-versus-effective evidence. | [SKILL.md](ds-infrastructure-security/SKILL.md) |
+| `ds-privacy-data-protection` | Purpose-aware data inventory, minimization, lifecycle/deletion, and derived-data controls. | [SKILL.md](ds-privacy-data-protection/SKILL.md) |
+| `ds-vulnerability-remediation` | Evidence-based vulnerability triage, scoped fixes, regression checks, and artifact/deployment closure. | [SKILL.md](ds-vulnerability-remediation/SKILL.md) |
+| `ds-data-modeling` | Entity grain, keys, relationships, tenant constraints, temporal semantics, and schema verification. | [SKILL.md](ds-data-modeling/SKILL.md) |
+
+These thirty-nine skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 40–44. Add registry rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -76,6 +82,8 @@ Catalog entries 20–24 create and run scoped executable tests, preserving the d
 Catalog entries 25–29 add bounded property/fuzz exploration, safe fixture/data creation, test-quality assessment, candidate-aware smoke verification and concrete threat modeling. Ordinary failing examples remain visible; synthetic/server-fixture success is scoped to that boundary. Assessment/modeling workflows do not silently modify products, execute attacks or grant release/risk acceptance.
 
 Catalog entries 30–34 add concrete secure code review, authentication/session controls, trusted authorization/tenant isolation, bounded application/API security tests and audited secrets/crypto lifecycle work. Review/tests-only scope stays explicit; local fixtures and mocked providers do not establish deployed identity, storage or key-service enforcement. These workflows do not grant risk acceptance, security certification or deployment authority.
+
+Catalog entries 35–39 cover software supply-chain trust, infrastructure controls, privacy/data lifecycle, vulnerability remediation, and data modeling. Bind evidence to actual artifacts and environments, distinguish desired state from deployed enforcement, preserve accepted privacy/domain policy, and separate source fixes from verified deployed closure. Data modeling creates traceable constraints and a coding handoff; it does not implicitly execute live migrations.
 
 ## Required testing and release behavior
 
