@@ -47,7 +47,13 @@ Use this collection for data scientists building ordinary backend services, anal
 | `ds-vulnerability-remediation` | Evidence-based vulnerability triage, scoped fixes, regression checks, and artifact/deployment closure. | [SKILL.md](ds-vulnerability-remediation/SKILL.md) |
 | `ds-data-modeling` | Entity grain, keys, relationships, tenant constraints, temporal semantics, and schema verification. | [SKILL.md](ds-data-modeling/SKILL.md) |
 
-These thirty-nine skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 40–44. Add registry rows only when the corresponding skill is created and validated.
+| `ds-database-migrations` | Compatible schema/data evolution, backfills, lock impact, recovery, and exact-state verification. | [SKILL.md](ds-database-migrations/SKILL.md) |
+| `ds-query-optimization` | Query correctness, representative plans, indexes, access patterns, and measured regressions. | [SKILL.md](ds-query-optimization/SKILL.md) |
+| `ds-transactions-consistency` | Transaction boundaries, isolation, constraints, retries, and cross-resource consistency. | [SKILL.md](ds-transactions-consistency/SKILL.md) |
+| `ds-cache-engineering` | Authoritative-source caching, keys, invalidation, freshness, stampedes, and failure behavior. | [SKILL.md](ds-cache-engineering/SKILL.md) |
+| `ds-messaging-background-jobs` | Message delivery, worker lifecycle, retries, idempotency, ordering, schemas, and recovery. | [SKILL.md](ds-messaging-background-jobs/SKILL.md) |
+
+These forty-four skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 45–49. Add registry rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -84,6 +90,8 @@ Catalog entries 25–29 add bounded property/fuzz exploration, safe fixture/data
 Catalog entries 30–34 add concrete secure code review, authentication/session controls, trusted authorization/tenant isolation, bounded application/API security tests and audited secrets/crypto lifecycle work. Review/tests-only scope stays explicit; local fixtures and mocked providers do not establish deployed identity, storage or key-service enforcement. These workflows do not grant risk acceptance, security certification or deployment authority.
 
 Catalog entries 35–39 cover software supply-chain trust, infrastructure controls, privacy/data lifecycle, vulnerability remediation, and data modeling. Bind evidence to actual artifacts and environments, distinguish desired state from deployed enforcement, preserve accepted privacy/domain policy, and separate source fixes from verified deployed closure. Data modeling creates traceable constraints and a coding handoff; it does not implicitly execute live migrations.
+
+Catalog entries 40–44 handle database migrations, query optimization, transactions/consistency, cache engineering, and messaging/background jobs. Preserve accepted data semantics and invariants, measure representative workloads, state consistency and delivery boundaries, and distinguish local or simulated evidence from actual engine, cache, broker, CI, and deployed behavior. Migration, replay, repair, and deployment remain separately authorized actions.
 
 ## Required testing and release behavior
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cache Engineering"
+  short_description: "Design bounded and correct caching behavior"
+  default_prompt: "Use $ds-cache-engineering for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

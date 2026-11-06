@@ -33,6 +33,8 @@ Last reviewed: 2026-11-06. Scope: repository navigation and the shared engineeri
 
 | TOOLKIT-017 | Implement catalog entries 35–39 as distinct supply-chain, infrastructure-security, privacy/data-protection, vulnerability-remediation, and data-modeling workflows. Preserve trusted provenance, effective-state and lifecycle evidence, scoped closure, and accepted domain invariants; separate review/design from implementation and deployment. | Implemented workflow packages in the requested cadence, 2026-11-06. | Metadata/resource/link checks and isolated workflow scenarios; no live infrastructure change, privacy certification, or application migration implied. |
 
+| TOOLKIT-018 | Implement catalog entries 40–44 as distinct database-migration, query-optimization, transaction/consistency, cache-engineering, and messaging/background-job workflows. Preserve accepted data semantics and invariants, representative measurement, explicit staleness/delivery boundaries, and exact evidence scope; keep production migration, replay, repair, and deployment separately authorized. | Implemented workflow packages in the requested cadence, 2026-11-06. | Metadata/resource/link checks and isolated executable scenarios; no production data migration, broker replay, cache flush, or deployment implied. |
+
 ## Workflow and outputs
 
 1. Identify the target component and read its current contracts and project logic.
@@ -43,7 +45,7 @@ Last reviewed: 2026-11-06. Scope: repository navigation and the shared engineeri
 6. Before coding, load the applicable logic revision and rule IDs, check critical open decisions and conflicts, and derive the implementation's verification cases.
 7. Verify the change, update logic/code/test links together, update the skill registry if needed, and report actual publication and validation status.
 
-Current available workflows: the first thirty-nine catalog entries, from requirements analysis through data modeling. The catalog and registry identify their boundaries. Remaining specialist security/performance, CI/CD/deployment, scaling and SRS gap-audit workflows remain planned. Test Strategy defines verification scope and gates; it does not implement all suites or establish a pass. Project Setup may create a real scoped CI test job, while Production Readiness Review assesses release evidence; neither means that this repository now has a generic product deployment pipeline.
+Current available workflows: the first forty-four catalog entries, from requirements analysis through messaging and background jobs. The catalog and registry identify their boundaries. Remaining specialist security/performance, CI/CD/deployment, scaling and SRS gap-audit workflows remain planned. Test Strategy defines verification scope and gates; it does not implement all suites or establish a pass. Project Setup may create a real scoped CI test job, while Production Readiness Review assesses release evidence; neither means that this repository now has a generic product deployment pipeline.
 
 ## Keep each product's logic local
 
@@ -58,5 +60,5 @@ Harness contract: load the target logic baseline before implementation, select r
 ## Open decisions and limits
 
 - Application-specific rules for the existing components have not been reverse-engineered in this task. Their deeper logic remains unverified here.
-- The first thirty-nine catalog skills are available. Subsequent creation uses batches of five in catalog order; the next batch is 40–44. The final batch may be smaller. Maintain actual available/planned status rather than treating the backlog as installed.
+- The first forty-four catalog skills are available. Subsequent creation uses batches of five in catalog order; the next batch is 45–49. The final batch may be smaller. Maintain actual available/planned status rather than treating the backlog as installed.
 - Organizational file layout is implemented for review; it is not evidence of product approval or production readiness.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Messaging and Background Jobs"
+  short_description: "Build reliable messages and background workers"
+  default_prompt: "Use $ds-messaging-background-jobs for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

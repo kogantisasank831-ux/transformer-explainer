@@ -1,0 +1,4 @@
+interface:
+  display_name: "Query Optimization"
+  short_description: "Measure and improve query performance safely"
+  default_prompt: "Use $ds-query-optimization for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

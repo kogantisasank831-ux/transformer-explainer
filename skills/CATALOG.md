@@ -2,7 +2,7 @@
 
 Scope: backend and data science products; apply specialist profiles only where relevant. This tracks the agreed 90 entries plus the added SRS gap-analysis workflow.
 
-Progress: **39 of 91 available; 52 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **40–44**. The final batch may be smaller. Planned entries are not installed workflows.
+Progress: **44 of 91 available; 47 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **45–49**. The final batch may be smaller. Planned entries are not installed workflows.
 
 Use the registry in [README.md](README.md) for scopes and the shared testing/release policy. Each available package contains its own SKILL.md, on-demand reference and output template. Update this table and the registry only after implementation and validation.
 
@@ -47,11 +47,11 @@ Use the registry in [README.md](README.md) for scopes and the shared testing/rel
 | 37 | Privacy and data protection | Available | [ds-privacy-data-protection](ds-privacy-data-protection/SKILL.md) |
 | 38 | Vulnerability remediation | Available | [ds-vulnerability-remediation](ds-vulnerability-remediation/SKILL.md) |
 | 39 | Data modeling | Available | [ds-data-modeling](ds-data-modeling/SKILL.md) |
-| 40 | Database migrations | Planned | — |
-| 41 | Query optimization | Planned | — |
-| 42 | Transactions and consistency | Planned | — |
-| 43 | Cache engineering | Planned | — |
-| 44 | Messaging and background jobs | Planned | — |
+| 40 | Database migrations | Available | [ds-database-migrations](ds-database-migrations/SKILL.md) |
+| 41 | Query optimization | Available | [ds-query-optimization](ds-query-optimization/SKILL.md) |
+| 42 | Transactions and consistency | Available | [ds-transactions-consistency](ds-transactions-consistency/SKILL.md) |
+| 43 | Cache engineering | Available | [ds-cache-engineering](ds-cache-engineering/SKILL.md) |
+| 44 | Messaging and background jobs | Available | [ds-messaging-background-jobs](ds-messaging-background-jobs/SKILL.md) |
 | 45 | Idempotency and workflow recovery | Planned | — |
 | 46 | Data pipeline reliability | Planned | — |
 | 47 | Performance profiling | Planned | — |
