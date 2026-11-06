@@ -1,0 +1,4 @@
+interface:
+  display_name: "Performance Profiling"
+  short_description: "Locate measured CPU memory I/O and GPU costs"
+  default_prompt: "Use $ds-performance-profiling for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

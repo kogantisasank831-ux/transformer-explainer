@@ -1,0 +1,4 @@
+interface:
+  display_name: "Idempotency and Workflow Recovery"
+  short_description: "Make retried workflows safe and recoverable"
+  default_prompt: "Use $ds-idempotency-workflow-recovery for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

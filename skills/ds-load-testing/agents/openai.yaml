@@ -1,0 +1,4 @@
+interface:
+  display_name: "Load Testing"
+  short_description: "Validate expected workloads and performance gates"
+  default_prompt: "Use $ds-load-testing for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

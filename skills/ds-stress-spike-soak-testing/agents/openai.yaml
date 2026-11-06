@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stress Spike and Soak Testing"
+  short_description: "Test limits surges endurance and recovery safely"
+  default_prompt: "Use $ds-stress-spike-soak-testing for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

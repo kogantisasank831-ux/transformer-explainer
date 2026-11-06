@@ -53,7 +53,13 @@ Use this collection for data scientists building ordinary backend services, anal
 | `ds-cache-engineering` | Authoritative-source caching, keys, invalidation, freshness, stampedes, and failure behavior. | [SKILL.md](ds-cache-engineering/SKILL.md) |
 | `ds-messaging-background-jobs` | Message delivery, worker lifecycle, retries, idempotency, ordering, schemas, and recovery. | [SKILL.md](ds-messaging-background-jobs/SKILL.md) |
 
-These forty-four skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 45–49. Add registry rows only when the corresponding skill is created and validated.
+| `ds-idempotency-workflow-recovery` | Operation identity, durable state machines, checkpoints, retries, compensation, and reconciliation. | [SKILL.md](ds-idempotency-workflow-recovery/SKILL.md) |
+| `ds-data-pipeline-reliability` | Deterministic batch/stream processing, lineage, quality gates, atomic publication, and backfills. | [SKILL.md](ds-data-pipeline-reliability/SKILL.md) |
+| `ds-performance-profiling` | Representative CPU, memory, I/O, concurrency, and GPU profiling with controlled overhead. | [SKILL.md](ds-performance-profiling/SKILL.md) |
+| `ds-load-testing` | Expected workload models, representative scenarios, tail latency, resource saturation, and gates. | [SKILL.md](ds-load-testing/SKILL.md) |
+| `ds-stress-spike-soak-testing` | Breaking-point, sudden-surge, endurance, degradation, and recovery evidence with safety controls. | [SKILL.md](ds-stress-spike-soak-testing/SKILL.md) |
+
+These forty-nine skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 50–54. Add registry rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -92,6 +98,8 @@ Catalog entries 30–34 add concrete secure code review, authentication/session 
 Catalog entries 35–39 cover software supply-chain trust, infrastructure controls, privacy/data lifecycle, vulnerability remediation, and data modeling. Bind evidence to actual artifacts and environments, distinguish desired state from deployed enforcement, preserve accepted privacy/domain policy, and separate source fixes from verified deployed closure. Data modeling creates traceable constraints and a coding handoff; it does not implicitly execute live migrations.
 
 Catalog entries 40–44 handle database migrations, query optimization, transactions/consistency, cache engineering, and messaging/background jobs. Preserve accepted data semantics and invariants, measure representative workloads, state consistency and delivery boundaries, and distinguish local or simulated evidence from actual engine, cache, broker, CI, and deployed behavior. Migration, replay, repair, and deployment remain separately authorized actions.
+
+Catalog entries 45–49 cover idempotent workflow recovery, data-pipeline reliability, performance profiling, expected-load testing, and stress/spike/soak testing. Define operation and data identities, publish only validated complete outputs, profile representative workloads, keep load-generator evidence separate from system behavior, and require explicit safety and recovery controls for abnormal load. Production replay, destructive recovery, traffic generation, and deployment remain separately authorized.
 
 ## Required testing and release behavior
 

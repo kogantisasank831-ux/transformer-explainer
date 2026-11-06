@@ -2,7 +2,7 @@
 
 Scope: backend and data science products; apply specialist profiles only where relevant. This tracks the agreed 90 entries plus the added SRS gap-analysis workflow.
 
-Progress: **44 of 91 available; 47 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **45–49**. The final batch may be smaller. Planned entries are not installed workflows.
+Progress: **49 of 91 available; 42 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **50–54**. The final batch may be smaller. Planned entries are not installed workflows.
 
 Use the registry in [README.md](README.md) for scopes and the shared testing/release policy. Each available package contains its own SKILL.md, on-demand reference and output template. Update this table and the registry only after implementation and validation.
 
@@ -52,11 +52,11 @@ Use the registry in [README.md](README.md) for scopes and the shared testing/rel
 | 42 | Transactions and consistency | Available | [ds-transactions-consistency](ds-transactions-consistency/SKILL.md) |
 | 43 | Cache engineering | Available | [ds-cache-engineering](ds-cache-engineering/SKILL.md) |
 | 44 | Messaging and background jobs | Available | [ds-messaging-background-jobs](ds-messaging-background-jobs/SKILL.md) |
-| 45 | Idempotency and workflow recovery | Planned | — |
-| 46 | Data pipeline reliability | Planned | — |
-| 47 | Performance profiling | Planned | — |
-| 48 | Load testing | Planned | — |
-| 49 | Stress, spike, and soak testing | Planned | — |
+| 45 | Idempotency and workflow recovery | Available | [ds-idempotency-workflow-recovery](ds-idempotency-workflow-recovery/SKILL.md) |
+| 46 | Data pipeline reliability | Available | [ds-data-pipeline-reliability](ds-data-pipeline-reliability/SKILL.md) |
+| 47 | Performance profiling | Available | [ds-performance-profiling](ds-performance-profiling/SKILL.md) |
+| 48 | Load testing | Available | [ds-load-testing](ds-load-testing/SKILL.md) |
+| 49 | Stress, spike, and soak testing | Available | [ds-stress-spike-soak-testing](ds-stress-spike-soak-testing/SKILL.md) |
 | 50 | Capacity planning | Planned | — |
 | 51 | Scalability architecture | Planned | — |
 | 52 | Autoscaling | Planned | — |
