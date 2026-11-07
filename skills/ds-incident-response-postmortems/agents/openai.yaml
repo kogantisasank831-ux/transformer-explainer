@@ -1,0 +1,4 @@
+interface:
+  display_name: "Incident Response and Postmortems"
+  short_description: "Coordinate incidents and turn evidence into learning"
+  default_prompt: "Use $ds-incident-response-postmortems for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

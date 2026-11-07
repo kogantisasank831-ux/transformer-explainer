@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cost and Resource Optimization"
+  short_description: "Optimize cost from measured usage without breaking quality"
+  default_prompt: "Use $ds-cost-resource-optimization for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

@@ -83,7 +83,13 @@ Use this collection for data scientists building ordinary backend services, anal
 | `ds-fault-injection-chaos-testing` | Hypothesis-driven fault experiments, steady-state measures, blast-radius limits, abort controls, recovery, and learning evidence. | [SKILL.md](ds-fault-injection-chaos-testing/SKILL.md) |
 | `ds-backup-disaster-recovery` | State inventory, RPO/RTO, consistent protected copies, restore validation, DR topology, failover/failback, and recovery drills. | [SKILL.md](ds-backup-disaster-recovery/SKILL.md) |
 
-These sixty-nine skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 70–74. Add registry rows only when the corresponding skill is created and validated.
+| `ds-incident-response-postmortems` | Incident declaration, command, containment, communication, recovery evidence, blameless analysis, and verified corrective actions. | [SKILL.md](ds-incident-response-postmortems/SKILL.md) |
+| `ds-runbooks-operational-handover` | Executable runbooks, safe decision paths, validation and freshness, ownership inventory, training, and evidence-based handover acceptance. | [SKILL.md](ds-runbooks-operational-handover/SKILL.md) |
+| `ds-cost-resource-optimization` | Cost allocation and unit economics, measured utilization, optimization options and guardrails, safe execution, and realized-savings verification. | [SKILL.md](ds-cost-resource-optimization/SKILL.md) |
+| `ds-frontend-engineering-quality` | Component and state design, API and async correctness, failure states, performance, security boundaries, testing, and measurable release quality. | [SKILL.md](ds-frontend-engineering-quality/SKILL.md) |
+| `ds-accessibility-verification` | Accepted accessibility scope, semantic implementation, keyboard/focus and visual checks, assistive-technology journeys, findings, and regression evidence. | [SKILL.md](ds-accessibility-verification/SKILL.md) |
+
+These seventy-four skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 75–79. Add registry rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -132,6 +138,8 @@ Catalog entries 55–59 cover build and packaging, containerization, infrastruct
 Catalog entries 60–64 cover deployment execution, Kubernetes operations, progressive delivery, rollback and release recovery, and versioning/compatibility. Execute one authorized immutable candidate, operate clusters from exact context and ownership, limit exposure through evidence-gated stages, recover from current effective state, and prove cross-version contracts. Mutations stay within the named environment and authority, and command success never substitutes for functional or data verification.
 
 Catalog entries 65–69 cover observability, SLOs and alerting, resilience engineering, bounded fault experiments, and backup/disaster recovery. Correlate privacy-safe signals, define user-centered budgets and actionable pages, bound failure amplification, test one authorized hypothesis with safe aborts, and prove recovery by restoring and validating data and service behavior. Configuration, quiet alerts, surviving processes, completed experiments, replicas, and backup-job success remain distinct from verified outcomes.
+
+Catalog entries 70–74 cover incident response and learning, executable runbooks and operational transfer, measured cost/resource optimization, frontend engineering quality, and accessibility verification. Coordinate from user impact and preserved evidence, prove procedures with cold readers, reconcile cost to demand and quality guardrails, make asynchronous interfaces deterministic, and combine automated accessibility checks with manual and assistive-technology journeys. Meetings, documents, estimates, development builds, and automated scores remain distinct from accepted and verified outcomes.
 
 ## Required testing and release behavior
 

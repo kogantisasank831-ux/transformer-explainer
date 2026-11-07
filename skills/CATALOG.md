@@ -2,7 +2,7 @@
 
 Scope: backend and data science products; apply specialist profiles only where relevant. This tracks the agreed 90 entries plus the added SRS gap-analysis workflow.
 
-Progress: **69 of 91 available; 22 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **70–74**. The final batch may be smaller. Planned entries are not installed workflows.
+Progress: **74 of 91 available; 17 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **75–79**. The final batch may be smaller. Planned entries are not installed workflows.
 
 Use the registry in [README.md](README.md) for scopes and the shared testing/release policy. Each available package contains its own SKILL.md, on-demand reference and output template. Update this table and the registry only after implementation and validation.
 
@@ -77,11 +77,11 @@ Use the registry in [README.md](README.md) for scopes and the shared testing/rel
 | 67 | Resilience engineering | Available | [ds-resilience-engineering](ds-resilience-engineering/SKILL.md) |
 | 68 | Fault injection and chaos testing | Available | [ds-fault-injection-chaos-testing](ds-fault-injection-chaos-testing/SKILL.md) |
 | 69 | Backup and disaster recovery | Available | [ds-backup-disaster-recovery](ds-backup-disaster-recovery/SKILL.md) |
-| 70 | Incident response and postmortems | Planned | — |
-| 71 | Runbooks and operational handover | Planned | — |
-| 72 | Cost and resource optimization | Planned | — |
-| 73 | Frontend engineering quality | Planned | — |
-| 74 | Accessibility verification | Planned | — |
+| 70 | Incident response and postmortems | Available | [ds-incident-response-postmortems](ds-incident-response-postmortems/SKILL.md) |
+| 71 | Runbooks and operational handover | Available | [ds-runbooks-operational-handover](ds-runbooks-operational-handover/SKILL.md) |
+| 72 | Cost and resource optimization | Available | [ds-cost-resource-optimization](ds-cost-resource-optimization/SKILL.md) |
+| 73 | Frontend engineering quality | Available | [ds-frontend-engineering-quality](ds-frontend-engineering-quality/SKILL.md) |
+| 74 | Accessibility verification | Available | [ds-accessibility-verification](ds-accessibility-verification/SKILL.md) |
 | 75 | Browser and device compatibility | Planned | — |
 | 76 | UX and product acceptance | Planned | — |
 | 77 | Product analytics and experimentation | Planned | — |

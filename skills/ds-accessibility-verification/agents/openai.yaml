@@ -1,0 +1,4 @@
+interface:
+  display_name: "Accessibility Verification"
+  short_description: "Verify accessible journeys with automated and human checks"
+  default_prompt: "Use $ds-accessibility-verification for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

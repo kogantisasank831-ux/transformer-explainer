@@ -1,0 +1,4 @@
+interface:
+  display_name: "Runbooks and Operational Handover"
+  short_description: "Create executable runbooks and prove operational transfer"
+  default_prompt: "Use $ds-runbooks-operational-handover for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

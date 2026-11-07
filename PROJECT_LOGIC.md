@@ -1,6 +1,6 @@
 # Repository and engineering toolkit logic
 
-Last reviewed: 2026-11-07. Scope: repository navigation and the shared engineering toolkit. This is not a completed specification of every application in this repository.
+Last reviewed: 2026-11-08. Scope: repository navigation and the shared engineering toolkit. This is not a completed specification of every application in this repository.
 
 ## Evidence and component boundary
 
@@ -45,6 +45,8 @@ Last reviewed: 2026-11-07. Scope: repository navigation and the shared engineeri
 
 | TOOLKIT-023 | Implement catalog entries 65–69 as distinct observability, SLO/alerting, resilience-engineering, fault-injection/chaos, and backup/disaster-recovery workflows. Preserve privacy-safe correlated signals, accepted SLI and recovery targets, bounded failure amplification, explicit experiment authority and aborts, protected copies, and restore-tested evidence; keep configuration and scheduled-job success distinct from effective behavior. | Implemented workflow packages in the requested cadence, 2026-11-07. | Metadata/resource/link checks and isolated executable scenarios; no live paging, production fault injection, failover, or production restore performed while creating the packages. |
 
+| TOOLKIT-024 | Implement catalog entries 70–74 as distinct incident/postmortem, runbook/handover, cost/resource, frontend-quality, and accessibility-verification workflows. Preserve impact and evidence boundaries, executable safe procedures, reconciled cost and quality guardrails, deterministic user-visible state, accepted conformance scope, and human verification; keep documents, estimates and automated scores distinct from accepted outcomes. | Implemented workflow packages in the requested cadence, 2026-11-08. | Metadata/resource/link checks and isolated executable scenarios; no live incident command, production mutation, commitment purchase, production rollout, or formal accessibility conformance audit performed while creating the packages. |
+
 ## Workflow and outputs
 
 1. Identify the target component and read its current contracts and project logic.
@@ -55,7 +57,7 @@ Last reviewed: 2026-11-07. Scope: repository navigation and the shared engineeri
 6. Before coding, load the applicable logic revision and rule IDs, check critical open decisions and conflicts, and derive the implementation's verification cases.
 7. Verify the change, update logic/code/test links together, update the skill registry if needed, and report actual publication and validation status.
 
-Current available workflows: the first sixty-nine catalog entries, from requirements analysis through backup and disaster recovery. The catalog and registry identify their boundaries. Remaining incident response, runbooks, cost, frontend and accessibility, data and ML operations, governance, and SRS gap-audit workflows remain planned. Test Strategy defines verification scope and gates; it does not implement all suites or establish a pass. Project Setup may create a real scoped CI test job, while Production Readiness Review assesses release evidence; neither means that this repository now has a generic product deployment pipeline.
+Current available workflows: the first seventy-four catalog entries, from requirements analysis through accessibility verification. The catalog and registry identify their boundaries. Remaining browser/device compatibility, UX and product acceptance, product analytics, documentation, licensing/compliance, decommissioning, data and ML operations, and SRS gap-audit workflows remain planned. Test Strategy defines verification scope and gates; it does not implement all suites or establish a pass. Project Setup may create a real scoped CI test job, while Production Readiness Review assesses release evidence; neither means that this repository now has a generic product deployment pipeline.
 
 ## Keep each product's logic local
 
@@ -70,5 +72,5 @@ Harness contract: load the target logic baseline before implementation, select r
 ## Open decisions and limits
 
 - Application-specific rules for the existing components have not been reverse-engineered in this task. Their deeper logic remains unverified here.
-- The first sixty-nine catalog skills are available. Subsequent creation uses batches of five in catalog order; the next batch is 70–74. The final batch may be smaller. Maintain actual available/planned status rather than treating the backlog as installed.
+- The first seventy-four catalog skills are available. Subsequent creation uses batches of five in catalog order; the next batch is 75–79. The final batch may be smaller. Maintain actual available/planned status rather than treating the backlog as installed.
 - Organizational file layout is implemented for review; it is not evidence of product approval or production readiness.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Engineering Quality"
+  short_description: "Build correct resilient and measurable web interfaces"
+  default_prompt: "Use $ds-frontend-engineering-quality for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."
