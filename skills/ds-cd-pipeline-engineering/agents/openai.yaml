@@ -1,0 +1,4 @@
+interface:
+  display_name: "CD Pipeline Engineering"
+  short_description: "Promote immutable candidates through protected stages"
+  default_prompt: "Use $ds-cd-pipeline-engineering for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

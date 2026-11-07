@@ -65,7 +65,13 @@ Use this collection for data scientists building ordinary backend services, anal
 | `ds-rate-limiting-backpressure` | Trusted admission, quotas and bursts, bounded queues, retry guidance, fairness, and overload propagation. | [SKILL.md](ds-rate-limiting-backpressure/SKILL.md) |
 | `ds-performance-regression-benchmarking` | Repeatable benchmark contracts, controlled baselines, statistical gates, CI evidence, and regression diagnosis. | [SKILL.md](ds-performance-regression-benchmarking/SKILL.md) |
 
-These fifty-four skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 55–59. Add registry rows only when the corresponding skill is created and validated.
+| `ds-build-packaging` | Native builds, versioned artifact contracts, clean installation, reproducibility, and exact-candidate verification. | [SKILL.md](ds-build-packaging/SKILL.md) |
+| `ds-containerization` | OCI image construction, minimal runtime contents, non-root operation, lifecycle correctness, and image-level tests. | [SKILL.md](ds-containerization/SKILL.md) |
+| `ds-infrastructure-as-code` | Versioned desired infrastructure, state and locking, reviewed plans, drift/import controls, and safe environment changes. | [SKILL.md](ds-infrastructure-as-code/SKILL.md) |
+| `ds-ci-pipeline-engineering` | Trusted CI triggers, exact-revision tests and builds, matrices, caches, artifacts, permissions, and required status gates. | [SKILL.md](ds-ci-pipeline-engineering/SKILL.md) |
+| `ds-cd-pipeline-engineering` | Immutable promotion, protected environments, progressive rollout gates, migration compatibility, verification, and recovery. | [SKILL.md](ds-cd-pipeline-engineering/SKILL.md) |
+
+These fifty-nine skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 60–64. Add registry rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -108,6 +114,8 @@ Catalog entries 40–44 handle database migrations, query optimization, transact
 Catalog entries 45–49 cover idempotent workflow recovery, data-pipeline reliability, performance profiling, expected-load testing, and stress/spike/soak testing. Define operation and data identities, publish only validated complete outputs, profile representative workloads, keep load-generator evidence separate from system behavior, and require explicit safety and recovery controls for abnormal load. Production replay, destructive recovery, traffic generation, and deployment remain separately authorized.
 
 Catalog entries 50–54 cover capacity planning, scalability architecture, autoscaling, rate limiting/backpressure, and performance regression benchmarking. Tie demand to measured service capacity, design state-aware scale paths, treat autoscaling as a bounded control loop, propagate overload through fair bounded admission, and compare performance against immutable comparable baselines. Plans and configured policies remain distinct from deployed behavior; production traffic, scaling, quota changes, and deployment remain separately authorized.
+
+Catalog entries 55–59 cover build and packaging, containerization, infrastructure as code, CI pipeline engineering, and CD pipeline engineering. Build exact installable artifacts, create runtime-correct OCI images, review stateful infrastructure plans, enforce candidate-matched test gates, and promote immutable digests through protected environments. Building, publishing, applying infrastructure, and deploying remain distinct evidence and authorization states.
 
 ## Required testing and release behavior
 

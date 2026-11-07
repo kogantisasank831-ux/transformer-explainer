@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build and Packaging"
+  short_description: "Create verifiable installable release artifacts"
+  default_prompt: "Use $ds-build-packaging for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

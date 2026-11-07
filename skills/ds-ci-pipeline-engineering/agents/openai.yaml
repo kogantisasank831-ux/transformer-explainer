@@ -1,0 +1,4 @@
+interface:
+  display_name: "CI Pipeline Engineering"
+  short_description: "Enforce exact-candidate build and test gates"
+  default_prompt: "Use $ds-ci-pipeline-engineering for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

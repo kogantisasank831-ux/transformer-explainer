@@ -1,0 +1,4 @@
+interface:
+  display_name: "Infrastructure as Code"
+  short_description: "Manage reviewed infrastructure through versioned plans"
+  default_prompt: "Use $ds-infrastructure-as-code for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

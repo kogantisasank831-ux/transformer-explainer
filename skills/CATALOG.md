@@ -2,7 +2,7 @@
 
 Scope: backend and data science products; apply specialist profiles only where relevant. This tracks the agreed 90 entries plus the added SRS gap-analysis workflow.
 
-Progress: **54 of 91 available; 37 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **55–59**. The final batch may be smaller. Planned entries are not installed workflows.
+Progress: **59 of 91 available; 32 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **60–64**. The final batch may be smaller. Planned entries are not installed workflows.
 
 Use the registry in [README.md](README.md) for scopes and the shared testing/release policy. Each available package contains its own SKILL.md, on-demand reference and output template. Update this table and the registry only after implementation and validation.
 
@@ -62,11 +62,11 @@ Use the registry in [README.md](README.md) for scopes and the shared testing/rel
 | 52 | Autoscaling | Available | [ds-autoscaling](ds-autoscaling/SKILL.md) |
 | 53 | Rate limiting and backpressure | Available | [ds-rate-limiting-backpressure](ds-rate-limiting-backpressure/SKILL.md) |
 | 54 | Performance regression benchmarking | Available | [ds-performance-regression-benchmarking](ds-performance-regression-benchmarking/SKILL.md) |
-| 55 | Build and packaging | Planned | — |
-| 56 | Containerization | Planned | — |
-| 57 | Infrastructure as code | Planned | — |
-| 58 | CI pipeline engineering | Planned | — |
-| 59 | CD pipeline engineering | Planned | — |
+| 55 | Build and packaging | Available | [ds-build-packaging](ds-build-packaging/SKILL.md) |
+| 56 | Containerization | Available | [ds-containerization](ds-containerization/SKILL.md) |
+| 57 | Infrastructure as code | Available | [ds-infrastructure-as-code](ds-infrastructure-as-code/SKILL.md) |
+| 58 | CI pipeline engineering | Available | [ds-ci-pipeline-engineering](ds-ci-pipeline-engineering/SKILL.md) |
+| 59 | CD pipeline engineering | Available | [ds-cd-pipeline-engineering](ds-cd-pipeline-engineering/SKILL.md) |
 | 60 | Deployment execution | Planned | — |
 | 61 | Kubernetes operations | Planned | — |
 | 62 | Progressive delivery | Planned | — |

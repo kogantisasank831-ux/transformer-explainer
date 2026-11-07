@@ -1,0 +1,4 @@
+interface:
+  display_name: "Containerization"
+  short_description: "Build minimal secure runtime-correct OCI images"
+  default_prompt: "Use $ds-containerization for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."
