@@ -1,0 +1,4 @@
+interface:
+  display_name: "Performance Regression Benchmarking"
+  short_description: "Detect repeatable performance regressions"
+  default_prompt: "Use $ds-performance-regression-benchmarking for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

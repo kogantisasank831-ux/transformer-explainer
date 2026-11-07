@@ -1,0 +1,4 @@
+interface:
+  display_name: "Capacity Planning"
+  short_description: "Forecast demand and provision defensible headroom"
+  default_prompt: "Use $ds-capacity-planning for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

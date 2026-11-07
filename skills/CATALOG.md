@@ -2,7 +2,7 @@
 
 Scope: backend and data science products; apply specialist profiles only where relevant. This tracks the agreed 90 entries plus the added SRS gap-analysis workflow.
 
-Progress: **49 of 91 available; 42 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **50–54**. The final batch may be smaller. Planned entries are not installed workflows.
+Progress: **54 of 91 available; 37 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **55–59**. The final batch may be smaller. Planned entries are not installed workflows.
 
 Use the registry in [README.md](README.md) for scopes and the shared testing/release policy. Each available package contains its own SKILL.md, on-demand reference and output template. Update this table and the registry only after implementation and validation.
 
@@ -57,11 +57,11 @@ Use the registry in [README.md](README.md) for scopes and the shared testing/rel
 | 47 | Performance profiling | Available | [ds-performance-profiling](ds-performance-profiling/SKILL.md) |
 | 48 | Load testing | Available | [ds-load-testing](ds-load-testing/SKILL.md) |
 | 49 | Stress, spike, and soak testing | Available | [ds-stress-spike-soak-testing](ds-stress-spike-soak-testing/SKILL.md) |
-| 50 | Capacity planning | Planned | — |
-| 51 | Scalability architecture | Planned | — |
-| 52 | Autoscaling | Planned | — |
-| 53 | Rate limiting and backpressure | Planned | — |
-| 54 | Performance regression benchmarking | Planned | — |
+| 50 | Capacity planning | Available | [ds-capacity-planning](ds-capacity-planning/SKILL.md) |
+| 51 | Scalability architecture | Available | [ds-scalability-architecture](ds-scalability-architecture/SKILL.md) |
+| 52 | Autoscaling | Available | [ds-autoscaling](ds-autoscaling/SKILL.md) |
+| 53 | Rate limiting and backpressure | Available | [ds-rate-limiting-backpressure](ds-rate-limiting-backpressure/SKILL.md) |
+| 54 | Performance regression benchmarking | Available | [ds-performance-regression-benchmarking](ds-performance-regression-benchmarking/SKILL.md) |
 | 55 | Build and packaging | Planned | — |
 | 56 | Containerization | Planned | — |
 | 57 | Infrastructure as code | Planned | — |

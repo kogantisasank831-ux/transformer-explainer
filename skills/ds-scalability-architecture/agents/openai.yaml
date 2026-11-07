@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scalability Architecture"
+  short_description: "Design scale paths without shared bottlenecks"
+  default_prompt: "Use $ds-scalability-architecture for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Autoscaling"
+  short_description: "Tune safe demand-driven resource scaling"
+  default_prompt: "Use $ds-autoscaling for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

@@ -59,7 +59,13 @@ Use this collection for data scientists building ordinary backend services, anal
 | `ds-load-testing` | Expected workload models, representative scenarios, tail latency, resource saturation, and gates. | [SKILL.md](ds-load-testing/SKILL.md) |
 | `ds-stress-spike-soak-testing` | Breaking-point, sudden-surge, endurance, degradation, and recovery evidence with safety controls. | [SKILL.md](ds-stress-spike-soak-testing/SKILL.md) |
 
-These forty-nine skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 50–54. Add registry rows only when the corresponding skill is created and validated.
+| `ds-capacity-planning` | Demand forecasts, service-capacity curves, bottlenecks, redundancy, lead time, and headroom decisions. | [SKILL.md](ds-capacity-planning/SKILL.md) |
+| `ds-scalability-architecture` | State-aware scale-up and scale-out design, partitioning, shared bottlenecks, locality, and safe evolution. | [SKILL.md](ds-scalability-architecture/SKILL.md) |
+| `ds-autoscaling` | Metric-driven scaling policies, bounds, stabilization, startup, draining, dependency limits, and control-loop evidence. | [SKILL.md](ds-autoscaling/SKILL.md) |
+| `ds-rate-limiting-backpressure` | Trusted admission, quotas and bursts, bounded queues, retry guidance, fairness, and overload propagation. | [SKILL.md](ds-rate-limiting-backpressure/SKILL.md) |
+| `ds-performance-regression-benchmarking` | Repeatable benchmark contracts, controlled baselines, statistical gates, CI evidence, and regression diagnosis. | [SKILL.md](ds-performance-regression-benchmarking/SKILL.md) |
+
+These fifty-four skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 55–59. Add registry rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -100,6 +106,8 @@ Catalog entries 35–39 cover software supply-chain trust, infrastructure contro
 Catalog entries 40–44 handle database migrations, query optimization, transactions/consistency, cache engineering, and messaging/background jobs. Preserve accepted data semantics and invariants, measure representative workloads, state consistency and delivery boundaries, and distinguish local or simulated evidence from actual engine, cache, broker, CI, and deployed behavior. Migration, replay, repair, and deployment remain separately authorized actions.
 
 Catalog entries 45–49 cover idempotent workflow recovery, data-pipeline reliability, performance profiling, expected-load testing, and stress/spike/soak testing. Define operation and data identities, publish only validated complete outputs, profile representative workloads, keep load-generator evidence separate from system behavior, and require explicit safety and recovery controls for abnormal load. Production replay, destructive recovery, traffic generation, and deployment remain separately authorized.
+
+Catalog entries 50–54 cover capacity planning, scalability architecture, autoscaling, rate limiting/backpressure, and performance regression benchmarking. Tie demand to measured service capacity, design state-aware scale paths, treat autoscaling as a bounded control loop, propagate overload through fair bounded admission, and compare performance against immutable comparable baselines. Plans and configured policies remain distinct from deployed behavior; production traffic, scaling, quota changes, and deployment remain separately authorized.
 
 ## Required testing and release behavior
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rate Limiting and Backpressure"
+  short_description: "Control overload with fair bounded admission"
+  default_prompt: "Use $ds-rate-limiting-backpressure for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."
