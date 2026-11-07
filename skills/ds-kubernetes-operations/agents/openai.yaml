@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kubernetes Operations"
+  short_description: "Operate Kubernetes workloads with scoped evidence"
+  default_prompt: "Use $ds-kubernetes-operations for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

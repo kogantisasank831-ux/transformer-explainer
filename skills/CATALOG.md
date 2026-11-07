@@ -2,7 +2,7 @@
 
 Scope: backend and data science products; apply specialist profiles only where relevant. This tracks the agreed 90 entries plus the added SRS gap-analysis workflow.
 
-Progress: **59 of 91 available; 32 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **60–64**. The final batch may be smaller. Planned entries are not installed workflows.
+Progress: **64 of 91 available; 27 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **65–69**. The final batch may be smaller. Planned entries are not installed workflows.
 
 Use the registry in [README.md](README.md) for scopes and the shared testing/release policy. Each available package contains its own SKILL.md, on-demand reference and output template. Update this table and the registry only after implementation and validation.
 
@@ -67,11 +67,11 @@ Use the registry in [README.md](README.md) for scopes and the shared testing/rel
 | 57 | Infrastructure as code | Available | [ds-infrastructure-as-code](ds-infrastructure-as-code/SKILL.md) |
 | 58 | CI pipeline engineering | Available | [ds-ci-pipeline-engineering](ds-ci-pipeline-engineering/SKILL.md) |
 | 59 | CD pipeline engineering | Available | [ds-cd-pipeline-engineering](ds-cd-pipeline-engineering/SKILL.md) |
-| 60 | Deployment execution | Planned | — |
-| 61 | Kubernetes operations | Planned | — |
-| 62 | Progressive delivery | Planned | — |
-| 63 | Rollback and release recovery | Planned | — |
-| 64 | Versioning and compatibility | Planned | — |
+| 60 | Deployment execution | Available | [ds-deployment-execution](ds-deployment-execution/SKILL.md) |
+| 61 | Kubernetes operations | Available | [ds-kubernetes-operations](ds-kubernetes-operations/SKILL.md) |
+| 62 | Progressive delivery | Available | [ds-progressive-delivery](ds-progressive-delivery/SKILL.md) |
+| 63 | Rollback and release recovery | Available | [ds-rollback-release-recovery](ds-rollback-release-recovery/SKILL.md) |
+| 64 | Versioning and compatibility | Available | [ds-versioning-compatibility](ds-versioning-compatibility/SKILL.md) |
 | 65 | Observability | Planned | — |
 | 66 | SLOs and alerting | Planned | — |
 | 67 | Resilience engineering | Planned | — |

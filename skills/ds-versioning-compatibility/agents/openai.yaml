@@ -1,0 +1,4 @@
+interface:
+  display_name: "Versioning and Compatibility"
+  short_description: "Govern versions deprecation and compatibility contracts"
+  default_prompt: "Use $ds-versioning-compatibility for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Progressive Delivery"
+  short_description: "Limit release risk with evidence-gated exposure"
+  default_prompt: "Use $ds-progressive-delivery for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

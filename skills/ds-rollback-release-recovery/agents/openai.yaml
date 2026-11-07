@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rollback and Release Recovery"
+  short_description: "Recover failed releases without compounding impact"
+  default_prompt: "Use $ds-rollback-release-recovery for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

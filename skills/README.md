@@ -71,7 +71,13 @@ Use this collection for data scientists building ordinary backend services, anal
 | `ds-ci-pipeline-engineering` | Trusted CI triggers, exact-revision tests and builds, matrices, caches, artifacts, permissions, and required status gates. | [SKILL.md](ds-ci-pipeline-engineering/SKILL.md) |
 | `ds-cd-pipeline-engineering` | Immutable promotion, protected environments, progressive rollout gates, migration compatibility, verification, and recovery. | [SKILL.md](ds-cd-pipeline-engineering/SKILL.md) |
 
-These fifty-nine skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 60–64. Add registry rows only when the corresponding skill is created and validated.
+| `ds-deployment-execution` | Authorized exact-candidate deployment, preflight, controlled mutation, rollout observation, smoke verification, and closure. | [SKILL.md](ds-deployment-execution/SKILL.md) |
+| `ds-kubernetes-operations` | Context-safe Kubernetes inspection, controller diagnosis, workload and node operations, declarative ownership, and effective-state checks. | [SKILL.md](ds-kubernetes-operations/SKILL.md) |
+| `ds-progressive-delivery` | Canary, blue-green and shadow exposure, comparable cohorts, analysis gates, staged promotion, abort, and recovery. | [SKILL.md](ds-progressive-delivery/SKILL.md) |
+| `ds-rollback-release-recovery` | Failed-release containment, rollback versus roll-forward decisions, data and model compatibility, reconciliation, and verified recovery. | [SKILL.md](ds-rollback-release-recovery/SKILL.md) |
+| `ds-versioning-compatibility` | Public version contracts, compatibility directions, deprecation, migration, cross-version matrices, and DS artifact sets. | [SKILL.md](ds-versioning-compatibility/SKILL.md) |
+
+These sixty-four skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 65–69. Add registry rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -117,9 +123,11 @@ Catalog entries 50–54 cover capacity planning, scalability architecture, autos
 
 Catalog entries 55–59 cover build and packaging, containerization, infrastructure as code, CI pipeline engineering, and CD pipeline engineering. Build exact installable artifacts, create runtime-correct OCI images, review stateful infrastructure plans, enforce candidate-matched test gates, and promote immutable digests through protected environments. Building, publishing, applying infrastructure, and deploying remain distinct evidence and authorization states.
 
+Catalog entries 60–64 cover deployment execution, Kubernetes operations, progressive delivery, rollback and release recovery, and versioning/compatibility. Execute one authorized immutable candidate, operate clusters from exact context and ownership, limit exposure through evidence-gated stages, recover from current effective state, and prove cross-version contracts. Mutations stay within the named environment and authority, and command success never substitutes for functional or data verification.
+
 ## Required testing and release behavior
 
-Follow [the shared testing/release policy](../docs/TESTING_AND_RELEASE_POLICY.md): thorough relevant local checks, mandatory pytest CI gates for Python deployment candidates, and basic server smoke checks before promotion and after deployment. Carry the policy into future testing/CI/CD/deployment skills. Further specialized testing, CI/CD and deployment skills are still planned; this policy is not a claim that a target application's pipeline or server checks already exist.
+Follow [the shared testing/release policy](../docs/TESTING_AND_RELEASE_POLICY.md): thorough relevant local checks, mandatory pytest CI gates for Python deployment candidates, and basic server smoke checks before promotion and after deployment. The specialized testing, CI, CD, and deployment-execution workflows now carry this policy. Their presence is not a claim that a target application's pipeline, environment protections, or server checks already exist or have passed.
 
 ## Keep three kinds of knowledge separate
 

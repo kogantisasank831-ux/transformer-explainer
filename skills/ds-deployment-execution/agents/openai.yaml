@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deployment Execution"
+  short_description: "Deploy one verified candidate with controlled evidence"
+  default_prompt: "Use $ds-deployment-execution for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."
