@@ -43,6 +43,8 @@ Last reviewed: 2026-11-07. Scope: repository navigation and the shared engineeri
 
 | TOOLKIT-022 | Implement catalog entries 60–64 as distinct deployment-execution, Kubernetes-operations, progressive-delivery, rollback/release-recovery, and versioning/compatibility workflows. Bind immutable candidate and target identities, honor existing authorization and declarative ownership, gate exposure on comparable evidence, recover from effective data/schema/model state, and prove directional compatibility. | Implemented workflow packages in the requested cadence, 2026-11-07. | Metadata/resource/link checks and isolated executable scenarios; no live deployment, cluster mutation, traffic shift, rollback, or production recovery performed while creating the packages. |
 
+| TOOLKIT-023 | Implement catalog entries 65–69 as distinct observability, SLO/alerting, resilience-engineering, fault-injection/chaos, and backup/disaster-recovery workflows. Preserve privacy-safe correlated signals, accepted SLI and recovery targets, bounded failure amplification, explicit experiment authority and aborts, protected copies, and restore-tested evidence; keep configuration and scheduled-job success distinct from effective behavior. | Implemented workflow packages in the requested cadence, 2026-11-07. | Metadata/resource/link checks and isolated executable scenarios; no live paging, production fault injection, failover, or production restore performed while creating the packages. |
+
 ## Workflow and outputs
 
 1. Identify the target component and read its current contracts and project logic.
@@ -53,7 +55,7 @@ Last reviewed: 2026-11-07. Scope: repository navigation and the shared engineeri
 6. Before coding, load the applicable logic revision and rule IDs, check critical open decisions and conflicts, and derive the implementation's verification cases.
 7. Verify the change, update logic/code/test links together, update the skill registry if needed, and report actual publication and validation status.
 
-Current available workflows: the first sixty-four catalog entries, from requirements analysis through versioning and compatibility. The catalog and registry identify their boundaries. Remaining observability, resilience, backup/recovery, data and ML operations, governance, and SRS gap-audit workflows remain planned. Test Strategy defines verification scope and gates; it does not implement all suites or establish a pass. Project Setup may create a real scoped CI test job, while Production Readiness Review assesses release evidence; neither means that this repository now has a generic product deployment pipeline.
+Current available workflows: the first sixty-nine catalog entries, from requirements analysis through backup and disaster recovery. The catalog and registry identify their boundaries. Remaining incident response, runbooks, cost, frontend and accessibility, data and ML operations, governance, and SRS gap-audit workflows remain planned. Test Strategy defines verification scope and gates; it does not implement all suites or establish a pass. Project Setup may create a real scoped CI test job, while Production Readiness Review assesses release evidence; neither means that this repository now has a generic product deployment pipeline.
 
 ## Keep each product's logic local
 
@@ -68,5 +70,5 @@ Harness contract: load the target logic baseline before implementation, select r
 ## Open decisions and limits
 
 - Application-specific rules for the existing components have not been reverse-engineered in this task. Their deeper logic remains unverified here.
-- The first sixty-four catalog skills are available. Subsequent creation uses batches of five in catalog order; the next batch is 65–69. The final batch may be smaller. Maintain actual available/planned status rather than treating the backlog as installed.
+- The first sixty-nine catalog skills are available. Subsequent creation uses batches of five in catalog order; the next batch is 70–74. The final batch may be smaller. Maintain actual available/planned status rather than treating the backlog as installed.
 - Organizational file layout is implemented for review; it is not evidence of product approval or production readiness.

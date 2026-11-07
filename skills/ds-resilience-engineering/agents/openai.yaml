@@ -1,0 +1,4 @@
+interface:
+  display_name: "Resilience Engineering"
+  short_description: "Design bounded failure behavior and recovery paths"
+  default_prompt: "Use $ds-resilience-engineering for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

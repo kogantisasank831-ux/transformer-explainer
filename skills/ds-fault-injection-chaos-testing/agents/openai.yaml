@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fault Injection and Chaos Testing"
+  short_description: "Run bounded failure experiments with safe aborts"
+  default_prompt: "Use $ds-fault-injection-chaos-testing for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SLOs and Alerting"
+  short_description: "Define user-centered objectives and actionable alerts"
+  default_prompt: "Use $ds-slos-alerting for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

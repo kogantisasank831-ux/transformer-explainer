@@ -1,0 +1,4 @@
+interface:
+  display_name: "Observability"
+  short_description: "Instrument correlated useful and privacy-safe telemetry"
+  default_prompt: "Use $ds-observability for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

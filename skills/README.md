@@ -77,7 +77,13 @@ Use this collection for data scientists building ordinary backend services, anal
 | `ds-rollback-release-recovery` | Failed-release containment, rollback versus roll-forward decisions, data and model compatibility, reconciliation, and verified recovery. | [SKILL.md](ds-rollback-release-recovery/SKILL.md) |
 | `ds-versioning-compatibility` | Public version contracts, compatibility directions, deprecation, migration, cross-version matrices, and DS artifact sets. | [SKILL.md](ds-versioning-compatibility/SKILL.md) |
 
-These sixty-four skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 65–69. Add registry rows only when the corresponding skill is created and validated.
+| `ds-observability` | Correlated logs, metrics, traces and profiles, semantic schemas, cardinality, sampling, privacy, pipelines, and diagnostic validation. | [SKILL.md](ds-observability/SKILL.md) |
+| `ds-slos-alerting` | User-centered SLIs and SLOs, error budgets, burn-rate alerts, paging ownership, missing-data rules, and alert validation. | [SKILL.md](ds-slos-alerting/SKILL.md) |
+| `ds-resilience-engineering` | Failure-mode analysis, deadlines and retry budgets, isolation, degradation, redundancy, consistency, and recovery design. | [SKILL.md](ds-resilience-engineering/SKILL.md) |
+| `ds-fault-injection-chaos-testing` | Hypothesis-driven fault experiments, steady-state measures, blast-radius limits, abort controls, recovery, and learning evidence. | [SKILL.md](ds-fault-injection-chaos-testing/SKILL.md) |
+| `ds-backup-disaster-recovery` | State inventory, RPO/RTO, consistent protected copies, restore validation, DR topology, failover/failback, and recovery drills. | [SKILL.md](ds-backup-disaster-recovery/SKILL.md) |
+
+These sixty-nine skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 70–74. Add registry rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -124,6 +130,8 @@ Catalog entries 50–54 cover capacity planning, scalability architecture, autos
 Catalog entries 55–59 cover build and packaging, containerization, infrastructure as code, CI pipeline engineering, and CD pipeline engineering. Build exact installable artifacts, create runtime-correct OCI images, review stateful infrastructure plans, enforce candidate-matched test gates, and promote immutable digests through protected environments. Building, publishing, applying infrastructure, and deploying remain distinct evidence and authorization states.
 
 Catalog entries 60–64 cover deployment execution, Kubernetes operations, progressive delivery, rollback and release recovery, and versioning/compatibility. Execute one authorized immutable candidate, operate clusters from exact context and ownership, limit exposure through evidence-gated stages, recover from current effective state, and prove cross-version contracts. Mutations stay within the named environment and authority, and command success never substitutes for functional or data verification.
+
+Catalog entries 65–69 cover observability, SLOs and alerting, resilience engineering, bounded fault experiments, and backup/disaster recovery. Correlate privacy-safe signals, define user-centered budgets and actionable pages, bound failure amplification, test one authorized hypothesis with safe aborts, and prove recovery by restoring and validating data and service behavior. Configuration, quiet alerts, surviving processes, completed experiments, replicas, and backup-job success remain distinct from verified outcomes.
 
 ## Required testing and release behavior
 

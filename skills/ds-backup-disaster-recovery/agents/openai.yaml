@@ -1,0 +1,4 @@
+interface:
+  display_name: "Backup and Disaster Recovery"
+  short_description: "Prove recoverable data and disaster workflows"
+  default_prompt: "Use $ds-backup-disaster-recovery for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

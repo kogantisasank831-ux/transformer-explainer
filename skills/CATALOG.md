@@ -2,7 +2,7 @@
 
 Scope: backend and data science products; apply specialist profiles only where relevant. This tracks the agreed 90 entries plus the added SRS gap-analysis workflow.
 
-Progress: **64 of 91 available; 27 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **65–69**. The final batch may be smaller. Planned entries are not installed workflows.
+Progress: **69 of 91 available; 22 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **70–74**. The final batch may be smaller. Planned entries are not installed workflows.
 
 Use the registry in [README.md](README.md) for scopes and the shared testing/release policy. Each available package contains its own SKILL.md, on-demand reference and output template. Update this table and the registry only after implementation and validation.
 
@@ -72,11 +72,11 @@ Use the registry in [README.md](README.md) for scopes and the shared testing/rel
 | 62 | Progressive delivery | Available | [ds-progressive-delivery](ds-progressive-delivery/SKILL.md) |
 | 63 | Rollback and release recovery | Available | [ds-rollback-release-recovery](ds-rollback-release-recovery/SKILL.md) |
 | 64 | Versioning and compatibility | Available | [ds-versioning-compatibility](ds-versioning-compatibility/SKILL.md) |
-| 65 | Observability | Planned | — |
-| 66 | SLOs and alerting | Planned | — |
-| 67 | Resilience engineering | Planned | — |
-| 68 | Fault injection and chaos testing | Planned | — |
-| 69 | Backup and disaster recovery | Planned | — |
+| 65 | Observability | Available | [ds-observability](ds-observability/SKILL.md) |
+| 66 | SLOs and alerting | Available | [ds-slos-alerting](ds-slos-alerting/SKILL.md) |
+| 67 | Resilience engineering | Available | [ds-resilience-engineering](ds-resilience-engineering/SKILL.md) |
+| 68 | Fault injection and chaos testing | Available | [ds-fault-injection-chaos-testing](ds-fault-injection-chaos-testing/SKILL.md) |
+| 69 | Backup and disaster recovery | Available | [ds-backup-disaster-recovery](ds-backup-disaster-recovery/SKILL.md) |
 | 70 | Incident response and postmortems | Planned | — |
 | 71 | Runbooks and operational handover | Planned | — |
 | 72 | Cost and resource optimization | Planned | — |
