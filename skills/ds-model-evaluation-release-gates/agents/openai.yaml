@@ -1,0 +1,4 @@
+interface:
+  display_name: "Model Evaluation and Release Gates"
+  short_description: "Gate exact model candidates on contextual evidence"
+  default_prompt: "Use $ds-model-evaluation-release-gates for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

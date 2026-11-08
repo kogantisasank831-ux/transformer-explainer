@@ -1,0 +1,4 @@
+interface:
+  display_name: "Training and Experiment Reproducibility"
+  short_description: "Reproduce training from complete immutable run lineage"
+  default_prompt: "Use $ds-training-experiment-reproducibility for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

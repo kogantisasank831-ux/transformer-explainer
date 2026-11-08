@@ -2,7 +2,7 @@
 
 Scope: backend and data science products; apply specialist profiles only where relevant. This tracks the agreed 90 entries plus the added SRS gap-analysis workflow.
 
-Progress: **79 of 91 available; 12 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **80–84**. The final batch may be smaller. Planned entries are not installed workflows.
+Progress: **84 of 91 available; 7 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **85–89**. The final batch may be smaller. Planned entries are not installed workflows.
 
 Use the registry in [README.md](README.md) for scopes and the shared testing/release policy. Each available package contains its own SKILL.md, on-demand reference and output template. Update this table and the registry only after implementation and validation.
 
@@ -87,11 +87,11 @@ Use the registry in [README.md](README.md) for scopes and the shared testing/rel
 | 77 | Product analytics and experimentation | Available | [ds-product-analytics-experimentation](ds-product-analytics-experimentation/SKILL.md) |
 | 78 | Technical documentation | Available | [ds-technical-documentation](ds-technical-documentation/SKILL.md) |
 | 79 | Licensing and compliance assessment | Available | [ds-licensing-compliance-assessment](ds-licensing-compliance-assessment/SKILL.md) |
-| 80 | Service decommissioning | Planned | — |
-| 81 | ML data and feature validation | Planned | — |
-| 82 | Training and experiment reproducibility | Planned | — |
-| 83 | Model evaluation and release gates | Planned | — |
-| 84 | Model serving and inference optimization | Planned | — |
+| 80 | Service decommissioning | Available | [ds-service-decommissioning](ds-service-decommissioning/SKILL.md) |
+| 81 | ML data and feature validation | Available | [ds-ml-data-feature-validation](ds-ml-data-feature-validation/SKILL.md) |
+| 82 | Training and experiment reproducibility | Available | [ds-training-experiment-reproducibility](ds-training-experiment-reproducibility/SKILL.md) |
+| 83 | Model evaluation and release gates | Available | [ds-model-evaluation-release-gates](ds-model-evaluation-release-gates/SKILL.md) |
+| 84 | Model serving and inference optimization | Available | [ds-model-serving-inference-optimization](ds-model-serving-inference-optimization/SKILL.md) |
 | 85 | Prompt and structured-output engineering | Planned | — |
 | 86 | RAG engineering and evaluation | Planned | — |
 | 87 | Agent workflow reliability | Planned | — |

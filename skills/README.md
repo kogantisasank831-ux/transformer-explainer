@@ -95,7 +95,13 @@ Use this collection for data scientists building ordinary backend services, anal
 | `ds-technical-documentation` | Audience and task-oriented documentation architecture, authoritative references and examples, versioning and ownership, executable validation, and maintenance. | [SKILL.md](ds-technical-documentation/SKILL.md) |
 | `ds-licensing-compliance-assessment` | Component and obligation inventory, provenance and SPDX normalization, policy and legal review, artifact-level notices and source obligations, exceptions, and evidence-based release assessment. | [SKILL.md](ds-licensing-compliance-assessment/SKILL.md) |
 
-These seventy-nine skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 80–84. Add registry rows only when the corresponding skill is created and validated.
+| `ds-service-decommissioning` | Usage and dependency discovery, replacement migration, staged disablement, data retention and sanitization, access/infrastructure removal, and verified closure. | [SKILL.md](ds-service-decommissioning/SKILL.md) |
+| `ds-ml-data-feature-validation` | Data provenance and snapshots, schema/domain and label quality, leakage-safe splits, feature semantics and point-in-time parity, drift/skew, slices, and quality gates. | [SKILL.md](ds-ml-data-feature-validation/SKILL.md) |
+| `ds-training-experiment-reproducibility` | Experiment intent and lineage, immutable code/data/config/environment identities, randomness and numerical limits, checkpoints, tracking integrity, and independent reruns. | [SKILL.md](ds-training-experiment-reproducibility/SKILL.md) |
+| `ds-model-evaluation-release-gates` | Contextual evaluation plans, independent data and slices, task metrics and uncertainty, robustness and harm evidence, exact-candidate gates, approval and monitoring readiness. | [SKILL.md](ds-model-evaluation-release-gates/SKILL.md) |
+| `ds-model-serving-inference-optimization` | Exact serving identities and workload, phase-level latency and capacity, engine tuning, caching/quantization/parallelism, quality guardrails, overload behavior, and rollout evidence. | [SKILL.md](ds-model-serving-inference-optimization/SKILL.md) |
+
+These eighty-four skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 85–89. Add registry rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -148,6 +154,8 @@ Catalog entries 65–69 cover observability, SLOs and alerting, resilience engin
 Catalog entries 70–74 cover incident response and learning, executable runbooks and operational transfer, measured cost/resource optimization, frontend engineering quality, and accessibility verification. Coordinate from user impact and preserved evidence, prove procedures with cold readers, reconcile cost to demand and quality guardrails, make asynchronous interfaces deterministic, and combine automated accessibility checks with manual and assistive-technology journeys. Meetings, documents, estimates, development builds, and automated scores remain distinct from accepted and verified outcomes.
 
 Catalog entries 75–79 cover supported browser/device behavior, user and product acceptance, trustworthy analytics and controlled experiments, task-oriented technical documentation, and licensing/compliance evidence. Define actual support and user populations, verify authoritative state and side effects, diagnose experiment data quality before causal decisions, execute documentation examples, and bind obligations to exact release artifacts. Compatibility metadata, demos, dashboards, page views, scans and top-level license files remain distinct from verified outcomes and accountable decisions.
+
+Catalog entries 80–84 cover verified service retirement, ML data and feature correctness, training reproducibility, contextual model release evaluation, and measured inference optimization. Discover hidden consumers before staged shutdown, preserve point-in-time data semantics, capture complete immutable run lineage, bind independent gates to exact model artifacts, and tune serving from representative queue and GPU evidence. Quiet dashboards, inferred schemas, seeds, aggregate scores, theoretical capacity and copied engine settings remain distinct from verified outcomes.
 
 ## Required testing and release behavior
 

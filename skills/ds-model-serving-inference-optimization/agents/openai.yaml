@@ -1,0 +1,4 @@
+interface:
+  display_name: "Model Serving and Inference Optimization"
+  short_description: "Optimize inference from measured workload and quality"
+  default_prompt: "Use $ds-model-serving-inference-optimization for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

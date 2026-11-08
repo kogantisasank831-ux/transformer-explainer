@@ -1,0 +1,4 @@
+interface:
+  display_name: "ML Data and Feature Validation"
+  short_description: "Validate point-in-time ML data and feature semantics"
+  default_prompt: "Use $ds-ml-data-feature-validation for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."
