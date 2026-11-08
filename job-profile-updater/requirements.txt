@@ -1,0 +1,4 @@
+playwright==1.58.0
+PyYAML>=6,<7
+tzdata>=2025.1
+pytest>=8,<10

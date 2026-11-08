@@ -1,0 +1,25 @@
+# Illustrative selectors: replace every selector with your current UI's locator.
+timezone: Asia/Kolkata
+headless: true
+open_manual_pages: true
+profiles:
+  - name: naukri
+    mode: auto
+    method: text_variants
+    url: https://www.naukri.com/mnjuser/profile
+    variants:
+      - 'Senior Data Scientist | Generative AI and Applied ML'
+      - 'Senior Data Scientist | Applied ML and Generative AI'
+    edit_steps: ['#headline-edit']
+    field_selector: 'textarea[name="headline"]'
+    save_selector: '#headline-dialog button[type="submit"]'
+    success_selector: '#save-success'
+    verification_steps: []
+    last_updated_selector: '#profile-updated'
+    last_updated_attribute: datetime
+    verification_attempts: 3
+  - name: hirist
+    mode: disabled
+  - name: indeed
+    mode: manual
+    url: https://profile.indeed.com/

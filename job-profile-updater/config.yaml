@@ -1,0 +1,40 @@
+timezone: Asia/Kolkata
+headless: true
+open_manual_pages: true
+profiles:
+  - name: naukri
+    mode: auto
+    method: resume_upload
+    url: https://www.naukri.com/mnjuser/profile
+    resume_path: resume.pdf
+    max_resume_bytes: 2097152
+    edit_steps: []
+    file_input_selector: ""
+    # Empty save_selector means selecting the file automatically uploads it.
+    save_selector: ""
+    success_selector: ""
+    verification_steps: []
+    resume_name_selector: ""
+    last_updated_selector: ""
+    # Prefer a precise server-provided attribute such as datetime when available.
+    last_updated_attribute: ""
+    verification_attempts: 3
+  - name: hirist
+    mode: auto
+    method: resume_upload
+    # Replace with your profile page after login.
+    url: https://www.hirist.tech/
+    resume_path: resume.pdf
+    max_resume_bytes: 2097152
+    edit_steps: []
+    file_input_selector: ""
+    save_selector: ""
+    success_selector: ""
+    verification_steps: []
+    resume_name_selector: ""
+    last_updated_selector: ""
+    last_updated_attribute: ""
+    verification_attempts: 3
+  - name: indeed
+    mode: manual
+    url: https://profile.indeed.com/
