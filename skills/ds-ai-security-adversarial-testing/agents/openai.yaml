@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Security and Adversarial Testing"
+  short_description: "Test AI abuse paths with bounded impact evidence"
+  default_prompt: "Use $ds-ai-security-adversarial-testing for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

@@ -51,6 +51,8 @@ Last reviewed: 2026-11-08. Scope: repository navigation and the shared engineeri
 
 | TOOLKIT-026 | Implement catalog entries 80–84 as distinct service-decommissioning, ML-data/feature-validation, training-reproducibility, model-evaluation/release-gate, and model-serving/inference-optimization workflows. Preserve hidden-consumer and retention evidence, point-in-time semantics, immutable run lineage, context-specific independent gates, exact serving identities and measured quality/capacity; keep plans, inferred schemas, tracked runs, aggregate scores and theoretical tuning distinct from proof. | Implemented workflow packages in the requested cadence, 2026-11-08. | Metadata/resource/link checks and isolated executable scenarios; no production service deletion, live data sanitization, model training, production model approval, GPU benchmark or serving rollout performed while creating the packages. |
 
+| TOOLKIT-027 | Implement catalog entries 85–89 as distinct prompt/structured-output, RAG, agent-reliability, AI-adversarial-security, and token/context/inference-cost workflows. Preserve exact prompt/model/schema/corpus/workflow identities, untrusted content boundaries, deterministic authority and impact oracles, bounded side effects and budgets, component-level evaluation, and complete quality-aware unit economics; keep valid syntax, citations, fluent traces, payload-list passes and estimates distinct from proof. | Implemented workflow packages in the requested cadence, 2026-11-08. | Metadata/resource/link checks and isolated executable scenarios; no production prompt/model release, live corpus reindex, consequential agent action, production adversarial attack, provider billing change or inference rollout performed while creating the packages. |
+
 ## Workflow and outputs
 
 1. Identify the target component and read its current contracts and project logic.
@@ -61,7 +63,7 @@ Last reviewed: 2026-11-08. Scope: repository navigation and the shared engineeri
 6. Before coding, load the applicable logic revision and rule IDs, check critical open decisions and conflicts, and derive the implementation's verification cases.
 7. Verify the change, update logic/code/test links together, update the skill registry if needed, and report actual publication and validation status.
 
-Current available workflows: the first eighty-four catalog entries, from requirements analysis through model serving and inference optimization. The catalog and registry identify their boundaries. Remaining prompt and structured-output, RAG, agent reliability, AI security, token/context cost, AI monitoring, and SRS gap-audit workflows remain planned. Test Strategy defines verification scope and gates; it does not implement all suites or establish a pass. Project Setup may create a real scoped CI test job, while Production Readiness Review assesses release evidence; neither means that this repository now has a generic product deployment pipeline.
+Current available workflows: the first eighty-nine catalog entries, from requirements analysis through token, context, and inference cost control. The catalog and registry identify their boundaries. Remaining AI production monitoring and SRS gap-analysis workflows remain planned. Test Strategy defines verification scope and gates; it does not implement all suites or establish a pass. Project Setup may create a real scoped CI test job, while Production Readiness Review assesses release evidence; neither means that this repository now has a generic product deployment pipeline.
 
 ## Keep each product's logic local
 
@@ -76,5 +78,5 @@ Harness contract: load the target logic baseline before implementation, select r
 ## Open decisions and limits
 
 - Application-specific rules for the existing components have not been reverse-engineered in this task. Their deeper logic remains unverified here.
-- The first eighty-four catalog skills are available. Subsequent creation uses batches of five in catalog order; the next batch is 85–89. The final batch may be smaller. Maintain actual available/planned status rather than treating the backlog as installed.
+- The first eighty-nine catalog skills are available. The final batch is 90–91 and contains the two remaining skills. Maintain actual available/planned status rather than treating the backlog as installed.
 - Organizational file layout is implemented for review; it is not evidence of product approval or production readiness.

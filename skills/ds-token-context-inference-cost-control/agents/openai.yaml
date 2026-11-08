@@ -1,0 +1,4 @@
+interface:
+  display_name: "Token, Context, and Inference Cost Control"
+  short_description: "Control AI context and cost with quality guardrails"
+  default_prompt: "Use $ds-token-context-inference-cost-control for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

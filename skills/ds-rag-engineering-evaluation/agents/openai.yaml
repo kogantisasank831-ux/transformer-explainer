@@ -1,0 +1,4 @@
+interface:
+  display_name: "RAG Engineering and Evaluation"
+  short_description: "Engineer and evaluate traceable grounded retrieval"
+  default_prompt: "Use $ds-rag-engineering-evaluation for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

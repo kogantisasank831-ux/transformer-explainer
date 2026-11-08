@@ -101,7 +101,13 @@ Use this collection for data scientists building ordinary backend services, anal
 | `ds-model-evaluation-release-gates` | Contextual evaluation plans, independent data and slices, task metrics and uncertainty, robustness and harm evidence, exact-candidate gates, approval and monitoring readiness. | [SKILL.md](ds-model-evaluation-release-gates/SKILL.md) |
 | `ds-model-serving-inference-optimization` | Exact serving identities and workload, phase-level latency and capacity, engine tuning, caching/quantization/parallelism, quality guardrails, overload behavior, and rollout evidence. | [SKILL.md](ds-model-serving-inference-optimization/SKILL.md) |
 
-These eighty-four skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 85–89. Add registry rows only when the corresponding skill is created and validated.
+| `ds-prompt-structured-output-engineering` | Versioned prompt assembly, instruction and data boundaries, schema-first outputs, validation and repair, semantic enforcement, regression evaluation, compatibility, and lineage. | [SKILL.md](ds-prompt-structured-output-engineering/SKILL.md) |
+| `ds-rag-engineering-evaluation` | Corpus and index lineage, access-aware ingestion, hybrid retrieval and reranking, grounded generation and citations, component and end-to-end evaluation, freshness, security, and operations. | [SKILL.md](ds-rag-engineering-evaluation/SKILL.md) |
+| `ds-agent-workflow-reliability` | Explicit workflow state, typed least-privilege tools, durable side-effect recovery, bounded loops and budgets, memory and handoffs, trajectory/outcome evaluation, and operations. | [SKILL.md](ds-agent-workflow-reliability/SKILL.md) |
+| `ds-ai-security-adversarial-testing` | Authorized AI threat scenarios, impact-based adversarial harnesses, prompt injection and poisoning, output/tool/tenant controls, resource abuse, mitigation verification, regression, and residual risk. | [SKILL.md](ds-ai-security-adversarial-testing/SKILL.md) |
+| `ds-token-context-inference-cost-control` | End-to-end AI unit economics, token and billing reconciliation, context allocation and compaction, caching and routing, budget enforcement, quality-cost evaluation, allocation, and anomalies. | [SKILL.md](ds-token-context-inference-cost-control/SKILL.md) |
+
+These eighty-nine skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the final batch is 90–91. Add registry rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -156,6 +162,8 @@ Catalog entries 70–74 cover incident response and learning, executable runbook
 Catalog entries 75–79 cover supported browser/device behavior, user and product acceptance, trustworthy analytics and controlled experiments, task-oriented technical documentation, and licensing/compliance evidence. Define actual support and user populations, verify authoritative state and side effects, diagnose experiment data quality before causal decisions, execute documentation examples, and bind obligations to exact release artifacts. Compatibility metadata, demos, dashboards, page views, scans and top-level license files remain distinct from verified outcomes and accountable decisions.
 
 Catalog entries 80–84 cover verified service retirement, ML data and feature correctness, training reproducibility, contextual model release evaluation, and measured inference optimization. Discover hidden consumers before staged shutdown, preserve point-in-time data semantics, capture complete immutable run lineage, bind independent gates to exact model artifacts, and tune serving from representative queue and GPU evidence. Quiet dashboards, inferred schemas, seeds, aggregate scores, theoretical capacity and copied engine settings remain distinct from verified outcomes.
+
+Catalog entries 85–89 cover prompt and structured-output contracts, traceable RAG, recoverable agent workflows, impact-based AI adversarial testing, and end-to-end token/context cost control. Keep generated and retrieved content untrusted, enforce semantics and authority in code, preserve corpus/workflow/cost identities, bound retries and side effects, and compare exact candidates on representative quality, security, reliability and unit economics. Schema validity, citations, agent narratives, payload-list passes, token estimates and lower averages remain distinct from verified outcomes.
 
 ## Required testing and release behavior
 

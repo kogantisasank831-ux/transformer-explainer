@@ -2,7 +2,7 @@
 
 Scope: backend and data science products; apply specialist profiles only where relevant. This tracks the agreed 90 entries plus the added SRS gap-analysis workflow.
 
-Progress: **84 of 91 available; 7 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Next batch: **85–89**. The final batch may be smaller. Planned entries are not installed workflows.
+Progress: **89 of 91 available; 2 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Final batch: **90–91**. It contains the two remaining skills. Planned entries are not installed workflows.
 
 Use the registry in [README.md](README.md) for scopes and the shared testing/release policy. Each available package contains its own SKILL.md, on-demand reference and output template. Update this table and the registry only after implementation and validation.
 
@@ -92,10 +92,10 @@ Use the registry in [README.md](README.md) for scopes and the shared testing/rel
 | 82 | Training and experiment reproducibility | Available | [ds-training-experiment-reproducibility](ds-training-experiment-reproducibility/SKILL.md) |
 | 83 | Model evaluation and release gates | Available | [ds-model-evaluation-release-gates](ds-model-evaluation-release-gates/SKILL.md) |
 | 84 | Model serving and inference optimization | Available | [ds-model-serving-inference-optimization](ds-model-serving-inference-optimization/SKILL.md) |
-| 85 | Prompt and structured-output engineering | Planned | — |
-| 86 | RAG engineering and evaluation | Planned | — |
-| 87 | Agent workflow reliability | Planned | — |
-| 88 | AI security and adversarial testing | Planned | — |
-| 89 | Token, context, and inference cost control | Planned | — |
+| 85 | Prompt and structured-output engineering | Available | [ds-prompt-structured-output-engineering](ds-prompt-structured-output-engineering/SKILL.md) |
+| 86 | RAG engineering and evaluation | Available | [ds-rag-engineering-evaluation](ds-rag-engineering-evaluation/SKILL.md) |
+| 87 | Agent workflow reliability | Available | [ds-agent-workflow-reliability](ds-agent-workflow-reliability/SKILL.md) |
+| 88 | AI security and adversarial testing | Available | [ds-ai-security-adversarial-testing](ds-ai-security-adversarial-testing/SKILL.md) |
+| 89 | Token, context, and inference cost control | Available | [ds-token-context-inference-cost-control](ds-token-context-inference-cost-control/SKILL.md) |
 | 90 | AI production monitoring | Planned | — |
 | 91 | SRS gap analysis and business process validation | Planned | — |

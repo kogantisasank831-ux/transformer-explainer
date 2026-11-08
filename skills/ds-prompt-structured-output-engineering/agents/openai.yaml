@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prompt and Structured-Output Engineering"
+  short_description: "Engineer prompts and validated structured outputs"
+  default_prompt: "Use $ds-prompt-structured-output-engineering for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

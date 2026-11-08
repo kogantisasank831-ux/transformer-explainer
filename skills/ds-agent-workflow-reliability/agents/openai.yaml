@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Workflow Reliability"
+  short_description: "Build bounded recoverable agent workflows"
+  default_prompt: "Use $ds-agent-workflow-reliability for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."
