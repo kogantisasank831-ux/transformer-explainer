@@ -59,6 +59,21 @@ Last reviewed: 2026-11-08. Scope: repository navigation and the shared engineeri
 
 | TOOLKIT-030 | Orchestrate the 91 skills through explicit G0–G7 delivery gates. Block affected domain coding until accepted SRS logic, architecture/contracts and plan/test strategy permit the exact slice; block deployment until the immutable candidate passes mandatory CI pytest unit and every applicable additional gate, readiness and smoke requirements. Keep neutral scaffolding, local verification, CI evidence, release and production outcomes distinct. | Implemented and validated lifecycle protocol, 2026-11-08. | [End-to-end lifecycle](docs/END_TO_END_PROJECT_LIFECYCLE.md), [validation report](docs/SKILL_LIBRARY_END_TO_END_VALIDATION.md), `.github/workflows/skills-validation.yml`, gate-aware templates and 76 executable policy scenarios. |
 
+| TOOLKIT-031 | Validate the G0–G7 lifecycle on one real backend and data-science product before treating the library as proven in day-to-day delivery. Prefer the ATS or Model Suggester project; begin from its actual SRS and repository, preserve unanswered decisions, and collect candidate-matched implementation, pytest CI, smoke, deployment and production evidence. | `not_started`; durable future work, not an active session. Start when the user selects the pilot project and its current SRS/repository are available. | See the planned pilot section below and the end-to-end lifecycle; create component-local project logic and progress files when the pilot starts. |
+
+
+## Planned real-project lifecycle pilot
+
+Status: `not_started`. This is durable planned work and does not belong in `WORK_PROGRESS.md` until execution begins.
+
+- **Candidate project:** ATS or Model Suggester; final selection pending.
+- **Trigger to start:** the user selects the project and supplies or confirms its current repository, SRS/relevant requirements, environment boundaries and decision owners.
+- **Inputs:** actual SRS and open decisions, repository state, existing contracts and tests, component `PROJECT_LOGIC.md`, component `WORK_PROGRESS.md`, CI configuration, release target and available test environments.
+- **Process:** execute G0 through G7 on one bounded vertical slice. Audit scenario coverage and obtain accepted answers before affected domain coding; then define architecture/contracts, plan tests, implement, run local checks, run exact-candidate CI, perform authorized smoke/deployment verification and assess production signals.
+- **Outputs:** SRS gap and question register, accepted logic baseline, gate table, active handoff, implementation and test traceability, CI evidence, readiness decision, smoke/deployment record, monitoring evidence and a library-improvement list.
+- **Completion criteria:** every applicable gate has candidate-linked evidence or an explicit blocker and owner; Python pytest and all applicable additional suites pass for the exact candidate; pre/post-deployment smoke and monitoring evidence are recorded when deployment is in scope; GitHub required-check enforcement is assessed separately.
+- **Change rule:** findings that generalize beyond the pilot update the relevant skill and lifecycle tests. Project-specific business logic remains in that component's documents.
+
 ## Workflow and outputs
 
 1. Identify the target component and read its current contracts and project logic.
