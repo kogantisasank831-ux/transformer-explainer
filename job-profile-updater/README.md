@@ -1,5 +1,9 @@
 # Daily profile updater
 
+For an end-to-end Windows installation checklist, start with
+[`SETUP.md`](SETUP.md). This README explains the behavior and configuration
+contract in more detail.
+
 Re-upload your chosen resume or alternate between two accurate headline/summary
 variants. The updater checks the saved content and the profile's visible
 last-updated indicator. Windows scheduling runs when you sign in, unlock or
@@ -199,5 +203,7 @@ Official references:
 ```
 
 Tests include local logic, simulated UI fixtures, and optional Chromium tests
-with intercepted mock-site routes. They send no traffic to Naukri, Hirist or Indeed. See VALIDATION.md for the actual execution
-results and remaining live checks.
+with intercepted mock-site routes. They send no traffic to Naukri, Hirist or
+Indeed. The separate public login-page smoke check did not perform a profile
+edit. See `VALIDATION.md` for the actual execution results and remaining live
+checks.

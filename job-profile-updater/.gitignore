@@ -2,3 +2,7 @@ runtime/
 .venv/
 __pycache__/
 .pytest_cache/
+resume.pdf
+resume.doc
+resume.docx
+config.local.yaml

@@ -1,13 +1,19 @@
 # Job profile updater logic
 
-Baseline revision: import-1, 2026-11-08. Owner: repository owner.
-Scope: import the previously delivered updater into this repository without changing its runtime behavior. The user's current request authorizes source publication, not live profile updates or installing a laptop task.
+Baseline revision: import-2, 2026-11-08. Owner: repository owner.
+Scope: import the previously delivered updater, add setup instructions, and
+record public login-flow evidence without changing runtime behavior. The user's
+current request authorizes source publication and a dummy-account website test,
+but no authenticated test account was available. No live profile update or
+laptop task installation was performed.
 
 ## Sources and status
 
 - S1: User requested daily Naukri, Hirist and Indeed profile freshness updates, then resume re-upload, profile edits, scheduling, validation and a simple guide in the preceding conversation.
 - S2: `Daily_Profile_Updater.zip`, version 2, delivered 2026-10-03. SHA256: `8593dd644a26e35312f3187003af2088e10897f0c684f298c82bd293a16d6dfb`.
 - S3: User requested publication to the transformer repository on 2026-11-08.
+- S4: User requested setup documentation and an actual-website test using dummy
+  credentials on 2026-11-08.
 - Existing source files are imported byte for byte from S2. This document and `WORK_PROGRESS.md` record the component boundary required by the repository's agent instructions.
 - Implementation exists. Local evidence is distinct from CI, Windows scheduling, authenticated site behavior and recruiter visibility.
 
@@ -31,7 +37,14 @@ Scope: import the previously delivered updater into this repository without chan
 
 ## Verification and delivery evidence
 
-On 2026-11-08, the recovered source suite returned **27 passed and 8 skipped** on Python 3.12/Linux. The eight Chromium cases were skipped because the browser executable was unavailable. Compilation passed. Source-file parity with S2 was checked before adding these component records. Historical checks and laptop instructions remain in `VALIDATION.md`; the Word guide is included unchanged.
+On 2026-11-08, the recovered source suite returned **27 passed and 8 skipped**
+on Python 3.12/Linux. The eight Chromium cases were skipped because the browser
+executable was unavailable. Compilation passed. Source-file parity with S2 was
+checked before adding these component records. The current public Naukri login
+form and Hirist login dialog were inspected successfully. Dummy credentials
+cannot exercise profile updates, and no authenticated account was used.
+Historical checks and laptop instructions remain in `VALIDATION.md`; the Word
+guide is included unchanged and `SETUP.md` provides a concise current procedure.
 
 | Gate | Scope and outcome | Next boundary |
 |---|---|---|
@@ -39,9 +52,9 @@ On 2026-11-08, the recovered source suite returned **27 passed and 8 skipped** o
 | G1_SRS_LOGIC | CONDITIONAL for byte-preserving source import only; S1/S2 establish the historical implementation. | New domain behavior requires reviewed rules |
 | G2_ARCHITECTURE_CONTRACTS | CONDITIONAL for source import only; observed interfaces are recorded above. | New architecture requires review |
 | G3_PLAN_TEST_STRATEGY | PASS for import checks: archive recovery, parity, manifest inspection, compilation and existing suite. | Local checks |
-| G4_IMPLEMENT_LOCAL | CONDITIONAL: source and mocked checks pass; eight browser cases remain skipped. | Browser/Windows/live verification |
+| G4_IMPLEMENT_LOCAL | CONDITIONAL: source and mocked checks pass; eight browser cases remain skipped. Public login flows are reachable. | Authenticated browser/Windows verification |
 | G5_EXACT_CANDIDATE | BLOCKED for deployment: no candidate-specific CI or real-site evidence is claimed. | Required CI and applicable suites |
-| G6_RELEASE_VERIFY | BLOCKED for runtime release: no laptop task or live site action is installed/executed. Source publication is the only authorized output. | Operator setup and smoke checks |
+| G6_RELEASE_VERIFY | BLOCKED for runtime release: no laptop task or authenticated profile action is installed/executed. | Operator setup and supervised smoke checks |
 | G7_OPERATE_LEARN | BLOCKED for production verification: no live outcomes observed. | Evidence from the actual target environment |
 
 ## Open operational decisions
