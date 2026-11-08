@@ -13,6 +13,7 @@ Create a plan a coding harness can execute and verify without guessing business 
 - Identify the requested outcome, existing behavior, constraints and dependencies. Preserve established code boundaries and test tools; do not plan a rewrite merely for style.
 - Separate accepted business rules from authorized technical decisions, unresolved policy, feasibility risks and external prerequisites. Ask up to three high-impact questions while continuing independent planning.
 - Use the current logic and linked source documents as the coding baseline. Do not infer missing authorization, retention, expiry, fallback or numeric targets from convenience.
+- For a scope governed by the end-to-end lifecycle, verify that `G1_SRS_LOGIC` and `G2_ARCHITECTURE_CONTRACTS` pass or explicitly permit the named slice. Planning may expose and sequence blocked work, but do not call a slice coding-ready while either prerequisite is missing, blocked, not applicable or conditional for another slice.
 
 ## Plan slices and dependencies
 
@@ -39,5 +40,6 @@ Use [implementation-plan.md](assets/implementation-plan.md). Preserve requested 
 
 - Provide the dependency order, task register, critical risks/decisions, verification/release sequence and independent work. Keep planned, active, implemented, parked, verified and blocked states separate; never mark a planned test passed. Update stable capability status and plan links in `PROJECT_LOGIC.md` without copying session detail into it.
 - When project-document maintenance is requested, update the authoritative plan and link it from `PROJECT_LOGIC.md`. Create or refresh sibling `WORK_PROGRESS.md` for the active implementation slice with objective, logic revision/IDs, branch/commit/dirty state, inputs/outputs being changed, blockers, last verified checkpoint and the first exact next action. Supply logic/design/contract/NFR revisions, task/rule IDs, known code locations and test expectations to the coding harness. Do not place completed history in the active file.
+- Record `G3_PLAN_TEST_STRATEGY` in the delivery-gate table with scope, plan/test-strategy revisions, dependencies, applicable suite and release gates, blockers, owner and next gate. Use `PASS` only when the named slice can be implemented and verified without guessing. Use `CONDITIONAL` only for explicitly listed independent slices; otherwise use `BLOCKED`. G3 itself cannot be `NOT_APPLICABLE`. Put the current gate and exact next action in `WORK_PROGRESS.md`.
 - If the baseline changes, map the changed rules to tasks and acceptance cases and replan affected dependencies. Preserve history and superseded tasks rather than silently changing scope.
 - State readiness for the named next activity with scoped blockers. Check specialist skill availability before invoking another workflow. Do not implement code, install tools, run experiments or deploy unless separately requested.

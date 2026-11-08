@@ -28,6 +28,7 @@ Read [release-gates.md](references/release-gates.md). For every applicable gate 
 ## Decide without weakening mandatory controls
 
 - Use gate outcomes PASS, FAIL, UNKNOWN, NOT YET DUE or NOT APPLICABLE with evidence/rationale. NOT YET DUE is only for a later stage; UNKNOWN/FAIL on a gate required now blocks that stage.
+- Record the overall exact-candidate decision as `G5_EXACT_CANDIDATE` in project logic. Map it to pass only when the immutable candidate identity and every gate required for the present stage pass. Any `UNKNOWN/FAIL`, stale or mismatched evidence, skipped required suite, absent pipeline dependency or unit-only evidence keeps G5 blocked. G5 itself cannot be not applicable; an optional specialist suite may be not applicable only with a concrete architecture-based reason.
 - State READY FOR [stage] only when all applicable gates required for that stage pass and authorized governance requirements are met. Otherwise state NOT READY with exact blockers; separately list independent preparation that can proceed.
 - Keep nonblocking recommendations distinct from blockers. For documented risk exceptions, record authorized owner, scope, justification, expiry/revisit and residual exposure. Do not silently waive the user's mandatory passing CI or smoke gates; a change to that policy needs explicit source authority.
 - Do not turn hypothetical risks or a preferred architecture pattern into new release obligations. Do not claim blanket compliance, future capacity, model quality or successful recovery from design descriptions alone.

@@ -10,6 +10,7 @@ Establish a small runnable base whose contracts and checks support the accepted 
 ## Inspect and select the minimal scaffold
 
 - Read applicable instructions, PROJECT_LOGIC.md, accepted requirements/design/NFRs, testing policy and current repository/manifests/tests/CI before writing. Identify target component, delivery mode and constraints; record missing business behavior rather than inventing it.
+- Check `G1_SRS_LOGIC` before adding domain behavior. If G1 is missing or blocked, an explicitly requested neutral scaffold may include package layout, configuration/startup behavior, tooling and a CI skeleton, but no inferred domain decisions, fabricated schemas, fake success endpoints, placeholder predictions or tests that bless an unanswered rule. Accepted domain examples require G1 to pass or explicitly permit the exact slice.
 - Preserve user edits and existing packaging, language, lockfiles and layout. An ordinary backend or analysis does not automatically need a model, vector store, queue, Docker or Kubernetes.
 - For a new Python project, select supported runtime/build/package/dependency tools consistent with the requirements; pin or lock reproducibly using the chosen tools. Verify current primary documentation before relying on version-specific configuration or actions.
 - Make routine reversible setup choices within scope. Ask only consequential missing questions and continue independent work. Do not overwrite populated projects, replace tools wholesale or execute arbitrary repository scripts without inspecting them.

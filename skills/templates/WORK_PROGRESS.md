@@ -9,6 +9,7 @@ This is a transient resume file. Keep only current active or blocked work. Durab
 
 - Work item ID and objective: [ID; one bounded outcome]
 - Current phase/status: [discovery / requirements / design / implementation / testing / release / blocked]
+- Current delivery gate: [G0–G7; outcome; exact permitted slice; evidence link; next gate]
 - Logic path, revision and applicable IDs: [PROJECT_LOGIC.md; revision; rule/process/input/output IDs]
 - Branch/worktree and last known commit: [values]
 - Dirty or uncommitted state: [exact files and whether changes are saved]

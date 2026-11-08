@@ -13,6 +13,23 @@ Status: draft template, not accepted requirements. Replace placeholders with evi
 
 Keep these dimensions separate. `implemented` means code exists; it does not mean tests, CI, deployment, or production verification passed. An `active` row points to the active-work file for transient details.
 
+## Delivery stage gates
+
+Follow the repository end-to-end lifecycle. A gate is `PASS`, `CONDITIONAL`, or `BLOCKED`; `NOT_APPLICABLE` is allowed only for a reasoned optional specialist check, not for G0–G7 themselves. A conditional gate must name every independent slice it permits. Missing gates block the affected next stage.
+
+| Gate ID | Scope / permitted slices | Outcome | Required evidence and revision | Blockers / affected IDs | Owner and next gate |
+|---|---|---|---|---|---|
+| `G0_CONTEXT_BOUNDARY` | [Component] | [Status] | [Repository/current-state evidence] | [IDs or none] | [Owner/G1] |
+| `G1_SRS_LOGIC` | [Process slices] | [Status] | [SRS coverage, accepted decisions, logic revision] | [Q/rule/process IDs] | [Owner/G2] |
+| `G2_ARCHITECTURE_CONTRACTS` | [Slices] | [Status] | [Architecture, contract, NFR and risk revisions] | [IDs] | [Owner/G3] |
+| `G3_PLAN_TEST_STRATEGY` | [Slices] | [Status] | [Plan and test-strategy revisions] | [IDs] | [Owner/G4] |
+| `G4_IMPLEMENT_LOCAL` | [Candidate scope] | [Status] | [Code revision and local checks] | [Defects/limits] | [Owner/G5] |
+| `G5_EXACT_CANDIDATE` | [Source/artifact identity] | [Status] | [CI unit plus applicable suite reports] | [Missing/failed/stale gates] | [Owner/G6] |
+| `G6_RELEASE_VERIFY` | [Environment/candidate] | [Status] | [Readiness, smoke, deployment and rollback evidence] | [Release blockers] | [Owner/G7] |
+| `G7_OPERATE_LEARN` | [Deployed identity/population] | [Status] | [Telemetry integrity and outcome evidence] | [Unknowns/incidents] | [Owner/re-entry gate] |
+
+Before domain coding, require G1, G2 and G3 to pass or explicitly permit the exact slice. Unit tests alone do not pass G5. Update this table when a dependency-impact change reopens an earlier gate.
+
 ## Scope, users, and sources
 
 - Purpose, user decisions, and business outcomes: [values]

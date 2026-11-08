@@ -63,6 +63,15 @@ Start new files from [the project-logic template](skills/templates/PROJECT_LOGIC
 - Keep the authoritative architecture linked from the target project's logic index. Carry both revisions and relevant rule/component/contract IDs into implementation; distinguish authorized technical choices from unaccepted business changes. Respect project governance without requiring approval for every reversible technical detail.
 - Link the authoritative NFR/quality baseline from project logic and carry its revision, accepted constraints, measurement contracts and open decisions into design/coding/testing. Do not silently change targets, denominators, exclusions, quality or fallback policies to claim a pass.
 
+## End-to-end delivery gates
+
+- Follow [the end-to-end project lifecycle](docs/END_TO_END_PROJECT_LIFECYCLE.md) for new products, consequential features and productionization. Record `G0_CONTEXT_BOUNDARY` through `G7_OPERATE_LEARN` in the target component's project logic with scope, outcome, evidence, blockers, owner and next gate.
+- Before domain coding for an affected slice, require `G1_SRS_LOGIC`, `G2_ARCHITECTURE_CONTRACTS` and `G3_PLAN_TEST_STRATEGY` to be `PASS`, or `CONDITIONAL` with that exact independent slice listed. A missing, `BLOCKED` or `NOT_APPLICABLE` prerequisite blocks domain behavior. Continue documentation, discovery and unrelated ready slices.
+- A requested neutral scaffold may precede G1, but keep it free of inferred business behavior, fabricated contracts, fake success endpoints and placeholder model results. Do not let scaffold tests silently bless unanswered requirements.
+- At `G4_IMPLEMENT_LOCAL`, run thorough relevant local checks and record actual results. At `G5_EXACT_CANDIDATE`, require the exact source/artifact identity, mandatory CI pytest unit tests for Python and every applicable integration, contract, regression, security, data/model and other planned gate. Unit success alone never permits deployment.
+- At G6, require candidate-specific readiness, safe pre-promotion smoke, immutable deployment identity, rollback readiness and post-rollout smoke. At G7, require trustworthy deployed-identity and outcome evidence before marking `production_verified`.
+- Keep the current delivery gate and exact next action in `WORK_PROGRESS.md`. Reopen the earliest affected gate when an accepted rule, contract, NFR, dependency, schema, event, model, prompt, index or risk decision changes.
+
 ## Apply software quality to backend and DS work
 
 - Preserve clear interfaces and business/transport/persistence boundaries. Validate external input and enforce authorization independently of model output.

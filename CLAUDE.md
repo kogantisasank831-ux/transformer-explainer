@@ -16,4 +16,6 @@ Different workflows maintain different evidence: requirements and SRS validation
 
 Select an available workflow from [skills/README.md](skills/README.md); read its `SKILL.md` and only relevant references. Scope workflows to the requested backend, native or data science component and apply ML concerns only where relevant. Follow the shared local/CI/server test policy in AGENTS.md; diagnostic or smoke success does not waive candidate gates or authorize deployment.
 
+For a new product, consequential feature or productionization task, follow [the end-to-end lifecycle](docs/END_TO_END_PROJECT_LIFECYCLE.md). Record the current G0–G7 gate in project logic and progress. Do not implement domain behavior for an affected slice until `G1_SRS_LOGIC`, `G2_ARCHITECTURE_CONTRACTS` and `G3_PLAN_TEST_STRATEGY` pass or explicitly permit that named independent slice. At release, require `G5_EXACT_CANDIDATE`; unit tests alone, stale evidence or smoke alone cannot permit deployment.
+
 The complete registry contains 91 workflows. Load only what the task needs rather than copying skill instructions into this file.

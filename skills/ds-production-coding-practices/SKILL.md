@@ -11,6 +11,8 @@ Read the target component's agent instructions, package/runtime configuration, a
 
 Resolve only material blockers for the affected behavior; continue independent work. Distinguish implementation defects from unresolved business decisions and proposed policy. Do not invent missing authorization, retention, fallback, quality or retry rules. Use existing accepted contracts for small well-specified changes without demanding a new SRS.
 
+For a new product, consequential feature or other scope governed by the end-to-end lifecycle, require `G1_SRS_LOGIC`, `G2_ARCHITECTURE_CONTRACTS` and `G3_PLAN_TEST_STRATEGY` in the project-logic gate table. Each must be `PASS` or `CONDITIONAL` with the exact affected slice listed. A missing, `BLOCKED` or `NOT_APPLICABLE` prerequisite blocks domain behavior. Continue documentation, investigation, neutral scaffolding and unrelated permitted slices. For an urgent repair, record its accepted behavior, bounded authority and gate evidence rather than silently bypassing the baseline.
+
 ## Implement a bounded vertical change
 
 1. Map the requested behavior to rules, inputs, outputs, side effects and failure cases. Inspect all affected callers, persistence and public contracts. Identify relevant checks before editing. Keep unrelated cleanup outside the change.
@@ -25,6 +27,8 @@ Use [implementation-record.md](assets/implementation-record.md) for a substantia
 ## Verify and hand off
 
 Run proportionate relevant checks using the project's runner: pytest for Python, native tools elsewhere. Use behavior-based cases and failure paths, not assertions that mirror private implementation. Report command, environment/revision, results, skips and limitations; unavailable tooling or unexecuted checks remain unverified. Do not weaken tests or targets to obtain green results.
+
+After thorough relevant local checks, record `G4_IMPLEMENT_LOCAL` for the exact slice and code revision, with actual results, failures/skips, code-review status and remaining applicable gates. A local pass does not establish CI, release or production success.
 
 Retain the shared release policy when preparing a deployable change: thorough relevant local checks, mandatory candidate-matched pytest CI gates for Python (native equivalent elsewhere), safe candidate/server smoke before promotion and post-deployment verification. Failed, missing or skipped required gates block their stage. Local checks and documentation do not establish remote CI success or authorize deployment.
 
