@@ -107,7 +107,10 @@ Use this collection for data scientists building ordinary backend services, anal
 | `ds-ai-security-adversarial-testing` | Authorized AI threat scenarios, impact-based adversarial harnesses, prompt injection and poisoning, output/tool/tenant controls, resource abuse, mitigation verification, regression, and residual risk. | [SKILL.md](ds-ai-security-adversarial-testing/SKILL.md) |
 | `ds-token-context-inference-cost-control` | End-to-end AI unit economics, token and billing reconciliation, context allocation and compaction, caching and routing, budget enforcement, quality-cost evaluation, allocation, and anomalies. | [SKILL.md](ds-token-context-inference-cost-control/SKILL.md) |
 
-These eighty-nine skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the final batch is 90–91. Add registry rows only when the corresponding skill is created and validated.
+| `ds-ai-production-monitoring` | Exact deployed lineage, telemetry integrity, service and dependency health, production quality and drift, RAG and agent outcomes, safety and cost signals, alerts, feedback, and response. | [SKILL.md](ds-ai-production-monitoring/SKILL.md) |
+| `ds-srs-gap-analysis-business-process-validation` | SRS quality and traceability, end-to-end process and state validation, unanswered and contradictory decisions, question ownership and blocking status, stakeholder walkthrough, and accepted logic handoff. | [SKILL.md](ds-srs-gap-analysis-business-process-validation/SKILL.md) |
+
+These ninety-one skills are implemented. The complete catalog and current status are recorded in [CATALOG.md](CATALOG.md). Maintain each package independently and update the registry only after validation.
 
 ## Use a skill
 
@@ -164,6 +167,8 @@ Catalog entries 75–79 cover supported browser/device behavior, user and produc
 Catalog entries 80–84 cover verified service retirement, ML data and feature correctness, training reproducibility, contextual model release evaluation, and measured inference optimization. Discover hidden consumers before staged shutdown, preserve point-in-time data semantics, capture complete immutable run lineage, bind independent gates to exact model artifacts, and tune serving from representative queue and GPU evidence. Quiet dashboards, inferred schemas, seeds, aggregate scores, theoretical capacity and copied engine settings remain distinct from verified outcomes.
 
 Catalog entries 85–89 cover prompt and structured-output contracts, traceable RAG, recoverable agent workflows, impact-based AI adversarial testing, and end-to-end token/context cost control. Keep generated and retrieved content untrusted, enforce semantics and authority in code, preserve corpus/workflow/cost identities, bound retries and side effects, and compare exact candidates on representative quality, security, reliability and unit economics. Schema validity, citations, agent narratives, payload-list passes, token estimates and lower averages remain distinct from verified outcomes.
+
+Catalog entries 90–91 complete the collection with production AI monitoring and SRS gap/business-process validation. Bind live evidence to exact deployed identities, treat missing telemetry as unknown, join delayed outcomes, and connect alerts to tested response. Before implementation, reconstruct complete processes and states, expose every material unanswered decision or contradiction, record accountable acceptance, and transfer effective rules into the target `PROJECT_LOGIC.md`. Dashboards, meetings, answers and polished diagrams remain distinct from verified monitoring, accepted logic and coding readiness.
 
 ## Required testing and release behavior
 

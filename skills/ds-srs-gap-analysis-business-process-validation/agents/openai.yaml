@@ -1,0 +1,4 @@
+interface:
+  display_name: "SRS Gap Analysis and Business Process Validation"
+  short_description: "Expose SRS gaps and establish accepted project logic"
+  default_prompt: "Use $ds-srs-gap-analysis-business-process-validation for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

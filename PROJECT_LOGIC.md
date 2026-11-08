@@ -53,6 +53,8 @@ Last reviewed: 2026-11-08. Scope: repository navigation and the shared engineeri
 
 | TOOLKIT-027 | Implement catalog entries 85–89 as distinct prompt/structured-output, RAG, agent-reliability, AI-adversarial-security, and token/context/inference-cost workflows. Preserve exact prompt/model/schema/corpus/workflow identities, untrusted content boundaries, deterministic authority and impact oracles, bounded side effects and budgets, component-level evaluation, and complete quality-aware unit economics; keep valid syntax, citations, fluent traces, payload-list passes and estimates distinct from proof. | Implemented workflow packages in the requested cadence, 2026-11-08. | Metadata/resource/link checks and isolated executable scenarios; no production prompt/model release, live corpus reindex, consequential agent action, production adversarial attack, provider billing change or inference rollout performed while creating the packages. |
 
+| TOOLKIT-028 | Complete the catalog with AI production monitoring and SRS-gap/business-process-validation workflows. Bind production signals to exact deployed identities, delayed outcomes, telemetry integrity and tested response; reconstruct process/state/data/authority/failure logic, expose neutral one-decision questions and contradictions, gate affected coding slices, and transfer only accepted answers into the target `PROJECT_LOGIC.md`. | Implemented final workflow packages, 2026-11-08. | Metadata/resource/link checks and isolated executable scenarios; no production telemetry mutation, paging change, live rollback, stakeholder acceptance, application implementation or deployment performed while creating the packages. |
+
 ## Workflow and outputs
 
 1. Identify the target component and read its current contracts and project logic.
@@ -63,7 +65,7 @@ Last reviewed: 2026-11-08. Scope: repository navigation and the shared engineeri
 6. Before coding, load the applicable logic revision and rule IDs, check critical open decisions and conflicts, and derive the implementation's verification cases.
 7. Verify the change, update logic/code/test links together, update the skill registry if needed, and report actual publication and validation status.
 
-Current available workflows: the first eighty-nine catalog entries, from requirements analysis through token, context, and inference cost control. The catalog and registry identify their boundaries. Remaining AI production monitoring and SRS gap-analysis workflows remain planned. Test Strategy defines verification scope and gates; it does not implement all suites or establish a pass. Project Setup may create a real scoped CI test job, while Production Readiness Review assesses release evidence; neither means that this repository now has a generic product deployment pipeline.
+Current available workflows: all ninety-one catalog entries, from requirements analysis through SRS gap analysis and business process validation. The catalog and registry identify their boundaries. No catalog entries remain planned; future work is maintenance or explicitly approved catalog evolution. Test Strategy defines verification scope and gates; it does not implement all suites or establish a pass. Project Setup may create a real scoped CI test job, while Production Readiness Review assesses release evidence; neither means that this repository now has a generic product deployment pipeline.
 
 ## Keep each product's logic local
 
@@ -78,5 +80,5 @@ Harness contract: load the target logic baseline before implementation, select r
 ## Open decisions and limits
 
 - Application-specific rules for the existing components have not been reverse-engineered in this task. Their deeper logic remains unverified here.
-- The first eighty-nine catalog skills are available. The final batch is 90–91 and contains the two remaining skills. Maintain actual available/planned status rather than treating the backlog as installed.
+- All ninety-one catalog skills are available. Maintain actual validation and availability status when packages change.
 - Organizational file layout is implemented for review; it is not evidence of product approval or production readiness.

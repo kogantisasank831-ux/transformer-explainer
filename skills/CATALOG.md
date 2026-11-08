@@ -2,7 +2,7 @@
 
 Scope: backend and data science products; apply specialist profiles only where relevant. This tracks the agreed 90 entries plus the added SRS gap-analysis workflow.
 
-Progress: **89 of 91 available; 2 planned.** Create subsequent skills in batches of five, keeping independent packages and per-skill validation. Final batch: **90–91**. It contains the two remaining skills. Planned entries are not installed workflows.
+Progress: **91 of 91 available; 0 planned.** All catalog entries are implemented as independent packages with per-skill validation.
 
 Use the registry in [README.md](README.md) for scopes and the shared testing/release policy. Each available package contains its own SKILL.md, on-demand reference and output template. Update this table and the registry only after implementation and validation.
 
@@ -97,5 +97,5 @@ Use the registry in [README.md](README.md) for scopes and the shared testing/rel
 | 87 | Agent workflow reliability | Available | [ds-agent-workflow-reliability](ds-agent-workflow-reliability/SKILL.md) |
 | 88 | AI security and adversarial testing | Available | [ds-ai-security-adversarial-testing](ds-ai-security-adversarial-testing/SKILL.md) |
 | 89 | Token, context, and inference cost control | Available | [ds-token-context-inference-cost-control](ds-token-context-inference-cost-control/SKILL.md) |
-| 90 | AI production monitoring | Planned | — |
-| 91 | SRS gap analysis and business process validation | Planned | — |
+| 90 | AI production monitoring | Available | [ds-ai-production-monitoring](ds-ai-production-monitoring/SKILL.md) |
+| 91 | SRS gap analysis and business process validation | Available | [ds-srs-gap-analysis-business-process-validation](ds-srs-gap-analysis-business-process-validation/SKILL.md) |
