@@ -9,7 +9,7 @@ Create a plan a coding harness can execute and verify without guessing business 
 
 ## Establish the baseline and scope
 
-- Read applicable instructions, PROJECT_LOGIC.md, accepted requirements, NFRs, contracts, architecture/ADRs and relevant repository/review evidence. Record revisions and intended delivery stage.
+- Read applicable instructions, `PROJECT_LOGIC.md`, sibling `WORK_PROGRESS.md` when present, accepted requirements, NFRs, contracts, architecture/ADRs and relevant repository/review evidence. Record revisions and intended delivery stage. Verify any recorded branch/commit and distinguish a resumable active item from stale or already completed work.
 - Identify the requested outcome, existing behavior, constraints and dependencies. Preserve established code boundaries and test tools; do not plan a rewrite merely for style.
 - Separate accepted business rules from authorized technical decisions, unresolved policy, feasibility risks and external prerequisites. Ask up to three high-impact questions while continuing independent planning.
 - Use the current logic and linked source documents as the coding baseline. Do not infer missing authorization, retention, expiry, fallback or numeric targets from convenience.
@@ -37,7 +37,7 @@ Read [planning-checks.md](references/planning-checks.md). Break the change into 
 
 Use [implementation-plan.md](assets/implementation-plan.md). Preserve requested scope and a clear definition of done per slice; mark estimates as estimates with assumptions only when requested or supported. Do not invent deadlines, staffing or business acceptance.
 
-- Provide the dependency order, task register, critical risks/decisions, verification/release sequence and independent work. Keep planned, in-progress, verified and blocked states separate; never mark a planned test passed.
-- When project-document maintenance is requested, update the authoritative plan and link it from PROJECT_LOGIC.md. Supply logic/design/contract/NFR revisions, task/rule IDs, known code locations and test expectations to the coding harness.
+- Provide the dependency order, task register, critical risks/decisions, verification/release sequence and independent work. Keep planned, active, implemented, parked, verified and blocked states separate; never mark a planned test passed. Update stable capability status and plan links in `PROJECT_LOGIC.md` without copying session detail into it.
+- When project-document maintenance is requested, update the authoritative plan and link it from `PROJECT_LOGIC.md`. Create or refresh sibling `WORK_PROGRESS.md` for the active implementation slice with objective, logic revision/IDs, branch/commit/dirty state, inputs/outputs being changed, blockers, last verified checkpoint and the first exact next action. Supply logic/design/contract/NFR revisions, task/rule IDs, known code locations and test expectations to the coding harness. Do not place completed history in the active file.
 - If the baseline changes, map the changed rules to tasks and acceptance cases and replan affected dependencies. Preserve history and superseded tasks rather than silently changing scope.
 - State readiness for the named next activity with scoped blockers. Check specialist skill availability before invoking another workflow. Do not implement code, install tools, run experiments or deploy unless separately requested.

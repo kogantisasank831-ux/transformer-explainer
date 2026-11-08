@@ -55,6 +55,8 @@ Last reviewed: 2026-11-08. Scope: repository navigation and the shared engineeri
 
 | TOOLKIT-028 | Complete the catalog with AI production monitoring and SRS-gap/business-process-validation workflows. Bind production signals to exact deployed identities, delayed outcomes, telemetry integrity and tested response; reconstruct process/state/data/authority/failure logic, expose neutral one-decision questions and contradictions, gate affected coding slices, and transfer only accepted answers into the target `PROJECT_LOGIC.md`. | Implemented final workflow packages, 2026-11-08. | Metadata/resource/link checks and isolated executable scenarios; no production telemetry mutation, paging change, live rollback, stakeholder acceptance, application implementation or deployment performed while creating the packages. |
 
+| TOOLKIT-029 | Separate durable project logic from transient active-work handoff. Keep accepted processes, input/output contracts, independent acceptance/implementation/verification status, code/test traceability, parked restart conditions and dependency-impact notes in component `PROJECT_LOGIC.md`; keep only the current resume point, branch/commit/dirty state, in-flight files/environment, actual checks, blockers and exact next action in sibling `WORK_PROGRESS.md`. Different workflows update their evidence boundary and completed/parked details are consolidated before active history is cleared. | Confirmed user requirement and implemented documentation/skill protocol, 2026-11-08. | Templates, routing guidance, responsibility checks and isolated lifecycle scenarios; no application-specific business logic was inferred or implementation status changed by this toolkit update. |
+
 ## Workflow and outputs
 
 1. Identify the target component and read its current contracts and project logic.
@@ -67,9 +69,15 @@ Last reviewed: 2026-11-08. Scope: repository navigation and the shared engineeri
 
 Current available workflows: all ninety-one catalog entries, from requirements analysis through SRS gap analysis and business process validation. The catalog and registry identify their boundaries. No catalog entries remain planned; future work is maintenance or explicitly approved catalog evolution. Test Strategy defines verification scope and gates; it does not implement all suites or establish a pass. Project Setup may create a real scoped CI test job, while Production Readiness Review assesses release evidence; neither means that this repository now has a generic product deployment pipeline.
 
+## Stable logic and active-work handoff
+
+For each component, keep durable behavior in `PROJECT_LOGIC.md` and only resumable active state in sibling `WORK_PROGRESS.md`. Requirements/SRS analysis may establish processes and accepted input/output contracts before code. Repository assessment may add observed code/database contracts with their evidence status. Planning opens the active work item. Coding and tests maintain the checkpoint, then update final implementation and verification status, traceability and future impact notes in project logic before clearing the active record.
+
+The status axes remain independent: acceptance (`proposed/accepted/rejected/unresolved/superseded`), implementation (`not_started/active/implemented/parked/superseded`) and verification/release (`unverified/tests_planned/locally_verified/ci_verified/released/production_verified`). The active file is not an archive and does not replace Git, issue tracking, test artifacts or decision records. See [the handoff decision](docs/decisions/0002-project-logic-and-active-work-handoff.md).
+
 ## Keep each product's logic local
 
-For a component-specific task, establish a `PROJECT_LOGIC.md` inside that component using [the template](skills/templates/PROJECT_LOGIC.md), or preserve its existing equivalent documentation and link it here. Keep its rules and decision records scoped to that product. Do not share one unqualified rule table across unrelated products.
+For a component-specific task, establish a `PROJECT_LOGIC.md` inside that component using [the template](skills/templates/PROJECT_LOGIC.md) and a sibling active file from [the progress template](skills/templates/WORK_PROGRESS.md), or preserve equivalent existing documentation and link it here. Keep its rules and decision records scoped to that product. Do not share one unqualified rule table across unrelated products.
 
 Use a linked SRS for full requirements, API/event schemas for interface details, and `docs/decisions/` for major choices and tradeoffs. This file remains the entry point, not a copy of every document. See [the layout decision](docs/decisions/0001-engineering-knowledge-layout.md).
 

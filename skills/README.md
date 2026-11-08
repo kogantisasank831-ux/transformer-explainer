@@ -174,16 +174,17 @@ Catalog entries 90–91 complete the collection with production AI monitoring an
 
 Follow [the shared testing/release policy](../docs/TESTING_AND_RELEASE_POLICY.md): thorough relevant local checks, mandatory pytest CI gates for Python deployment candidates, and basic server smoke checks before promotion and after deployment. The specialized testing, CI, CD, and deployment-execution workflows now carry this policy. Their presence is not a claim that a target application's pipeline, environment protections, or server checks already exist or have passed.
 
-## Keep three kinds of knowledge separate
+## Keep guidance, stable logic, and active work separate
 
 | File | Purpose |
 |---|---|
-| [AGENTS.md](../AGENTS.md) and [CLAUDE.md](../CLAUDE.md) | Tell assistants how to work and select skills. |
+| [AGENTS.md](../AGENTS.md) and [CLAUDE.md](../CLAUDE.md) | Tell assistants how to work, resume and select skills. |
 | `skills/<name>/SKILL.md` and linked resources | Supply reusable task procedures. |
-| [PROJECT_LOGIC.md](../PROJECT_LOGIC.md) and component-local equivalents | Describe current product rules, workflows, contracts, and open decisions. |
+| [PROJECT_LOGIC.md](../PROJECT_LOGIC.md) and component-local equivalents | Hold durable accepted rules, processes, I/O contracts, status, traceability and change-impact notes. |
+| [WORK_PROGRESS.md](../WORK_PROGRESS.md) and component-local equivalents | Hold only current active/blocked resume state, checks, blockers and exact next action. |
 | `docs/decisions/` inside the relevant project | Preserve why significant choices were made and what they supersede. |
 
-Start a project's living logic document from [PROJECT_LOGIC.md](templates/PROJECT_LOGIC.md). Use [ADR.md](templates/ADR.md) for decisions that deserve durable rationale. Split long documents by domain and retain a short index; do not duplicate full rules across files.
+Start from [the project-logic template](templates/PROJECT_LOGIC.md) and [the active-work template](templates/WORK_PROGRESS.md). Use [ADR.md](templates/ADR.md) for durable rationale. Split long logic by domain and retain a short index. On completion or parking, consolidate durable facts into project logic and clear old active detail; do not duplicate the same rule in both files.
 
 ## Carry reviewed SRS logic into implementation
 
