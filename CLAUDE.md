@@ -8,4 +8,4 @@ Before coding, load the current logic revision, applicable rules/contracts and u
 
 Keep review/modeling/planning-only tasks within scope. Keep test oracles independent and report actual execution, failed/skipped gates and evidence limits. Follow the shared local/CI/server test policy in AGENTS.md; diagnostic or smoke success does not waive required candidate gates or authorize deployment.
 
-Track actual availability and the next five-skill batch in [CATALOG.md](skills/CATALOG.md). The registry now covers requirements through accessibility verification (entries 1–74); load only what the task needs rather than copying all skill instructions into this file.
+Track actual availability and the next five-skill batch in [CATALOG.md](skills/CATALOG.md). The registry now covers requirements through licensing and compliance assessment (entries 1–79); load only what the task needs rather than copying all skill instructions into this file.

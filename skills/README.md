@@ -89,7 +89,13 @@ Use this collection for data scientists building ordinary backend services, anal
 | `ds-frontend-engineering-quality` | Component and state design, API and async correctness, failure states, performance, security boundaries, testing, and measurable release quality. | [SKILL.md](ds-frontend-engineering-quality/SKILL.md) |
 | `ds-accessibility-verification` | Accepted accessibility scope, semantic implementation, keyboard/focus and visual checks, assistive-technology journeys, findings, and regression evidence. | [SKILL.md](ds-accessibility-verification/SKILL.md) |
 
-These seventy-four skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 75–79. Add registry rows only when the corresponding skill is created and validated.
+| `ds-browser-device-compatibility` | Supported environment matrix, standards and fallbacks, responsive/input/API behavior, risk-based automation and real-device evidence, and defect triage. | [SKILL.md](ds-browser-device-compatibility/SKILL.md) |
+| `ds-ux-product-acceptance` | User needs and journeys, research and task evidence, outcome-based acceptance criteria, exact-candidate UAT, defects, and accountable acceptance. | [SKILL.md](ds-ux-product-acceptance/SKILL.md) |
+| `ds-product-analytics-experimentation` | Decision-linked metric and event contracts, privacy-safe instrumentation, experiment assignment/exposure, quality diagnostics, analysis, and governed decisions. | [SKILL.md](ds-product-analytics-experimentation/SKILL.md) |
+| `ds-technical-documentation` | Audience and task-oriented documentation architecture, authoritative references and examples, versioning and ownership, executable validation, and maintenance. | [SKILL.md](ds-technical-documentation/SKILL.md) |
+| `ds-licensing-compliance-assessment` | Component and obligation inventory, provenance and SPDX normalization, policy and legal review, artifact-level notices and source obligations, exceptions, and evidence-based release assessment. | [SKILL.md](ds-licensing-compliance-assessment/SKILL.md) |
+
+These seventy-nine skills are implemented. Track all **91 entries** and their actual status in [CATALOG.md](CATALOG.md). Subsequent creation proceeds in batches of five; the next is 80–84. Add registry rows only when the corresponding skill is created and validated.
 
 ## Use a skill
 
@@ -140,6 +146,8 @@ Catalog entries 60–64 cover deployment execution, Kubernetes operations, progr
 Catalog entries 65–69 cover observability, SLOs and alerting, resilience engineering, bounded fault experiments, and backup/disaster recovery. Correlate privacy-safe signals, define user-centered budgets and actionable pages, bound failure amplification, test one authorized hypothesis with safe aborts, and prove recovery by restoring and validating data and service behavior. Configuration, quiet alerts, surviving processes, completed experiments, replicas, and backup-job success remain distinct from verified outcomes.
 
 Catalog entries 70–74 cover incident response and learning, executable runbooks and operational transfer, measured cost/resource optimization, frontend engineering quality, and accessibility verification. Coordinate from user impact and preserved evidence, prove procedures with cold readers, reconcile cost to demand and quality guardrails, make asynchronous interfaces deterministic, and combine automated accessibility checks with manual and assistive-technology journeys. Meetings, documents, estimates, development builds, and automated scores remain distinct from accepted and verified outcomes.
+
+Catalog entries 75–79 cover supported browser/device behavior, user and product acceptance, trustworthy analytics and controlled experiments, task-oriented technical documentation, and licensing/compliance evidence. Define actual support and user populations, verify authoritative state and side effects, diagnose experiment data quality before causal decisions, execute documentation examples, and bind obligations to exact release artifacts. Compatibility metadata, demos, dashboards, page views, scans and top-level license files remain distinct from verified outcomes and accountable decisions.
 
 ## Required testing and release behavior
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX and Product Acceptance"
+  short_description: "Prove user and business outcomes before acceptance"
+  default_prompt: "Use $ds-ux-product-acceptance for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

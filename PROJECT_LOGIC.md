@@ -47,6 +47,8 @@ Last reviewed: 2026-11-08. Scope: repository navigation and the shared engineeri
 
 | TOOLKIT-024 | Implement catalog entries 70–74 as distinct incident/postmortem, runbook/handover, cost/resource, frontend-quality, and accessibility-verification workflows. Preserve impact and evidence boundaries, executable safe procedures, reconciled cost and quality guardrails, deterministic user-visible state, accepted conformance scope, and human verification; keep documents, estimates and automated scores distinct from accepted outcomes. | Implemented workflow packages in the requested cadence, 2026-11-08. | Metadata/resource/link checks and isolated executable scenarios; no live incident command, production mutation, commitment purchase, production rollout, or formal accessibility conformance audit performed while creating the packages. |
 
+| TOOLKIT-025 | Implement catalog entries 75–79 as distinct browser/device-compatibility, UX/product-acceptance, analytics/experimentation, technical-documentation, and licensing/compliance workflows. Preserve accepted support and user populations, authoritative state, privacy-safe prespecified metrics, executable versioned examples, complete artifact provenance, and accountable decisions; keep metadata, demos, dashboards and scans distinct from proof. | Implemented workflow packages in the requested cadence, 2026-11-08. | Metadata/resource/link checks and isolated executable scenarios; no production device-farm certification, formal user acceptance, live product experiment, public documentation release, or legal approval performed while creating the packages. |
+
 ## Workflow and outputs
 
 1. Identify the target component and read its current contracts and project logic.
@@ -57,7 +59,7 @@ Last reviewed: 2026-11-08. Scope: repository navigation and the shared engineeri
 6. Before coding, load the applicable logic revision and rule IDs, check critical open decisions and conflicts, and derive the implementation's verification cases.
 7. Verify the change, update logic/code/test links together, update the skill registry if needed, and report actual publication and validation status.
 
-Current available workflows: the first seventy-four catalog entries, from requirements analysis through accessibility verification. The catalog and registry identify their boundaries. Remaining browser/device compatibility, UX and product acceptance, product analytics, documentation, licensing/compliance, decommissioning, data and ML operations, and SRS gap-audit workflows remain planned. Test Strategy defines verification scope and gates; it does not implement all suites or establish a pass. Project Setup may create a real scoped CI test job, while Production Readiness Review assesses release evidence; neither means that this repository now has a generic product deployment pipeline.
+Current available workflows: the first seventy-nine catalog entries, from requirements analysis through licensing and compliance assessment. The catalog and registry identify their boundaries. Remaining service decommissioning, data and ML validation/reproducibility/evaluation/serving/GenAI operations, and SRS gap-audit workflows remain planned. Test Strategy defines verification scope and gates; it does not implement all suites or establish a pass. Project Setup may create a real scoped CI test job, while Production Readiness Review assesses release evidence; neither means that this repository now has a generic product deployment pipeline.
 
 ## Keep each product's logic local
 
@@ -72,5 +74,5 @@ Harness contract: load the target logic baseline before implementation, select r
 ## Open decisions and limits
 
 - Application-specific rules for the existing components have not been reverse-engineered in this task. Their deeper logic remains unverified here.
-- The first seventy-four catalog skills are available. Subsequent creation uses batches of five in catalog order; the next batch is 75–79. The final batch may be smaller. Maintain actual available/planned status rather than treating the backlog as installed.
+- The first seventy-nine catalog skills are available. Subsequent creation uses batches of five in catalog order; the next batch is 80–84. The final batch may be smaller. Maintain actual available/planned status rather than treating the backlog as installed.
 - Organizational file layout is implemented for review; it is not evidence of product approval or production readiness.

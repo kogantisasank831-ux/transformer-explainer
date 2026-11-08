@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Analytics and Experimentation"
+  short_description: "Build trustworthy metrics and controlled experiments"
+  default_prompt: "Use $ds-product-analytics-experimentation for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

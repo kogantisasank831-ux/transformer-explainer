@@ -1,0 +1,4 @@
+interface:
+  display_name: "Licensing and Compliance Assessment"
+  short_description: "Trace software data and model obligations to evidence"
+  default_prompt: "Use $ds-licensing-compliance-assessment for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."

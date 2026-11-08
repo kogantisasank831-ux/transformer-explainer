@@ -1,0 +1,4 @@
+interface:
+  display_name: "Technical Documentation"
+  short_description: "Create accurate task-oriented versioned documentation"
+  default_prompt: "Use $ds-technical-documentation for this scoped backend or data science task, grounded in accepted project logic and explicit verification evidence."
