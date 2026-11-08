@@ -63,6 +63,7 @@ The representative ticket-routing SRS begins at `G1_SRS_LOGIC=BLOCKED`. It canno
 - Production coding checks G1/G2/G3 before domain behavior and records local verification at G4.
 - Project setup may create only a neutral scaffold while G1 is blocked.
 - Production readiness records `G5_EXACT_CANDIDATE`; unit-only or stale evidence cannot pass it.
+- `.github/workflows/skills-validation.yml` runs the 91-package structural audit and all lifecycle policy scenarios for relevant pull requests and `main` changes; failures and zero collected tests remain blocking job failures.
 
 ## Practical limits
 
@@ -77,8 +78,9 @@ The representative ticket-routing SRS begins at `G1_SRS_LOGIC=BLOCKED`. It canno
 From the repository root, run:
 
 ```bash
+python -m pip install -r skills/validation/requirements.txt
 python -m pytest -q skills/validation/test_end_to_end_skill_validator.py
 python skills/validation/end_to_end_skill_validator.py --repo-root . --json
 ```
 
-The structural command expects all 91 portable skill packages in `skills/`. The behavioral suite is deterministic and does not call production systems.
+The structural command expects all 91 portable skill packages in `skills/`. The behavioral suite is deterministic and does not call production systems. The same commands are enforced by the skills lifecycle CI workflow.
