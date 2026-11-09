@@ -57,6 +57,22 @@
 | Combined PDF | 35 A4 pages, unencrypted |
 | Visual review | Cover, overview, all four section starts, code layout, tables, and final page reviewed |
 
+## Batch 5
+
+| Check | Result |
+|---|---|
+| Source sheets | 4 |
+| Approximate source words | 9,586 |
+| Python fenced blocks parsed | 3/3 |
+| Dependency-free Python blocks executed | 3/3 |
+| Behavior assertions | KV-cache memory, immutable release identity, and replica capacity passed |
+| Markdown code fences | Balanced in all sheets |
+| Required revision sections | Thirty-second revision, rapid Q&A, lead case, checklist, and primary references present in all sheets |
+| DOCX integrity | ZIP container test passed |
+| Combined PDF | 33 A4 pages, tagged, unencrypted |
+| PDF text extraction | 9,326 words extracted |
+| Visual review | Cover, overview, all four section starts, equations/code, representative dense pages, and final page reviewed |
+
 ## Content checks
 
 - Topic boundaries match the master index.
@@ -72,6 +88,10 @@
 - Framework coverage compares LangChain/LangGraph, Google ADK, OpenAI Agents SDK, LlamaIndex, Haystack, PydanticAI, Microsoft Agent Framework, CrewAI, Agno, Strands, DSPy, and LiteLLM.
 - NVIDIA coverage distinguishes Nemotron models, NeMo Framework/Guardrails, NIM, Relay, Helix, and Fabric, and records the official NeMo Agent Toolkit deprecation lifecycle.
 - Protocol coverage distinguishes MCP, A2A, service APIs, and events, with identity, authorization, idempotency, retries, backpressure, fault injection, observability, and release evaluation.
+- System-design coverage starts from requirements and scale, then covers data/control and serving planes, APIs, storage, caching, queues, consistency, multi-tenancy, security, release, and failure handling.
+- Inference coverage separates admission, queueing, prefill, decode, KV-cache memory, continuous batching, prefix caching, quantization, speculative decoding, parallelism, capacity, benchmarking, and autoscaling.
+- MLOps/LLMOps coverage records complete release identity across code, runtime, data, model, prompt, index, agent, evaluation, and deployment, with CI/CD/CT gates and progressive rollout/rollback.
+- Production monitoring coverage separates service, data, model, GenAI/RAG/agent behavior, safety, business outcome, cost, telemetry health, delayed labels, capacity, and actionable incident response.
 
 ## Known limits
 

@@ -10,12 +10,13 @@
 - Batch 2 completed: Deep Learning, NLP, Transformers, and LLM & Generative AI.
 - Batch 3 completed: Embeddings/Vector Search, Ingestion/Chunking/Indexing, RAG Architecture, and RAG Evaluation/Security/Production.
 - Batch 4 completed: Agent Fundamentals/Workflow Patterns, LangGraph, Agent Frameworks/Libraries, and Agent Protocols/Reliability/Security/Evaluation.
-- Markdown sources validated and combined PDF/DOCX editions generated for Batches 1–4.
-- Batch 1 through Batch 4 repository documentation prepared.
+- Batch 5 completed: AI/ML System Design, LLM Inference/Serving Optimization, MLOps/LLMOps Lifecycle, and AI Production Monitoring/Reliability/Cost/Capacity.
+- Markdown sources validated and combined PDF/DOCX editions generated for Batches 1–5.
+- Batch 1 through Batch 5 repository documentation prepared.
 
 ## Next logical batch
 
-AI production systems, including LLM inference and serving optimization, MLOps/LLMOps, AI system design, production monitoring, and cost/capacity planning.
+Data/distributed-compute engineering, AI security/privacy/governance, and lead-level product, technical-leadership, and project-deep-dive preparation.
 
 No next-batch implementation is active in this checkpoint.
 

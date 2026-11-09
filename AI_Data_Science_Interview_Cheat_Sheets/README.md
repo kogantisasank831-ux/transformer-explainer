@@ -12,7 +12,8 @@ The collection is organized in small batches so each topic can be revised indepe
 | Batch 2 — Deep Learning & GenAI | Deep Learning, NLP, Transformers, LLM & Generative AI | Complete |
 | Batch 3 — RAG & Search | Embeddings, ingestion/chunking, RAG architecture, evaluation/security/production | Complete |
 | Batch 4 — Agent Systems | Agent foundations, LangGraph, framework/library selection, MCP/A2A, reliability/security/evaluation | Complete |
-| Later batches | AI system design, LLM inference/optimization, MLOps, AI security, and technical leadership | Planned in `MASTER_INDEX.md` |
+| Batch 5 — Production AI Systems | AI/ML system design, LLM inference/serving, MLOps/LLMOps, monitoring, reliability, capacity, and cost | Complete |
+| Later batches | Distributed data/training, AI security/privacy/governance, and technical leadership | Planned in `MASTER_INDEX.md` |
 
 ## Directory map
 
@@ -34,11 +35,16 @@ AI_Data_Science_Interview_Cheat_Sheets/
 │   ├── 10_Document_Ingestion_Chunking_Indexing_Cheat_Sheet.md
 │   ├── 11_RAG_Architecture_Retrieval_Generation_Cheat_Sheet.md
 │   └── 12_RAG_Evaluation_Security_Production_Cheat_Sheet.md
-└── Batch_4_Agent_Systems/
+├── Batch_4_Agent_Systems/
     ├── 13_Agent_Fundamentals_Workflow_Patterns_Cheat_Sheet.md
     ├── 14_LangGraph_Deep_Dive_Interview_Cheat_Sheet.md
     ├── 15_Agent_Frameworks_Libraries_Comparison_Cheat_Sheet.md
     └── 16_Agent_Protocols_Reliability_Evaluation_Cheat_Sheet.md
+└── Batch_5_Production_AI/
+    ├── 17_AI_ML_System_Design_Production_Architecture_Cheat_Sheet.md
+    ├── 18_LLM_Inference_Serving_Optimization_Cheat_Sheet.md
+    ├── 19_MLOps_LLMOps_Deployment_Lifecycle_Cheat_Sheet.md
+    └── 20_AI_Production_Monitoring_Cost_Capacity_Cheat_Sheet.md
 ```
 
 ## Combined editions
@@ -49,6 +55,7 @@ AI_Data_Science_Interview_Cheat_Sheets/
 | Batch 2 | [Open PDF](https://chatgpt.com/library?file_id=libfile_ffa13e8692b88191aa2b5b614e8d7ce5&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_4a70b145fdb081919f581f98ff5a4c03&account_id=personal) |
 | Batch 3 | [Open PDF](https://chatgpt.com/library?file_id=libfile_9159089fb1148191beb29c5e6404b222&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_3f3029f06d488191aa351d989f9f2cc8&account_id=personal) |
 | Batch 4 | [Open PDF](https://chatgpt.com/library?file_id=libfile_7f5ef293a59881918c5e523700bde909&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_2ad72f04317481918904cbbe70f9799a&account_id=personal) |
+| Batch 5 | [Open PDF](https://chatgpt.com/library?file_id=libfile_aeac8e5885088191a732a17c7fec401b&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_b6a4129799688191983ff590463d42bc&account_id=personal) |
 
 ## How to use the sheets
 
