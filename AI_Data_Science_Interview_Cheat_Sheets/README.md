@@ -30,10 +30,10 @@ AI_Data_Science_Interview_Cheat_Sheets/
 │   ├── 07_Transformers_Interview_Cheat_Sheet.md
 │   └── 08_LLM_Generative_AI_Interview_Cheat_Sheet.md
 ├── Batch_3_RAG_Search/
-    ├── 09_Embeddings_Vector_Search_Interview_Cheat_Sheet.md
-    ├── 10_Document_Ingestion_Chunking_Indexing_Cheat_Sheet.md
-    ├── 11_RAG_Architecture_Retrieval_Generation_Cheat_Sheet.md
-    └── 12_RAG_Evaluation_Security_Production_Cheat_Sheet.md
+│   ├── 09_Embeddings_Vector_Search_Interview_Cheat_Sheet.md
+│   ├── 10_Document_Ingestion_Chunking_Indexing_Cheat_Sheet.md
+│   ├── 11_RAG_Architecture_Retrieval_Generation_Cheat_Sheet.md
+│   └── 12_RAG_Evaluation_Security_Production_Cheat_Sheet.md
 └── Batch_4_Agent_Systems/
     ├── 13_Agent_Fundamentals_Workflow_Patterns_Cheat_Sheet.md
     ├── 14_LangGraph_Deep_Dive_Interview_Cheat_Sheet.md
