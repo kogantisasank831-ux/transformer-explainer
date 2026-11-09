@@ -2,7 +2,7 @@
 
 **Documentation set:** AI and Data Science Interview Cheat Sheets  
 **Environment:** document generation and static checks in the project workspace  
-**Checked:** 9 November 2026
+**Checked:** 10 November 2026
 
 ## Batch 1
 
@@ -73,6 +73,21 @@
 | PDF text extraction | 9,326 words extracted |
 | Visual review | Cover, overview, all four section starts, equations/code, representative dense pages, and final page reviewed |
 
+## Batch 6
+
+| Check | Result |
+|---|---|
+| Source sheets | 4 |
+| Approximate source words | 11,683 |
+| Python fenced blocks parsed and executed | 2/2 |
+| Behavior assertions | Partition sizing and security-scenario validation passed |
+| Markdown code fences | Balanced in all sheets |
+| Required revision sections | Thirty-second revision, rapid Q&A, lead case, checklist, and primary references present in all sheets |
+| DOCX integrity | ZIP container test passed |
+| Combined PDF | 33 A4 pages, tagged, unencrypted |
+| PDF text extraction | 11,420 words extracted |
+| Visual review | Cover, overview, all four section starts, code layout, representative dense pages, and final page reviewed |
+
 ## Content checks
 
 - Topic boundaries match the master index.
@@ -92,6 +107,10 @@
 - Inference coverage separates admission, queueing, prefill, decode, KV-cache memory, continuous batching, prefix caching, quantization, speculative decoding, parallelism, capacity, benchmarking, and autoscaling.
 - MLOps/LLMOps coverage records complete release identity across code, runtime, data, model, prompt, index, agent, evaluation, and deployment, with CI/CD/CT gates and progressive rollout/rollback.
 - Production monitoring coverage separates service, data, model, GenAI/RAG/agent behavior, safety, business outcome, cost, telemetry health, delayed labels, capacity, and actionable incident response.
+- Distributed-compute coverage distinguishes local versus distributed choices, partitions/stages/shuffles, skew, files/table formats, idempotent pipelines, backfills, streaming event time/watermarks, Kafka delivery semantics, and distributed training strategies.
+- Security/governance coverage threat-models the application, AI component, data, and action planes; covers prompt injection, RAG/agent/tool boundaries, privacy, supply chain, resource abuse, red-team evidence, NIST/OWASP/MITRE/ISO awareness, and regulation verification.
+- Lead-level coverage connects problem framing, metric trees, uncertainty reduction, roadmaps, build/buy/self-host decisions, architecture review, delegation, mentoring, rollout, incidents, fairness, and executive communication.
+- Project-defense coverage includes portfolio selection, 30-second/two-minute/20-minute explanations, ownership, leakage, evaluation, impact attribution, production/security follow-ups, behavioral stories, mock cases, and a scoring rubric.
 
 ## Known limits
 

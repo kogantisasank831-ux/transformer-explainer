@@ -13,7 +13,8 @@ The collection is organized in small batches so each topic can be revised indepe
 | Batch 3 — RAG & Search | Embeddings, ingestion/chunking, RAG architecture, evaluation/security/production | Complete |
 | Batch 4 — Agent Systems | Agent foundations, LangGraph, framework/library selection, MCP/A2A, reliability/security/evaluation | Complete |
 | Batch 5 — Production AI Systems | AI/ML system design, LLM inference/serving, MLOps/LLMOps, monitoring, reliability, capacity, and cost | Complete |
-| Later batches | Distributed data/training, AI security/privacy/governance, and technical leadership | Planned in `MASTER_INDEX.md` |
+| Batch 6 — Data, Security & Leadership | Distributed data/training, AI security/privacy/governance, technical leadership/product thinking, and project/behavioral preparation | Complete |
+| Later batches | Experimentation/causal inference, feature engineering/data validation, forecasting, and recommendation/ranking | Planned in `MASTER_INDEX.md` |
 
 ## Directory map
 
@@ -40,11 +41,16 @@ AI_Data_Science_Interview_Cheat_Sheets/
 │   ├── 14_LangGraph_Deep_Dive_Interview_Cheat_Sheet.md
 │   ├── 15_Agent_Frameworks_Libraries_Comparison_Cheat_Sheet.md
 │   └── 16_Agent_Protocols_Reliability_Evaluation_Cheat_Sheet.md
-└── Batch_5_Production_AI/
-    ├── 17_AI_ML_System_Design_Production_Architecture_Cheat_Sheet.md
-    ├── 18_LLM_Inference_Serving_Optimization_Cheat_Sheet.md
-    ├── 19_MLOps_LLMOps_Deployment_Lifecycle_Cheat_Sheet.md
-    └── 20_AI_Production_Monitoring_Cost_Capacity_Cheat_Sheet.md
+├── Batch_5_Production_AI/
+│   ├── 17_AI_ML_System_Design_Production_Architecture_Cheat_Sheet.md
+│   ├── 18_LLM_Inference_Serving_Optimization_Cheat_Sheet.md
+│   ├── 19_MLOps_LLMOps_Deployment_Lifecycle_Cheat_Sheet.md
+│   └── 20_AI_Production_Monitoring_Cost_Capacity_Cheat_Sheet.md
+└── Batch_6_Data_Security_Leadership/
+    ├── 21_Data_Distributed_Compute_Engineering_Cheat_Sheet.md
+    ├── 22_AI_Security_Privacy_Governance_Cheat_Sheet.md
+    ├── 23_AI_Data_Science_Technical_Leadership_Product_Thinking_Cheat_Sheet.md
+    └── 24_Project_Deep_Dive_Behavioral_Mock_Interview_Cheat_Sheet.md
 ```
 
 ## Combined editions
@@ -56,6 +62,7 @@ AI_Data_Science_Interview_Cheat_Sheets/
 | Batch 3 | [Open PDF](https://chatgpt.com/library?file_id=libfile_9159089fb1148191beb29c5e6404b222&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_3f3029f06d488191aa351d989f9f2cc8&account_id=personal) |
 | Batch 4 | [Open PDF](https://chatgpt.com/library?file_id=libfile_7f5ef293a59881918c5e523700bde909&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_2ad72f04317481918904cbbe70f9799a&account_id=personal) |
 | Batch 5 | [Open PDF](https://chatgpt.com/library?file_id=libfile_aeac8e5885088191a732a17c7fec401b&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_b6a4129799688191983ff590463d42bc&account_id=personal) |
+| Batch 6 | [Open PDF](https://chatgpt.com/library?file_id=libfile_4fdc02a25d048191a2a48efb3b31f910&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_48308c353cdc8191b7a0d0306db39c75&account_id=personal) |
 
 ## How to use the sheets
 

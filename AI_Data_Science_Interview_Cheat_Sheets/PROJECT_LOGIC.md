@@ -1,6 +1,6 @@
 # Project Logic — AI and Data Science Interview Cheat Sheets
 
-**Last reviewed:** 9 November 2026  
+**Last reviewed:** 10 November 2026  
 **Owner:** repository owner  
 **Audience:** AI/ML interview candidates with beginner-to-senior depth requirements  
 **Review triggers:** a new batch; a material framework/model change; a reported technical error; or six months since the last review
