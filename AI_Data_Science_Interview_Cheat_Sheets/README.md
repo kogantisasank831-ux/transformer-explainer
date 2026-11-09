@@ -10,7 +10,8 @@ The collection is organized in small batches so each topic can be revised indepe
 |---|---|---|
 | Batch 1 — Core Foundations | Python, SQL, Probability & Statistics, Machine Learning | Complete |
 | Batch 2 — Deep Learning & GenAI | Deep Learning, NLP, Transformers, LLM & Generative AI | Complete |
-| Later batches | RAG, agents, LangGraph, Google ADK, agent libraries, system design, MLOps, inference, AI security, leadership | Planned in `MASTER_INDEX.md` |
+| Batch 3 — RAG & Search | Embeddings, ingestion/chunking, RAG architecture, evaluation/security/production | Complete |
+| Later batches | Agents, LangGraph, Google ADK, agent libraries, system design, MLOps, inference, AI security, leadership | Planned in `MASTER_INDEX.md` |
 
 ## Directory map
 
@@ -22,11 +23,16 @@ AI_Data_Science_Interview_Cheat_Sheets/
 │   ├── 02_SQL_Interview_Cheat_Sheet.md
 │   ├── 03_Probability_Statistics_Interview_Cheat_Sheet.md
 │   └── 04_Machine_Learning_Fundamentals_Cheat_Sheet.md
-└── Batch_2_Deep_Learning_GenAI/
-    ├── 05_Deep_Learning_Neural_Networks_Cheat_Sheet.md
-    ├── 06_NLP_Interview_Cheat_Sheet.md
-    ├── 07_Transformers_Interview_Cheat_Sheet.md
-    └── 08_LLM_Generative_AI_Interview_Cheat_Sheet.md
+├── Batch_2_Deep_Learning_GenAI/
+│   ├── 05_Deep_Learning_Neural_Networks_Cheat_Sheet.md
+│   ├── 06_NLP_Interview_Cheat_Sheet.md
+│   ├── 07_Transformers_Interview_Cheat_Sheet.md
+│   └── 08_LLM_Generative_AI_Interview_Cheat_Sheet.md
+└── Batch_3_RAG_Search/
+    ├── 09_Embeddings_Vector_Search_Interview_Cheat_Sheet.md
+    ├── 10_Document_Ingestion_Chunking_Indexing_Cheat_Sheet.md
+    ├── 11_RAG_Architecture_Retrieval_Generation_Cheat_Sheet.md
+    └── 12_RAG_Evaluation_Security_Production_Cheat_Sheet.md
 ```
 
 ## Combined editions
@@ -35,6 +41,7 @@ AI_Data_Science_Interview_Cheat_Sheets/
 |---|---|---|
 | Batch 1 | [Open PDF](https://chatgpt.com/library?file_id=libfile_7f01f88e87208191b22897e088963460&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_647a2e15eab88191b2a3ff3013692b89&account_id=personal) |
 | Batch 2 | [Open PDF](https://chatgpt.com/library?file_id=libfile_ffa13e8692b88191aa2b5b614e8d7ce5&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_4a70b145fdb081919f581f98ff5a4c03&account_id=personal) |
+| Batch 3 | [Open PDF](https://chatgpt.com/library?file_id=libfile_9159089fb1148191beb29c5e6404b222&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_3f3029f06d488191aa351d989f9f2cc8&account_id=personal) |
 
 ## How to use the sheets
 

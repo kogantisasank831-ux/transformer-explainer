@@ -28,6 +28,20 @@
 | PDF text extraction | 12,035 words extracted |
 | Visual review | Cover, all four section starts, dense content, and final page reviewed |
 
+## Batch 3
+
+| Check | Result |
+|---|---|
+| Source sheets | 4 |
+| Approximate source words | 11,479 |
+| Python fenced blocks parsed and executed | 6/6 |
+| Behavior assertions | Cosine similarity, RRF, deterministic IDs, Recall@K, reciprocal rank passed |
+| Markdown code fences | Balanced in all sheets |
+| DOCX integrity | ZIP container test passed |
+| Combined PDF | 38 A4 pages, tagged, unencrypted |
+| PDF text extraction | 11,297 words extracted |
+| Visual review | Cover, all four section starts, representative dense pages, and final page reviewed |
+
 ## Content checks
 
 - Topic boundaries match the master index.
@@ -35,6 +49,9 @@
 - Transformer coverage distinguishes training, prefill, decode, KV cache, MHA/MQA/GQA, FlashAttention, long context, and MoE.
 - LLM coverage distinguishes prompting, RAG, fine-tuning, SFT, LoRA/QLoRA, preference optimization, quantization, evaluation, security, and ecosystem roles.
 - Library descriptions distinguish Nemotron, NeMo Framework, NeMo Guardrails, serving engines, and training/post-training libraries.
+- RAG coverage separates embeddings/vector search, ingestion/chunking, online architecture, generation/citations, evaluation, security, and production operations.
+- Retrieval coverage includes sparse/dense/hybrid search, bi-encoders/cross-encoders, exact/ANN, HNSW/IVF/PQ, RRF, reranking, and late interaction.
+- Security coverage includes poisoning, indirect prompt injection, current ACL/tenant isolation, cache leakage, privacy, deletion, incident response, and release gates.
 
 ## Known limits
 
