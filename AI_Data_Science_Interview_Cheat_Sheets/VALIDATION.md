@@ -104,6 +104,22 @@
 | PDF text extraction | 10,707 words extracted |
 | Visual review | Cover, overview, all four section starts, all four code layouts, representative dense pages, and final page reviewed |
 
+## Batch 8
+
+| Check | Result |
+|---|---|
+| Source sheets | 4 |
+| Approximate source words | 11,990 |
+| Python fenced blocks parsed and executed | 4/4 |
+| Behavior assertions | Stable softmax, mean silhouette, robust modified z-scores, and expected calibration error passed |
+| Markdown code fences | Balanced in all sheets |
+| Required revision sections | Thirty-second revision, rapid Q&A, lead case, checklist, and primary references present in all sheets |
+| Source control characters | None detected |
+| DOCX integrity | ZIP container test passed |
+| Combined PDF | 35 A4 pages, tagged, unencrypted |
+| PDF text extraction | 11,527 words extracted |
+| Visual review | Cover, overview, all four section starts, all four code layouts, representative tables/equations, and final page reviewed |
+
 ## Content checks
 
 - Topic boundaries match the master index.
@@ -131,6 +147,10 @@
 - Feature-engineering/data-validation coverage defines modeling grain, label timing, deployment-safe splits, leakage classes, point-in-time joins, feature contracts, schema/domain/temporal gates, offline-online parity, drift diagnosis, quarantine, and current validation-tool roles.
 - Forecasting coverage defines origin/horizon/lead time, temporal audits, naive baselines, ETS/ARIMA/state-space/ML/global/deep/foundation models, rolling-origin evaluation, point/probabilistic metrics, intermittent demand, hierarchy, censoring, and operations.
 - Recommendation/ranking coverage separates eligibility, candidate generation, scoring, and re-ranking; covers implicit-feedback bias, matrix factorization, two-tower retrieval, learning-to-rank, offline/online/counterfactual evaluation, cold start, exploration, feedback loops, and serving reliability.
+- Mathematical-foundation coverage connects tensor shapes, geometry, rank/conditioning, eigen-decomposition/SVD/PCA, derivatives/autodiff, optimizer behavior, convexity/constraints, regularization, and numerical stability to implementation and debugging.
+- Unsupervised-learning coverage defines the entity/decision/representation/distance contract; compares k-means, mixtures, hierarchical, density, spectral, PCA, t-SNE, UMAP, and learned representations; and covers stability, utility, new-point assignment, drift, privacy, and cluster versioning.
+- Anomaly/rare-event coverage distinguishes rarity, anomaly, novelty, outlier, and change points; covers robust baselines, classical/deep detectors, imbalanced supervision, calibration, alert-budget/event-level metrics, thresholding, delayed/selective labels, replay, alert operations, and rollback.
+- Model-assurance coverage distinguishes global/local and predictive/causal explanations; covers attribution/counterfactual limitations, calibration and conformal coverage, harm-based/intersectional fairness, exact-artifact evidence, release gates, exceptions, monitoring, appeals, incidents, rollback, and retirement.
 
 ## Known limits
 
