@@ -88,6 +88,22 @@
 | PDF text extraction | 11,420 words extracted |
 | Visual review | Cover, overview, all four section starts, code layout, representative dense pages, and final page reviewed |
 
+## Batch 7
+
+| Check | Result |
+|---|---|
+| Source sheets | 4 |
+| Approximate source words | 10,923 |
+| Python fenced blocks parsed and executed | 4/4 |
+| Behavior assertions | Difference-in-means, point-in-time retrieval, rolling-origin splitting, and NDCG passed |
+| Markdown code fences | Balanced in all sheets |
+| Required revision sections | Thirty-second revision, rapid Q&A, lead case, checklist, and primary references present in all sheets |
+| Source control characters | None detected |
+| DOCX integrity | ZIP container test passed |
+| Combined PDF | 33 A4 pages, tagged, unencrypted |
+| PDF text extraction | 10,707 words extracted |
+| Visual review | Cover, overview, all four section starts, all four code layouts, representative dense pages, and final page reviewed |
+
 ## Content checks
 
 - Topic boundaries match the master index.
@@ -111,6 +127,10 @@
 - Security/governance coverage threat-models the application, AI component, data, and action planes; covers prompt injection, RAG/agent/tool boundaries, privacy, supply chain, resource abuse, red-team evidence, NIST/OWASP/MITRE/ISO awareness, and regulation verification.
 - Lead-level coverage connects problem framing, metric trees, uncertainty reduction, roadmaps, build/buy/self-host decisions, architecture review, delegation, mentoring, rollout, incidents, fairness, and executive communication.
 - Project-defense coverage includes portfolio selection, 30-second/two-minute/20-minute explanations, ownership, leakage, evaluation, impact attribution, production/security follow-ups, behavioral stories, mock cases, and a scoring rubric.
+- Experimentation coverage defines estimands, randomization units, power/MDE, SRM and instrumentation checks, CUPED, sequential/multiple testing, cluster/switchback designs, causal DAGs, observational identification, sensitivity, and heterogeneous-effect validation.
+- Feature-engineering/data-validation coverage defines modeling grain, label timing, deployment-safe splits, leakage classes, point-in-time joins, feature contracts, schema/domain/temporal gates, offline-online parity, drift diagnosis, quarantine, and current validation-tool roles.
+- Forecasting coverage defines origin/horizon/lead time, temporal audits, naive baselines, ETS/ARIMA/state-space/ML/global/deep/foundation models, rolling-origin evaluation, point/probabilistic metrics, intermittent demand, hierarchy, censoring, and operations.
+- Recommendation/ranking coverage separates eligibility, candidate generation, scoring, and re-ranking; covers implicit-feedback bias, matrix factorization, two-tower retrieval, learning-to-rank, offline/online/counterfactual evaluation, cold start, exploration, feedback loops, and serving reliability.
 
 ## Known limits
 
