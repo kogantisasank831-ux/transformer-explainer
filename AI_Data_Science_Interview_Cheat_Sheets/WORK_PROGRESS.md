@@ -1,7 +1,7 @@
 # Work Progress
 
 **Status:** `no_active_work`  
-**Updated:** 10 November 2026
+**Updated:** 11 November 2026
 
 ## Completed
 
@@ -14,12 +14,13 @@
 - Batch 6 completed: Data/Distributed Compute Engineering, AI Security/Privacy/Governance, AI Technical Leadership/Product Thinking, and Project Deep-Dive/Behavioral/Mock Interview Preparation.
 - Batch 7 completed: Experimentation/Causal Inference, Feature Engineering/ML Data Validation, Time Series/Forecasting, and Recommendation/Search/Ranking.
 - Batch 8 completed: Linear Algebra/Calculus/Optimization, Unsupervised Learning/Dimensionality Reduction, Anomaly Detection/Rare-Event Modeling, and Explainability/Fairness/Uncertainty/Model Governance.
-- Markdown sources validated and combined PDF/DOCX editions generated for Batches 1–8.
-- Batch 1 through Batch 8 repository documentation prepared.
+- Batch 9 completed: Computer Vision/Multimodal AI, Graph Machine Learning/GNNs, Survival Analysis/Reliability Modeling, and Operations Research/Scheduling/Decision Optimization.
+- Markdown sources validated and combined PDF/DOCX editions generated for Batches 1–9.
+- Batch 1 through Batch 9 repository documentation prepared.
 
 ## Next logical batch
 
-Computer vision/multimodal AI, graph machine learning/GNNs, survival analysis/reliability modeling, and operations-research/scheduling specialization.
+AI backend/API and async-service engineering, cloud/Kubernetes/GPU platform engineering, AI testing/release quality, and end-to-end architecture/mock interview preparation.
 
 No next-batch implementation is active in this checkpoint.
 

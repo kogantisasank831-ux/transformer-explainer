@@ -16,7 +16,8 @@ The collection is organized in small batches so each topic can be revised indepe
 | Batch 6 — Data, Security & Leadership | Distributed data/training, AI security/privacy/governance, technical leadership/product thinking, and project/behavioral preparation | Complete |
 | Batch 7 — Modeling & Decision Science | Experimentation/causal inference, feature engineering/data validation, forecasting, and recommendation/search/ranking | Complete |
 | Batch 8 — Advanced Modeling & Model Assurance | Linear algebra/calculus/optimization, unsupervised learning, anomaly/rare-event modeling, and explainability/fairness/uncertainty/governance | Complete |
-| Later batches | Specialized modeling and AI backend/cloud engineering | Planned in `MASTER_INDEX.md` |
+| Batch 9 — Specialized Modeling | Computer vision/multimodal AI, graph ML/GNNs, survival/reliability modeling, and operations research/scheduling | Complete |
+| Batch 10 — AI Engineering Platform | Backend/API engineering, cloud/Kubernetes/GPU platforms, AI testing/release quality, and final architecture preparation | Planned in `MASTER_INDEX.md` |
 
 ## Directory map
 
@@ -54,15 +55,20 @@ AI_Data_Science_Interview_Cheat_Sheets/
 │   ├── 23_AI_Data_Science_Technical_Leadership_Product_Thinking_Cheat_Sheet.md
 │   └── 24_Project_Deep_Dive_Behavioral_Mock_Interview_Cheat_Sheet.md
 ├── Batch_7_Modeling_Decision_Science/
-    ├── 25_Experimentation_Causal_Inference_Interview_Cheat_Sheet.md
-    ├── 26_Feature_Engineering_Data_Validation_Cheat_Sheet.md
-    ├── 27_Time_Series_Forecasting_Interview_Cheat_Sheet.md
-    └── 28_Recommendation_Search_Ranking_Interview_Cheat_Sheet.md
-└── Batch_8_Advanced_Modeling_Model_Assurance/
-    ├── 29_Linear_Algebra_Calculus_Optimization_Interview_Cheat_Sheet.md
-    ├── 30_Unsupervised_Learning_Dimensionality_Reduction_Interview_Cheat_Sheet.md
-    ├── 31_Anomaly_Detection_Rare_Event_Modeling_Interview_Cheat_Sheet.md
-    └── 32_Explainability_Fairness_Uncertainty_Model_Governance_Cheat_Sheet.md
+│   ├── 25_Experimentation_Causal_Inference_Interview_Cheat_Sheet.md
+│   ├── 26_Feature_Engineering_Data_Validation_Cheat_Sheet.md
+│   ├── 27_Time_Series_Forecasting_Interview_Cheat_Sheet.md
+│   └── 28_Recommendation_Search_Ranking_Interview_Cheat_Sheet.md
+├── Batch_8_Advanced_Modeling_Model_Assurance/
+│   ├── 29_Linear_Algebra_Calculus_Optimization_Interview_Cheat_Sheet.md
+│   ├── 30_Unsupervised_Learning_Dimensionality_Reduction_Interview_Cheat_Sheet.md
+│   ├── 31_Anomaly_Detection_Rare_Event_Modeling_Interview_Cheat_Sheet.md
+│   └── 32_Explainability_Fairness_Uncertainty_Model_Governance_Cheat_Sheet.md
+└── Batch_9_Specialized_Modeling/
+    ├── 33_Computer_Vision_Multimodal_AI_Interview_Cheat_Sheet.md
+    ├── 34_Graph_Machine_Learning_GNN_Interview_Cheat_Sheet.md
+    ├── 35_Survival_Analysis_Reliability_Modeling_Cheat_Sheet.md
+    └── 36_Operations_Research_Scheduling_Optimization_Cheat_Sheet.md
 ```
 
 ## Combined editions
@@ -77,6 +83,7 @@ AI_Data_Science_Interview_Cheat_Sheets/
 | Batch 6 | [Open PDF](https://chatgpt.com/library?file_id=libfile_4fdc02a25d048191a2a48efb3b31f910&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_48308c353cdc8191b7a0d0306db39c75&account_id=personal) |
 | Batch 7 | [Open PDF](https://chatgpt.com/library?file_id=libfile_8ba4c500dea08191a10755415d4bd665&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_ba7d72823e9c8191be35892e262d2689&account_id=personal) |
 | Batch 8 | [Open PDF](https://chatgpt.com/library?file_id=libfile_0fdcd5ff06f081918c4de0faf7587adb&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_d95f092ed24c8191b42e167402289ba1&account_id=personal) |
+| Batch 9 | [Open PDF](https://chatgpt.com/library?file_id=libfile_67ebda5742748191b3437d2724ed67d4&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_b170f4e7d0b88191b44d92b2f3cb9eab&account_id=personal) |
 
 ## How to use the sheets
 

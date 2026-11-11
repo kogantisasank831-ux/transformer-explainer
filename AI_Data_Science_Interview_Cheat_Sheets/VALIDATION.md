@@ -2,7 +2,7 @@
 
 **Documentation set:** AI and Data Science Interview Cheat Sheets  
 **Environment:** document generation and static checks in the project workspace  
-**Checked:** 10 November 2026
+**Checked:** 11 November 2026
 
 ## Batch 1
 
@@ -120,6 +120,22 @@
 | PDF text extraction | 11,527 words extracted |
 | Visual review | Cover, overview, all four section starts, all four code layouts, representative tables/equations, and final page reviewed |
 
+## Batch 9
+
+| Check | Result |
+|---|---|
+| Source sheets | 4 |
+| Approximate source words | 11,870 |
+| Python fenced blocks parsed and executed | 4/4 |
+| Behavior assertions | Bounding-box IoU, mean graph message aggregation, Kaplan-Meier steps, and assignment optimization passed |
+| Markdown code fences | Balanced in all sheets |
+| Required revision sections | Thirty-second revision, rapid Q&A, lead case, checklist, and primary references present in all sheets |
+| Source control characters | None detected |
+| DOCX integrity | ZIP container test passed |
+| Combined PDF | 39 A4 pages, tagged, unencrypted |
+| PDF text extraction | 11,600 words extracted |
+| Visual review | Cover, overview, all four section starts, all four code layouts, representative equations/tables, and final page reviewed |
+
 ## Content checks
 
 - Topic boundaries match the master index.
@@ -151,6 +167,10 @@
 - Unsupervised-learning coverage defines the entity/decision/representation/distance contract; compares k-means, mixtures, hierarchical, density, spectral, PCA, t-SNE, UMAP, and learned representations; and covers stability, utility, new-point assignment, drift, privacy, and cluster versioning.
 - Anomaly/rare-event coverage distinguishes rarity, anomaly, novelty, outlier, and change points; covers robust baselines, classical/deep detectors, imbalanced supervision, calibration, alert-budget/event-level metrics, thresholding, delayed/selective labels, replay, alert operations, and rollback.
 - Model-assurance coverage distinguishes global/local and predictive/causal explanations; covers attribution/counterfactual limitations, calibration and conformal coverage, harm-based/intersectional fairness, exact-artifact evidence, release gates, exceptions, monitoring, appeals, incidents, rollback, and retirement.
+- Computer-vision/multimodal coverage defines the visual decision and annotation unit; covers CNNs, ViTs, classification/detection/segmentation/OCR/video, IoU/AP/Dice/NMS, transfer learning, dual encoders/VLMs, leakage-safe splits, grounding/hallucination evaluation, deployment, privacy, and safety.
+- Graph-ML coverage defines typed/directed/temporal graph construction; covers structural baselines, message passing, GCN/GraphSAGE/GAT/GIN, node/link/graph tasks, negative sampling, inductive/temporal splits, sampling/scale, oversmoothing/oversquashing/heterophily, production graph identity, and monitoring.
+- Survival/reliability coverage defines origin/event/censoring/truncation/competing risks; covers KM/Nelson-Aalen, Cox/AFT/forest/neural models, time-varying covariates, censoring-aware concordance/AUC/Brier/calibration, maintenance decisions, artifact identity, and delayed-outcome monitoring.
+- Operations-research coverage defines variables/objectives/hard-soft constraints; covers LP/MILP/CP-SAT, branch-and-bound/gaps, scheduling/routing/setup, infeasibility/numerics, heuristics/decomposition, stochastic/robust optimization, prediction-plus-optimization, independent feasibility checks, and production fallback.
 
 ## Known limits
 
