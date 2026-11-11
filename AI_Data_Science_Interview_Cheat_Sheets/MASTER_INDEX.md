@@ -3,7 +3,8 @@
 **Purpose:** a comprehensive syllabus for building short, reusable cheat sheets for AI Engineer, Senior/Lead Data Scientist, Applied Scientist, ML Engineer, and Agentic AI Engineer interviews.
 
 **Current as of:** 11 November 2026  
-**Scope:** Python, SQL, statistics, machine learning, deep learning, neural networks, NLP, transformers, generative AI, RAG, agents, system design, MLOps, AI security, leadership, and the current library ecosystem.
+**Scope:** Python, SQL, statistics, machine learning, deep learning, neural networks, NLP, transformers, generative AI, RAG, agents, system design, MLOps, AI security, leadership, and the current library ecosystem.  
+**Collection status:** all 40 planned sheets across 10 batches are complete.
 
 > No finite list can cover every company or domain. This index covers the recurring topics found across current senior AI/ML job descriptions and the major interview formats. Domain-specific roles may add forecasting, recommendations, computer vision, risk, optimization, or causal inference.
 

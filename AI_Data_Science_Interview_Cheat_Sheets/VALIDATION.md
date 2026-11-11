@@ -136,6 +136,22 @@
 | PDF text extraction | 11,600 words extracted |
 | Visual review | Cover, overview, all four section starts, all four code layouts, representative equations/tables, and final page reviewed |
 
+## Batch 10
+
+| Check | Result |
+|---|---|
+| Source sheets | 4 |
+| Approximate source words | 12,616 |
+| Python fenced blocks parsed and executed | 4/4 |
+| Behavior assertions | Bounded async concurrency, replica capacity, release-gate evaluation, and critical-path latency passed |
+| Markdown code fences | Balanced in all sheets |
+| Required revision sections | Thirty-second revision, rapid Q&A, lead/mock cases, checklist, and primary references present in all sheets |
+| Source control characters | None detected |
+| DOCX integrity | ZIP container test passed |
+| Combined PDF | 35 A4 pages, tagged, unencrypted |
+| PDF text extraction | 12,193 words extracted |
+| Visual review | Cover, overview, all four section starts, all four code layouts, representative tables, checklists, and final page reviewed |
+
 ## Content checks
 
 - Topic boundaries match the master index.
@@ -171,6 +187,21 @@
 - Graph-ML coverage defines typed/directed/temporal graph construction; covers structural baselines, message passing, GCN/GraphSAGE/GAT/GIN, node/link/graph tasks, negative sampling, inductive/temporal splits, sampling/scale, oversmoothing/oversquashing/heterophily, production graph identity, and monitoring.
 - Survival/reliability coverage defines origin/event/censoring/truncation/competing risks; covers KM/Nelson-Aalen, Cox/AFT/forest/neural models, time-varying covariates, censoring-aware concordance/AUC/Brier/calibration, maintenance decisions, artifact identity, and delayed-outcome monitoring.
 - Operations-research coverage defines variables/objectives/hard-soft constraints; covers LP/MILP/CP-SAT, branch-and-bound/gaps, scheduling/routing/setup, infeasibility/numerics, heuristics/decomposition, stochastic/robust optimization, prediction-plus-optimization, independent feasibility checks, and production fallback.
+- Backend/API coverage defines HTTP and job contracts, sync/async/streaming choices, event-loop safety, bounded concurrency, queues, delivery/idempotency, retry/backpressure, transactions/outbox, inference gateways, tenant security, observability, overload, and recovery.
+- Cloud/platform coverage defines container and release identity, Kubernetes reconciliation/objects/scheduling/probes, GPU stack/memory/sharing, serving platforms, token/queue-aware autoscaling, distributed training, storage/network/workload identity, reliability, and cost capacity.
+- Testing/release coverage separates deterministic tests from statistical evaluation; covers unit/property/contract/integration/E2E, dataset identity, model/RAG/agent/judge evaluation, adversarial/performance/resilience tests, immutable candidates, quality gates, canary, rollback, and post-release verification.
+- Final architecture coverage provides a timed system-design method, requirement and metric trees, capacity/latency math, baseline/RAG/fine-tune/agent decisions, planes/contracts/state, lifecycle, failure/security/operations, phased leadership delivery, and four complete mock cases.
+
+## Completed-collection audit
+
+| Check | Result |
+|---|---|
+| Planned batches | 10/10 complete |
+| Canonical source sheets | 40/40 present |
+| Approximate canonical source words | 114,998 |
+| Python fenced blocks parsed across repository | 63/63 |
+| Combined reading editions | PDF and DOCX generated and validated for all 10 batches |
+| Repository state | Root coverage, directory map, download index, progress, and validation records updated |
 
 ## Known limits
 

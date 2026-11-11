@@ -17,7 +17,9 @@ The collection is organized in small batches so each topic can be revised indepe
 | Batch 7 — Modeling & Decision Science | Experimentation/causal inference, feature engineering/data validation, forecasting, and recommendation/search/ranking | Complete |
 | Batch 8 — Advanced Modeling & Model Assurance | Linear algebra/calculus/optimization, unsupervised learning, anomaly/rare-event modeling, and explainability/fairness/uncertainty/governance | Complete |
 | Batch 9 — Specialized Modeling | Computer vision/multimodal AI, graph ML/GNNs, survival/reliability modeling, and operations research/scheduling | Complete |
-| Batch 10 — AI Engineering Platform | Backend/API engineering, cloud/Kubernetes/GPU platforms, AI testing/release quality, and final architecture preparation | Planned in `MASTER_INDEX.md` |
+| Batch 10 — AI Engineering Platform | Backend/API engineering, cloud/Kubernetes/GPU platforms, AI testing/release quality, and final architecture preparation | Complete |
+
+All ten planned batches are complete: 40 canonical Markdown sheets plus a combined PDF and editable DOCX for every batch.
 
 ## Directory map
 
@@ -64,11 +66,16 @@ AI_Data_Science_Interview_Cheat_Sheets/
 │   ├── 30_Unsupervised_Learning_Dimensionality_Reduction_Interview_Cheat_Sheet.md
 │   ├── 31_Anomaly_Detection_Rare_Event_Modeling_Interview_Cheat_Sheet.md
 │   └── 32_Explainability_Fairness_Uncertainty_Model_Governance_Cheat_Sheet.md
-└── Batch_9_Specialized_Modeling/
-    ├── 33_Computer_Vision_Multimodal_AI_Interview_Cheat_Sheet.md
-    ├── 34_Graph_Machine_Learning_GNN_Interview_Cheat_Sheet.md
-    ├── 35_Survival_Analysis_Reliability_Modeling_Cheat_Sheet.md
-    └── 36_Operations_Research_Scheduling_Optimization_Cheat_Sheet.md
+├── Batch_9_Specialized_Modeling/
+│   ├── 33_Computer_Vision_Multimodal_AI_Interview_Cheat_Sheet.md
+│   ├── 34_Graph_Machine_Learning_GNN_Interview_Cheat_Sheet.md
+│   ├── 35_Survival_Analysis_Reliability_Modeling_Cheat_Sheet.md
+│   └── 36_Operations_Research_Scheduling_Optimization_Cheat_Sheet.md
+└── Batch_10_AI_Engineering_Platform/
+    ├── 37_AI_Backend_API_Async_Service_Engineering_Cheat_Sheet.md
+    ├── 38_Cloud_Kubernetes_GPU_Platform_Engineering_Cheat_Sheet.md
+    ├── 39_AI_Testing_Release_Quality_Engineering_Cheat_Sheet.md
+    └── 40_End_to_End_AI_Architecture_Mock_Interview_Cheat_Sheet.md
 ```
 
 ## Combined editions
@@ -84,6 +91,7 @@ AI_Data_Science_Interview_Cheat_Sheets/
 | Batch 7 | [Open PDF](https://chatgpt.com/library?file_id=libfile_8ba4c500dea08191a10755415d4bd665&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_ba7d72823e9c8191be35892e262d2689&account_id=personal) |
 | Batch 8 | [Open PDF](https://chatgpt.com/library?file_id=libfile_0fdcd5ff06f081918c4de0faf7587adb&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_d95f092ed24c8191b42e167402289ba1&account_id=personal) |
 | Batch 9 | [Open PDF](https://chatgpt.com/library?file_id=libfile_67ebda5742748191b3437d2724ed67d4&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_b170f4e7d0b88191b44d92b2f3cb9eab&account_id=personal) |
+| Batch 10 | [Open PDF](https://chatgpt.com/library?file_id=libfile_1304008467848191ac294a4331a430b1&account_id=personal) | [Open DOCX](https://chatgpt.com/library?file_id=libfile_bcd29c72ecc08191bae7901393e20f15&account_id=personal) |
 
 ## How to use the sheets
 
